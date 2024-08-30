@@ -1,0 +1,405 @@
+{
+    "item_id": "crystalls",
+    "count": 1000,
+    "rarity": 0
+},
+{
+    "item_id": "health",
+    "count": 50,
+    "rarity": 0
+},
+{
+    "item_id": "armor",
+    "count": 50,
+    "rarity": 0
+},
+{
+    "item_id": "double_damage",
+    "count": 50,
+    "rarity": 0
+},
+{
+    "item_id": "n2o",
+    "count": 50,
+    "rarity": 0
+},
+{
+    "item_id": "mine",
+    "count": 50,
+    "rarity": 0
+},
+{
+    "item_id": "crystalls",
+    "count": 5000,
+    "rarity": 1
+},
+{
+    "item_id": "crystalls",
+    "count": 10000,
+    "rarity": 1
+},
+{
+    "item_id": "premium",
+    "count": 1,
+    "rarity": 1
+},
+{
+    "item_id": "crystalls",
+    "count": 25000,
+    "rarity": 2
+},
+{
+    "item_id": "crystalls",
+    "count": 50000,
+    "rarity": 2
+},
+{
+    "item_id": "premium",
+    "count": 3,
+    "rarity": 2
+},
+{
+    "item_id": "zeus",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "nefrit",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "needles",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "rock",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "prodigy",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "taiga",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "inferno",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "izumurud",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "irbis",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "savanna",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "urban",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "tina",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "blizzard",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "rustle",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "khokhloma",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "spark",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "digital",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "standstone",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "electra",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "python",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "kedr",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "roger",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "tundra",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "barkhan",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "surf",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "jaguar",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "dirt",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "rust",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "carbon",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "withlove",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "storm",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "mary",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "lead",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "dragon",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "foreign",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "safari",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "marsh",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "marine",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "lava",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "forester",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "metallic",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "flora",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "white",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "black",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "blue",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "red",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "orange",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "marsh",
+    "count": 0,
+    "rarity": 2
+},
+{
+    "item_id": "crystalls",
+    "count": 100000,
+    "rarity": 3
+},
+{
+    "item_id": "premium",
+    "count": 7,
+    "rarity": 3
+},
+{
+    "item_id": "galaxian",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "tictactoe",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "iceflurry",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "lightningstorm",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "matrix",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "glow",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "galaxy",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "cryo",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "turbo",
+    "count": 0,
+    "rarity": 3
+},
+{
+    "item_id": "crystalls",
+    "count": 300000,
+    "rarity": 4
+},
+{
+    "item_id": "crystalls",
+    "count": 1000000,
+    "rarity": 4
+},
+{
+    "item_id": "olivewidow",
+    "count": 0,
+    "rarity": 4
+},
+{
+    "item_id": "redstoker",
+    "count": 0,
+    "rarity": 4
+},
+{
+    "item_id": "thugsigns",
+    "count": 0,
+    "rarity": 4
+},
+{
+    "item_id": "boom",
+    "count": 0,
+    "rarity": 4
+},
+{
+    "item_id": "abstractmaze",
+    "count": 0,
+    "rarity": 4
+},
+{
+    "item_id": "infinity",
+    "count": 0,
+    "rarity": 4
+},
+{
+    "item_id": "poisonousvine",
+    "count": 0,
+    "rarity": 4
+},
+{
+    "item_id": "latex",
+    "count": 0,
+    "rarity": 4
+}

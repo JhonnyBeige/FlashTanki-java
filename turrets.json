@@ -1,0 +1,920 @@
+{
+	"type": "turrets",
+	"items": [
+		{
+			"name_ru": "Смоки",
+			"name_en": "Smoky",
+			"description_en": "Medium-caliber tank gun. It is used in light and training tanks. It is wide spread used because it is affordable and easy to operate. If you want to act like a guenilla, it certainly suits your needs. Fix it on light armor and enjoy speed among monster tanks.",
+			"description_ru": "Среднекалиберная танковая пушка. В основном, устанавливается на лёгкие истребительные и учебные танки. Получила распространение из-за дешевизны и простоты обслуживания. Установите её на быстрый корпус и, шныряя между ошарашенными врагами, берите тяжёлые неповоротливые танки на измор. Разработанные апгрейды способны существенно увеличить убойную силу этой малышки. Стоит помнить, что урон этой пушки падает на расстоянии.",
+			"modification": 0,
+			"id": "smoky",
+			"price_m0": "0",
+			"price_m1": "11000",
+			"price_m2": "114800",
+			"price_m3": "268600",
+			"rang_m0": "1",
+			"rang_m1": "10",
+			"rang_m2": "22",
+			"rang_m3": "27",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Smoky XT",
+					"description": "Creator of XT-skin for Smoky spent several years among the tropical forests of South America, learning anacondas. Returning home, he decided to reproduce the image of this huge snake in a tank gun - this is how this skin appeared.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "damage",
+					"value": "140 - 220"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "30.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "57.3"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage",
+					"value": "205 - 321"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "31.6"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "63.0"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage",
+					"value": "312 - 485"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "34.3"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "74.5"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage",
+					"value": "354 - 548"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "37.5"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "103.1"
+				}
+			]
+		},
+		{
+			"name_ru": "Огнемёт",
+			"name_en": "Firebird",
+			"description_en": "In close city quarters battles, there is no better weapon than a flame spitter. This is a weapon of mass destruction The heat will melt down any tank and its crew. This weapon is highly effective in a confined space on slow moving tanks.",
+			"description_ru": "В тесных городских кварталах, когда картина боя напоминает скорее муравейник, нет лучшего оружия, чем Огнемёт. Огнемёт является этаким оружием массового поражения для ближнего боя. Высокая температура горения смеси позволит быстро поджечь экипаж танка зазевавшегося противника, после чего скрыться за углом, пока враг догорает. Идеальное оружие против медленных танков в условиях ограниченного пространства. Из недостатков можно отметить сравнительно долгое время перезарядки, однако стрелять можно и из частично перезаряженного оружия.",
+			"modification": 0,
+			"id": "flamethrower",
+			"price_m0": "150",
+			"price_m1": "7100",
+			"price_m2": "94600",
+			"price_m3": "275000",
+			"rang_m0": "1",
+			"rang_m1": "8",
+			"rang_m2": "20",
+			"rang_m3": "29",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Firebird XT",
+					"description": "The Unique Firebird XT is embellished with a unique ornament, styled after the head of a fire-breathing dragon with burning eyes.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "damage_per_second",
+					"value": "200"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "91.7"
+				},
+				{
+					"type": "cone_angle",
+					"value": "9.4"
+				},
+				{
+					"type": "shot_range",
+					"value": "23.7"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage_per_second",
+					"value": "302"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "103.1"
+				},
+				{
+					"type": "cone_angle",
+					"value": "15.9"
+				},
+				{
+					"type": "shot_range",
+					"value": "25.6"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage_per_second",
+					"value": "479"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "126.1"
+				},
+				{
+					"type": "cone_angle",
+					"value": "22.8"
+				},
+				{
+					"type": "shot_range",
+					"value": "27.5"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage_per_second",
+					"value": "582"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "171.9"
+				},
+				{
+					"type": "cone_angle",
+					"value": "31.2"
+				},
+				{
+					"type": "shot_range",
+					"value": "30.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Твинс",
+			"name_en": "Twins",
+			"description_en": "This fast plasma gun with two tubes will melt enemy in seconds. Just remember that forced plasma generator, hid in this baby, eats a lot of energy, and gunfire accuracy is not the best ideal for dynamic firefight on a mid-distance.",
+			"description_ru": "Скорострельный двуствольный плазмомёт вмиг превратит врага в кучу расплавленного железа. Учитывая то, что попадание во вражеский танк сбивает ему прицел, это оружие идеально подходит для динамичного боя на средней дистанции.",
+			"modification": 0,
+			"id": "twins",
+			"price_m0": "150",
+			"price_m1": "35100",
+			"price_m2": "132600",
+			"price_m3": "259000",
+			"rang_m0": "1",
+			"rang_m1": "14",
+			"rang_m2": "19",
+			"rang_m3": "27",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Twins XT",
+					"description": "Twins XT is covered in the dinosaur hide preserved in the excellent condition among the caves of South Africa. Also infused with lava from the Indonesian volcanos, this skin turns plasma into truly melting firepower!",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "damage",
+					"value": "60 - 80"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "190.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "80"
+				},
+				{
+					"type": "shot_range",
+					"value": "60.7"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage",
+					"value": "110 - 133"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "191.5"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "106.8"
+				},
+				{
+					"type": "shot_range",
+					"value": "65.2"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage",
+					"value": "136 - 162"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "192.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "121.2"
+				},
+				{
+					"type": "shot_range",
+					"value": "69.8"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage",
+					"value": "159 - 187"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "193.5"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "133.5"
+				},
+				{
+					"type": "shot_range",
+					"value": "75.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Рельса",
+			"name_en": "Railgun",
+			"description_en": "If mid-caliber guns are not enough for your self-expression, this toy is right for you. Large-caliber gun with huge muzzle speed and uranic core shells. You can get several targets with a single shot, because it goes through the enemy. Complex recoil reduction system needs a lot of power to function. Ideal for long-range trench warfare and sniping.",
+			"description_ru": "Если среднекалиберные пушки уже не утоляют вашу жажду самовыражения, то эта игрушка специально для вас. Крупнокалиберная пушка, обладающая огромной дульной скоростью и снарядами с сердечниками из обеднённого урана. Сверхмощный и сверхточный кинетический снаряд способен пробить танк насквозь, поразив несколько целей, стоящих на одной прямой. Идеальное оружие для позиционного боя на дальней дистанции. Следует помнить, что это оружие довольно долго перезаряжается, чем обязательно воспользуется опытный противник.",
+			"modification": 0,
+			"id": "railgun",
+			"price_m0": "250",
+			"price_m1": "31400",
+			"price_m2": "96100",
+			"price_m3": "218300",
+			"rang_m0": "2",
+			"rang_m1": "13",
+			"rang_m2": "18",
+			"rang_m3": "26",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Railgun XT",
+					"description": "The unique Railgun XT is notable because of its side pattern styled after an eagles head, with a very distinctive predatory beak.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "damage",
+					"value": "534 - 810"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "8.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "34.4"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage",
+					"value": "595 - 1088"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "8.2"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "40.1"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage",
+					"value": "703 - 1205"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "8.5"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "57.3"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage",
+					"value": "800 - 1414"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "8.7"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "80.2"
+				}
+			]
+		},
+		{
+			"name_ru": "Изида",
+			"name_en": "Isida",
+			"description_en": "The idea of this unique weapon arose in the times of the cold war but was realized only with development of quantum physics\n\nand nanotechnologies. The heart of this wonder-machine is generator of nanorobots able to reproduce or destroy the structure of any non-biologocal material. The weapon is equipped with impulse emitter which allows to transport nanomass in the magnetic channel at a distance of about twenty meters. Molecular material, derived during nanorobots functioning in the mode of target destruction, is used to fix own chassis.",
+			"description_ru": "Уникальная идея этого оружия зародилась ещё во времена холодной войны, но смогла воплотиться только с развитием квантовой физики и нанотехнологий. Сердце этой чудо-машины — генератор нанороботов, способных воспроизвести или разрушить структуру любого материала небиологического происхождения. Импульсный излучатель, которым оборудована пушка, позволяет транспортировать наномассу в магнитном канале на расстояние в пару десятков метров. Молекулярный материал, получаемый при работе нанороботов в режиме разрушения цели, используется для починки собственного шасси. Таким образом, это оружие наносит урон врагам и восстанавливает союзников, что особенно необходимо при командной игре.",
+			"modification": 0,
+			"id": "isida",
+			"price_m0": "1800",
+			"price_m1": "18600",
+			"price_m2": "68000",
+			"price_m3": "206900",
+			"rang_m0": "6",
+			"rang_m1": "10",
+			"rang_m2": "16",
+			"rang_m3": "23",
+			"skins": [
+				{
+					"name": "Isida XT",
+					"description": "This elegant skin is styled to look like the head of a raven. It is worn with pride exclusively by the most dedicated field medics — those who are always in the line of fire to help those in need.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "heal_rate",
+					"value": "375"
+				},
+				{
+					"type": "vampire_rate",
+					"value": "500"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "74.5"
+				},
+				{
+					"type": "healing_radius",
+					"value": "35.9"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "heal_rate",
+					"value": "476"
+				},
+				{
+					"type": "vampire_rate",
+					"value": "632"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "83.1"
+				},
+				{
+					"type": "healing_radius",
+					"value": "40.88"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "heal_rate",
+					"value": "544"
+				},
+				{
+					"type": "vampire_rate",
+					"value": "720"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "97.4"
+				},
+				{
+					"type": "healing_radius",
+					"value": "45.79"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "heal_rate",
+					"value": "669"
+				},
+				{
+					"type": "vampire_rate",
+					"value": "882"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "120.3"
+				},
+				{
+					"type": "healing_radius",
+					"value": "50.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Гром",
+			"name_en": "Thunder",
+			"description_en": "This ''Type 2'' middle-caliber gun is the best choice for dynamic battle. Splash damage(make sure you won't hit yourself) allows you to attack a group of enemy vehicles. Equiped with light armor Thunder is one of the most dangerous weapons on the battlefield.",
+			"description_ru": "Среднекалиберная пушка — это лучший выбор для любителей динамичного боя. Разрывной снаряд Грома (осторожно, можно нанести урон самому себе) позволяет атаковать группу соперников, а быстрая перезарядка поможет получить неоспоримое преимущество перед тяжёлыми танками противника. В сочетании с быстрым корпусом Гром становится грозным оружием в руках умелого танкиста.",
+			"modification": 0,
+			"id": "thunder",
+			"price_m0": "500",
+			"price_m1": "38600",
+			"price_m2": "110500",
+			"price_m3": "206200",
+			"rang_m0": "3",
+			"rang_m1": "14",
+			"rang_m2": "19",
+			"rang_m3": "23",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Thunder XT",
+					"description": "The Exclusive Thunder XT will give you the feeling of slipping into the skin of a seasoned northern predator.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "damage",
+					"value": "269 - 380"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "17.1"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "45.8"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage",
+					"value": "431 - 600"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "19.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "51.6"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage",
+					"value": "504 - 700"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "22.2"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "65.9"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage",
+					"value": "622 - 860"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "26.7"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "91.7"
+				}
+			]
+		},
+		{
+			"name_ru": "Фриз",
+			"name_en": "Freeze",
+			"description_en": "The concept of «Freeze» weapon system was created in the desolate Russian village. Using old broken refrigerator «Sever» and vacuum cleaner «Buran» local inventor made «freeze thrower». Professional engineer who had been fishing near the village noticed this invention and brought it to the Zhukov Research institute. There clumsy «freeze thrower» became fomidable «Freeze» gun. It showers enemy with the chemical composition based on freon. Victim gets damagers and all its movements and processes become slower. Thought a flow of flame can unfreeze target.",
+			"description_ru": "Концепция грозной установки «Фриз» родилась в глухой русской деревне. Из неисправного холодильника «Север» и пылесоса «Буран» местный кулибин собрал «хладомёт». Новинку заметил рыбачивший в тех краях инженер. После доработки в закрытом НИИ им. Жукова «хладомёт» превратился в танковое орудие «Фриз». Заливая противника химическим составом на основе фреона, пушка наносит урон и замораживает объект, замедляя все его движения и процессы. Правда, струя пламени может разморозить жертву.",
+			"modification": 0,
+			"id": "frezee",
+			"price_m0": "600",
+			"price_m1": "22600",
+			"price_m2": "61400",
+			"price_m3": "221500",
+			"rang_m0": "4",
+			"rang_m1": "11",
+			"rang_m2": "15",
+			"rang_m3": "24",
+			"skins": [
+				{
+					"name": "Freeze XT",
+					"description": "Unique Freeze XT is designed to look like the head of a mammoth. Sturdy silver tusks will help you as a weapon against the enemies but also create a great protection.",
+					"skinType": "xt"
+				},
+				{
+					"name": "Freeze Frost",
+					"description": "High-speed Tanks were used effectively during the first battles for Iran. Then the Freeze, a commanding weapon that was able to establish control on the battlefield, appeared. 00 not let the enemy move and escape from your range of fire» is the basic principle of this freon weapon, which is able to slow down and freeze your opponent's equipment.",
+					"skinType": "fr"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "damage_per_second",
+					"value": "295"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "83.1"
+				},
+				{
+					"type": "cone_angle",
+					"value": "20.0"
+				},
+				{
+					"type": "shot_range",
+					"value": "24.8"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage_per_second",
+					"value": "400"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "93.4"
+				},
+				{
+					"type": "cone_angle",
+					"value": "23.5"
+				},
+				{
+					"type": "shot_range",
+					"value": "26.7"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage_per_second",
+					"value": "460"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "111.7"
+				},
+				{
+					"type": "cone_angle",
+					"value": "26.2"
+				},
+				{
+					"type": "shot_range",
+					"value": "28.6"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage_per_second",
+					"value": "640"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "146.1"
+				},
+				{
+					"type": "cone_angle",
+					"value": "30.0"
+				},
+				{
+					"type": "shot_range",
+					"value": "30.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Рикошет",
+			"name_en": "Ricochet",
+			"description_en": "«Ricochet» plasma gun is a new secret project of Siberian scientists. To produce this gun team of 22 high-class professionals have been working in the underground bunker more then three years without permission to exit on the surface. And their have created unique weapon. It throws plasma charges cloaked with «clever» minus-field. When such charge hits the tank it explodes but it bounces of any other surface. So using «Ricochet» you can defeat even targets out of over visibility range. But be careful! Do not stand in the way of a released charge, so you can do damage to youself.",
+			"description_ru": "Плазмомёт «Рикошет» — это новая секретная разработка сибирских ученых. Чтобы поставить её на вооружение, команда из 22 специалистов три года работала в подземном бункере без права выхода на поверхность. В итоге они создали уникальное оружие. Оно выпускает плазменные заряды, окутанные «умным» минус-полем. При попадании в танк заряд взрывается, но от других поверхностей отскакивает и продолжает полёт. Таким образом, из Рикошета можно поразить цель, даже не видя её.",
+			"modification": 0,
+			"id": "ricochet",
+			"price_m0": "1900",
+			"price_m1": "24300",
+			"price_m2": "89200",
+			"price_m3": "272100",
+			"rang_m0": "6",
+			"rang_m1": "11",
+			"rang_m2": "18",
+			"rang_m3": "29",
+			"skins": [
+				{
+					"name": "Ricochet XT",
+					"description": "Ricochet XT is made to look like a crocodile maw, with sharp and long teeth that will make your enemies double guess their decision to approach you in future battles.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "damage",
+					"value": "129 - 178"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "100.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "74.5"
+				},
+				{
+					"type": "shot_range",
+					"value": "67.4"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage",
+					"value": "158 - 216"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "104.3"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "83.1"
+				},
+				{
+					"type": "shot_range",
+					"value": "72.3"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage",
+					"value": "200 - 270"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "107.1"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "97.4"
+				},
+				{
+					"type": "shot_range",
+					"value": "77.2"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage",
+					"value": "252 - 338"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "120.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "120.3"
+				},
+				{
+					"type": "shot_range",
+					"value": "80.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Шафт",
+			"name_en": "Shaft",
+			"description_en": "The Shaft gun was designed by scientists who gave its enormous possibilities. It can make coffee, deliver pizzas, pay bills, but its main feature is the sniper mode, which allows you to stay one step ahead of your opponents. Get a unique opportunity to fight in long and short distances, as you can shoot without using a sniper scope.",
+			"description_ru": "Пушка Шафт была спроектирована учёными, которые наделили её огромным количеством функций. Она может варить кофе, доставлять пиццу, оплачивать счета, но главной её особенностью стал снайперский режим, который позволяет быть на шаг впереди своих противников. Получи уникальную возможность вести бой на дальних и ближних дистанциях, ведь из Шафта также можно стрелять, не используя снайперский прицел.",
+			"modification": 0,
+			"id": "shaft",
+			"price_m0": "1200",
+			"price_m1": "17900",
+			"price_m2": "103600",
+			"price_m3": "207200",
+			"rang_m0": "5",
+			"rang_m1": "10",
+			"rang_m2": "20",
+			"rang_m3": "25",
+			"propertys_m0": [
+				{
+					"type": "damage",
+					"value": "355"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "17.6"
+				},
+				{
+					"type": "shaft_damage",
+					"value": "1500"
+				},
+				{
+					"type": "shaft_shot_frequency",
+					"value": "4.9"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "28"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage",
+					"value": "450"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "18.8"
+				},
+				{
+					"type": "shaft_damage",
+					"value": "1897"
+				},
+				{
+					"type": "shaft_shot_frequency",
+					"value": "5.1"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "30"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage",
+					"value": "550"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "20.0"
+				},
+				{
+					"type": "shaft_damage",
+					"value": "2338"
+				},
+				{
+					"type": "shaft_shot_frequency",
+					"value": "5.3"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "34"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage",
+					"value": "622"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "21.4"
+				},
+				{
+					"type": "shaft_damage",
+					"value": "2947"
+				},
+				{
+					"type": "shaft_shot_frequency",
+					"value": "5.5"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "40"
+				}
+			]
+		},
+		{
+			"name_ru": "Снеговик",
+			"name_en": "Snowman",
+			"description_ru": "Снеговик, хуле",
+			"description_en": "Snowman, hule",
+			"modification": 0,
+			"id": "snowman",
+			"special_item": true,
+			"price_m0": "1000",
+			"price_m1": "1200",
+			"price_m2": "1750",
+			"price_m3": "2050",
+			"rang_m0": "1",
+			"rang_m1": "3",
+			"rang_m2": "5",
+			"rang_m3": "7",
+			"propertys_m0": [
+				{
+					"type": "damage",
+					"value": "8-10"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "150.0"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "70.0"
+				},
+				{
+					"type": "shot_range",
+					"value": "50"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "damage",
+					"value": "12-18"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "105.5"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "80.7"
+				},
+				{
+					"type": "shot_range",
+					"value": "60"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "damage",
+					"value": "13-20"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "109.2"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "95.3"
+				},
+				{
+					"type": "shot_range",
+					"value": "65"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "damage",
+					"value": "14 - 23"
+				},
+				{
+					"type": "shot_frequency",
+					"value": "115"
+				},
+				{
+					"type": "turret_turn_speed",
+					"value": "112.2"
+				},
+				{
+					"type": "shot_range",
+					"value": "69"
+				}
+			]
+		}
+	]
+}

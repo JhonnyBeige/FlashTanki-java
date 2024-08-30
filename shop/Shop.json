@@ -1,0 +1,429 @@
+
+{
+	"data": {
+		"categories": [{
+			"category_id": "special_offers",
+			"description": {
+				"RU": "Special Offers are available in the in-game shop and include a variety of items such as paint, skins, containers, crystals, and much more."
+			},
+			"header_text": {
+				"RU": "Special offers"
+			}
+		},
+		{
+			"category_id": "crystalls",
+			"description": {
+				"RU": "Crystals serve as the in-game currency, enabling players to purchase and upgrade equipment, as well as buy various items in the garage."
+			},
+			"header_text": {
+				"RU": "Crystals"
+			}
+		},
+		{
+			"category_id": "containers",
+			"description": {
+				"RU": "A container is a reward item with randomized contents. All earned or purchased containers can be found in the garage."
+			},
+			"header_text": {
+				"RU": "Cases"
+			}
+		},
+		{
+			"category_id": "premium",
+			"description": {
+				"RU": "A Premium account is a paid subscription that grants several bonuses and privileges to its owner. It is available for purchase at any rank, remains active for a specified number of days, and can be extended at any time."
+			},
+			"header_text": {
+				"RU": "Premium"
+			}
+		},
+		{
+			"category_id": "paints",
+			"description": {
+				"RU": "Unique paint jobs for tanks. Can only be purchased from the shop."
+			},
+			"header_text": {
+				"RU": "Paints"
+			}
+		},
+		{
+			"category_id": "others",
+			"description": {
+				"RU": "A promocode is a unique combination of letters and numbers that can be activated only once. They can be used at any time after being received, though some may have an expiration date."
+			},
+			"header_text": {
+				"RU": "Others"
+			}
+		}],
+		"items": [
+		{
+			"additional_data":
+			{
+				"crystalls_count": 1500,
+				"price": 0.99,
+				"currency": "USD"
+			},
+			"category_id": "crystalls",
+			"item_id": "crystall_1500",
+			"unique_id": "crystals1"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 5000,
+				"price": 3.99,
+				"currency": "USD",
+				"bonus_crystalls": "2000"
+			},
+			"category_id": "crystalls",
+			"item_id": "crystall_5000",
+			"unique_id": "crystals2"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 20000,
+				"price": 9.99,
+				"currency": "USD",
+				"bonus_crystalls": "10000"
+			},
+			"category_id": "crystalls",
+			"item_id": "crystall_15000",
+			"unique_id": "crystals3"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 60000,
+				"price": 20.99,
+				"currency": "USD",
+				"bonus_crystalls": "18000",
+				"premium_duration": "1"
+			},
+			"category_id": "crystalls",
+			"item_id": "crystall_30000",
+			"unique_id": "crystals4"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 125000,
+				"price": 35.99,
+				"currency": "USD",
+				"bonus_crystalls": "40000",
+				"premium_duration": "5"
+			},
+			"category_id": "crystalls",
+			"item_id": "crystall_60000",
+			"unique_id": "crystals5"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 220000,
+				"price": 69.99,
+				"currency": "USD",
+				"bonus_crystalls": "150000",
+				"premium_duration": "7"
+			},
+			"category_id": "crystalls",
+			"item_id": "crystall_100000",
+			"unique_id": "crystals6"
+		},
+		{
+			"additional_data":
+			{
+				"price": 0.99,
+				"currency": "USD",
+				"premium_duration": "1"
+			},
+			"category_id": "premium",
+			"item_id": "premium",
+			"unique_id": "premium1"
+		},
+		{
+			"additional_data":
+			{
+				"price": 4.99,
+				"currency": "USD",
+				"premium_duration": "7"
+			},
+			"category_id": "premium",
+			"item_id": "premium",
+			"unique_id": "premium2"
+		},
+		{
+			"additional_data":
+			{
+				"price": 9.99,
+				"currency": "USD",
+				"premium_duration": "14"
+			},
+			"category_id": "premium",
+			"item_id": "premium",
+			"unique_id": "premium3"
+		},
+		{
+			"additional_data":
+			{
+				"price": 24.99,
+				"currency": "USD",
+				"premium_duration": "40"
+			},
+			"category_id": "premium",
+			"item_id": "premium",
+			"unique_id": "premium4"
+		},
+		{
+			"additional_data":
+			{
+				"price": 49.99,
+				"currency": "USD",
+				"premium_duration": "75"
+			},
+			"category_id": "premium",
+			"item_id": "premium",
+			"unique_id": "premium5"
+		},
+		{
+			"additional_data":
+			{
+				"price": 79.99,
+				"currency": "USD",
+				"premium_duration": "100"
+			},
+			"category_id": "premium",
+			"item_id": "premium",
+			"unique_id": "premium6"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 1,
+				"price": 0.99,
+				"currency": "USD"
+			},
+			"category_id": "containers",
+			"item_id": "container_1",
+			"unique_id": "container1"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 5,
+				"price": 4.99,
+				"currency": "USD"
+			},
+			"category_id": "containers",
+			"item_id": "container_5",
+			"unique_id": "container2"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 20,
+				"price": 16.99,
+				"currency": "USD"
+			},
+			"category_id": "containers",
+			"item_id": "container_10",
+			"unique_id": "container3"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 50,
+				"price": 39.99,
+				"currency": "USD"
+			},
+			"category_id": "containers",
+			"item_id": "container_15",
+			"unique_id": "container4"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 75,
+				"price": 54.99,
+				"currency": "USD"
+			},
+			"category_id": "containers",
+			"item_id": "container_15",
+			"unique_id": "container5"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 100,
+				"price": 69.99,
+				"currency": "USD"
+			},
+			"category_id": "containers",
+			"item_id": "container_15",
+			"unique_id": "container6"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 0,
+				"supplies": 0,
+				"price": 19.99,
+				"currency": "USD",
+				"premium_duration": "0",
+				"name": "April Fool`s",
+				"image": "https://i.ibb.co/7193c7h/foolsday.png",
+				"extra_paint": "fools_m0",
+				"bg_type": 3,
+				"containers": 10
+			},
+			"category_id": "special_offers",
+			"item_id": "special_4",
+			"unique_id": "offer4"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 0,
+				"supplies": 0,
+				"price": 49.99,
+				"currency": "USD",
+				"premium_duration": "3",
+				"name": "The Matrix",
+				"image": "https://i.ibb.co/6JQkj4b/matrixks.png",
+				"bg_type": 1
+			},
+			"category_id": "special_offers",
+			"item_id": "special_1",
+			"unique_id": "offer1"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 0,
+				"supplies": 0,
+				"price": 24.99,
+				"currency": "USD",
+				"premium_duration": "3",
+				"name": "Set on Fire",
+				"image": "https://i.ibb.co/8shSYpq/setonfire.png",
+				"bg_type": 2
+			},
+			"category_id": "special_offers",
+			"item_id": "special_2",
+			"unique_id": "offer2"
+		},
+		{
+			"additional_data":
+			{
+				"crystalls_count": 25000,
+				"supplies": 100,
+				"price": 9.99,
+				"currency": "USD",
+				"premium_duration": "3",
+				"name": "Start up Kit",
+				"image": "",
+				"extra_paint": "recruit_m0",
+				"bg_type": 0
+			},
+			"category_id": "special_offers",
+			"item_id": "special_3",
+			"unique_id": "offer3"
+		},
+		{
+			"additional_data":
+			{
+				"name": "Olive Widow",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "olivewidow_m0_preview",
+			"unique_id": "olivewidow"
+		},
+		{
+			"additional_data":
+			{
+				"name": "Red Stoker",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "redstoker_m0_preview",
+			"unique_id": "redstoker"
+		},
+		{
+			"additional_data":
+			{
+				"name": "Thug Signs",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "thugsigns_m0_preview",
+			"unique_id": "thugsigns"
+		},
+		{
+			"additional_data":
+			{
+				"name": "BOOM",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "boom_m0_preview",
+			"unique_id": "boom"
+		},
+		{
+			"additional_data":
+			{
+				"name": "Abstract Maze",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "abstractmaze_m0_preview",
+			"unique_id": "abstractmaze"
+		},
+		{
+			"additional_data":
+			{
+				"name": "Infinity",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "infinity_m0_preview",
+			"unique_id": "infinity"
+		},
+		{
+			"additional_data":
+			{
+				"name": "Poisonous Vine",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "poisonousvine_m0_preview",
+			"unique_id": "poisonousvine"
+		},
+		{
+			"additional_data":
+			{
+				"name": "Latex",
+				"price": 19.99,
+				"currency": "USD"
+			},
+			"category_id": "paints",
+			"item_id": "latex_m0_preview",
+			"unique_id": "latex"
+		},
+		{
+			"additional_data":
+			{
+			},
+			"category_id": "others",
+			"item_id": "promo"
+		}]
+	
+	}
+}

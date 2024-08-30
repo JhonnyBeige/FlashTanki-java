@@ -1,0 +1,570 @@
+{
+	"type": "hulls",
+	"items": [
+		{
+			"name_ru": "Васп",
+			"name_en": "Wasp",
+			"description_en": "Light, efficient and simple in service - an ideal armor for beginners. Along with low energy consumption it gives relatively good protection from small-caliber weapons. In combination with good engine it gives an ability to drive as fast as a rally car, like you have nitro-fuel inside.",
+			"description_ru": "Легкий, экономичный, простой в эксплуатации - идеальный корпус начального уровня. После прокачки позволяет развивать довольно большую скорость, что в сочетании с небольшими габаритами даёт свободу действий на поле боя. Из-за небольшой массы подвержен переворотам от ударов мощного вражеского оружия.",
+			"modification": 0,
+			"id": "wasp",
+			"price_m0": "100",
+			"price_m1": "13100",
+			"price_m2": "102700",
+			"price_m3": "215700",
+			"rang_m0": "1",
+			"rang_m1": "10",
+			"rang_m2": "22",
+			"rang_m3": "26",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Wasp XT",
+					"description": "The elite Wasp XT has a unique appearance. Spectacular armor plates, stylized as wings, emphasize its swiftness and elegance.",
+					"skinType": "xt"
+				},
+				{
+					"name": "Wasp Frost",
+					"description": "This hull was specifically designed to cater to the needs of private armies around the world The Wasp makes short work of old-style tanks, and it is also a valuable tool to fighting modern wars. It can quickly cover distances, and it is easily able to escape enemy fire. It is designed to intercept and engage a cornered enemy in a Blitzkrieg-style battle. This hull poorly resists blows and can even flip over when hit by heavy shells. But it will faithfully serve those that can avoid enemy fire.",
+					"skinType": "fr"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "armor",
+					"value": "940"
+				},
+				{
+					"type": "speed",
+					"value": "10.8"
+				},
+				{
+					"type": "turn_speed",
+					"value": "93.9"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "armor",
+					"value": "1264"
+				},
+				{
+					"type": "speed",
+					"value": "11.5"
+				},
+				{
+					"type": "turn_speed",
+					"value": "111.7"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "armor",
+					"value": "1617"
+				},
+				{
+					"type": "speed",
+					"value": "12.2"
+				},
+				{
+					"type": "turn_speed",
+					"value": "129.6"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "armor",
+					"value": "1764"
+				},
+				{
+					"type": "speed",
+					"value": "13.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "150.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Хантер",
+			"name_en": "Hunter",
+			"description_en": "Thanks to balance between reinforced steel armor plates and low energy needs this armor is an all purpose one. It is good for everybody, from sprinters to snipers. Being so versarile, you'll never stay without a job on a field of war.",
+			"description_ru": "Этот корпус, обшитый бронёй из армированной стали является наиболее универсальным. Он хорошо подойдет как поклонникам активного, динамичного боя, так и игрокам, предпочитающим позиционный стиль игры. Вы никогда не останетесь без работы, будь то удержание высоты или жестокая битва за квартал разрушенного города.",
+			"modification": 0,
+			"id": "hunter",
+			"price_m0": "0",
+			"price_m1": "29900",
+			"price_m2": "94100",
+			"price_m3": "214700",
+			"rang_m0": "1",
+			"rang_m1": "14",
+			"rang_m2": "19",
+			"rang_m3": "28",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Hunter XT",
+					"description": "The Elite Hunter XT has a unique appearance. Spectacular armor plates, stylized as wings, emphasize its swiftness and elegance.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "armor",
+					"value": "1440"
+				},
+				{
+					"type": "speed",
+					"value": "8.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "75.8"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "armor",
+					"value": "1730"
+				},
+				{
+					"type": "speed",
+					"value": "8.6"
+				},
+				{
+					"type": "turn_speed",
+					"value": "95.3"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "armor",
+					"value": "2003"
+				},
+				{
+					"type": "speed",
+					"value": "9.2"
+				},
+				{
+					"type": "turn_speed",
+					"value": "114.9"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "armor",
+					"value": "2479"
+				},
+				{
+					"type": "speed",
+					"value": "10.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "140.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Титан",
+			"name_en": "Titan",
+			"description_en": "Titan alloy armor plates combined with special geometry let this one to be effective even against large-caliber weapons. Thanks to it's low thermal conductivity, it defends crew from heat very effectively. Using this armor, you can go into the hottest places of war.",
+			"description_ru": "Броня из сверхпрочного титанового сплава вкупе с грамотно спроектированной геометрией позволяет данному корпусу отлично противостоять даже крупнокалиберным пушкам. Танк, оборудованный данным корпусом, может без раздумий отправляться в самое пекло. Следует отметить, что из-за низкой скорости этот корпус непригоден для быстрых атак в тыл врага.",
+			"modification": 0,
+			"id": "titan",
+			"price_m0": "100",
+			"price_m1": "6000",
+			"price_m2": "92900",
+			"price_m3": "241500",
+			"rang_m0": "1",
+			"rang_m1": "8",
+			"rang_m2": "22",
+			"rang_m3": "28",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Titan XT",
+					"description": "Mythical XT-skin for Titan that personifies tenacity and the unbreakable will of the hull. This skin also grants its owner a truly titanic strength. Enemies, you better watch out!",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "armor",
+					"value": "1740"
+				},
+				{
+					"type": "speed",
+					"value": "5.3"
+				},
+				{
+					"type": "turn_speed",
+					"value": "55.7"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "armor",
+					"value": "2020"
+				},
+				{
+					"type": "speed",
+					"value": "5.5"
+				},
+				{
+					"type": "turn_speed",
+					"value": "67.1"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "armor",
+					"value": "3150"
+				},
+				{
+					"type": "speed",
+					"value": "5.8"
+				},
+				{
+					"type": "turn_speed",
+					"value": "78.6"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "armor",
+					"value": "3630"
+				},
+				{
+					"type": "speed",
+					"value": "5.9"
+				},
+				{
+					"type": "turn_speed",
+					"value": "90.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Диктатор",
+			"name_en": "Dictator",
+			"description_en": "Bacause of improved active defense system and usage of newest composite materials, this armor effectively absorbs an energy of an impact of almost any caliber gun. Having this one installed, you can lead any battle as a main force. Just don't forget to have enough energy onboard.",
+			"description_ru": "Благодаря усовершенствованной системе активной защиты и применению новейших композитных материалов данный корпус эффективно поглощает энергию взрыва снаряда любого калибра. Обладатель такого корпуса может смело вести товарищей в атаку, принимая основной удар на себя. Будучи одним из самых быстрых и защищённых, этот корпус имеет большие габариты, что делает его лёгкой мишенью для врага.",
+			"modification": 0,
+			"id": "dictator",
+			"price_m0": "200",
+			"price_m1": "26700",
+			"price_m2": "81800",
+			"price_m3": "223000",
+			"rang_m0": "2",
+			"rang_m1": "13",
+			"rang_m2": "18",
+			"rang_m3": "30",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Dictator XT",
+					"description": "Equip the elite Dictator XT and you will easily lead the charge for your team, cover your allies, and nothing will hide from your keen sight. The shine of golden wings on the sides of the hull can be seen from a mile away!",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "armor",
+					"value": "1680"
+				},
+				{
+					"type": "speed",
+					"value": "7.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "89.0"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "armor",
+					"value": "1960"
+				},
+				{
+					"type": "speed",
+					"value": "7.3"
+				},
+				{
+					"type": "turn_speed",
+					"value": "103.3"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "armor",
+					"value": "2300"
+				},
+				{
+					"type": "speed",
+					"value": "7.7"
+				},
+				{
+					"type": "turn_speed",
+					"value": "117.7"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "armor",
+					"value": "3110"
+				},
+				{
+					"type": "speed",
+					"value": "8.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "130.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Хорнет",
+			"name_en": "Hornet",
+			"description_en": "This compact hull uses the latest generation of composite materials, which makes it light, quick and grants high survivability even after a direct hit.",
+			"description_ru": "Корпус для тех, кто хотел бы получить скорость выше средней, при этом не забыв про броню. Немного тугой в поворотах, но очень устойчивый малыш. Хорошо смотрится почти с любой пушкой. Корпус используется при совершении молниеносных нападений, также им комплектуются танки десанта.В народе этот корпус зовётся «Хорьком».",
+			"modification": 0,
+			"id": "hornet",
+			"price_m0": "350",
+			"price_m1": "23100",
+			"price_m2": "70500",
+			"price_m3": "200300",
+			"rang_m0": "3",
+			"rang_m1": "12",
+			"rang_m2": "17",
+			"rang_m3": "24",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Hornet XT",
+					"description": "The elite Hornet XT is unique in terms of its looks. Its staggering armor plates resemble the wings of a bird of prey, stressing the hull's dynamic and elegant looks.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "armor",
+					"value": "1000"
+				},
+				{
+					"type": "speed",
+					"value": "10.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "90.8"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "armor",
+					"value": "1323"
+				},
+				{
+					"type": "speed",
+					"value": "10.7"
+				},
+				{
+					"type": "turn_speed",
+					"value": "105.2"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "armor",
+					"value": "1470"
+				},
+				{
+					"type": "speed",
+					"value": "11.5"
+				},
+				{
+					"type": "turn_speed",
+					"value": "119.7"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "armor",
+					"value": "1764"
+				},
+				{
+					"type": "speed",
+					"value": "12.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "130.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Викинг",
+			"name_en": "Viking",
+			"description_en": "This armour is designed with using of all modern army technologies. Improved armour and ''Type 2'' engine allow you to use it in any situations. Charge the enemy or cover your teammates - Viking will prove itself as a good and trustful armour.",
+			"description_ru": "Этот корпус воплощает в себе все самые современные наработки военной инженерии. Усиленная броня и гусеничная система второго поколения делают его великолепным универсалом. Корпус прекрасно подходит для решения любых боевых задач — от удержания высоты до лобовой атаки.",
+			"modification": 0,
+			"id": "viking",
+			"price_m0": "600",
+			"price_m1": "19300",
+			"price_m2": "99900",
+			"price_m3": "205600",
+			"rang_m0": "4",
+			"rang_m1": "11",
+			"rang_m2": "21",
+			"rang_m3": "29",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Viking XT",
+					"description": "The elite Viking XT has a high appearance. Spectacular armor plates, stylized under the wings, emphasize its swiftness and fiery nature.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "armor",
+					"value": "1376"
+				},
+				{
+					"type": "speed",
+					"value": "7.8"
+				},
+				{
+					"type": "turn_speed",
+					"value": "80.6"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "armor",
+					"value": "1588"
+				},
+				{
+					"type": "speed",
+					"value": "8.3"
+				},
+				{
+					"type": "turn_speed",
+					"value": "92.7"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "armor",
+					"value": "2176"
+				},
+				{
+					"type": "speed",
+					"value": "8.8"
+				},
+				{
+					"type": "turn_speed",
+					"value": "104.8"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "armor",
+					"value": "2529"
+				},
+				{
+					"type": "speed",
+					"value": "9.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "110.0"
+				}
+			]
+		},
+		{
+			"name_ru": "Мамонт",
+			"name_en": "Mammoth",
+			"description_en": "This is not a tank - this is a fortress on the track layers. Flagship among other armours. Heavy, strengthened with super-concrete this armour is slow, but it is able to fight several enemies. Other armours look fragile comparing to Mammoth.",
+			"description_ru": "Самоходная крепость на гусеничном ходу. Флагман среди танковых корпусов. Цельнолитой, тяжёлый, упрочнённый супербетоном, имеет низкую скорость, что не мешает ему с успехом противостоять одновременно нескольким вражеским орудиям.",
+			"modification": 0,
+			"id": "mamont",
+			"price_m0": "400",
+			"price_m1": "3200",
+			"price_m2": "76700",
+			"price_m3": "244200",
+			"rang_m0": "3",
+			"rang_m1": "7",
+			"rang_m2": "20",
+			"rang_m3": "30",
+			"has_skins": true,
+			"skins": [
+				{
+					"name": "Mammoth XT",
+					"description": "This elite Mammoth XT is special due to its unique texture. The hull is covered with additional golden plating that symbolizes the stability and unprecendented protection of this extremely heavy tank.",
+					"skinType": "xt"
+				}
+			],
+			"propertys_m0": [
+				{
+					"type": "armor",
+					"value": "1720"
+				},
+				{
+					"type": "speed",
+					"value": "4.5"
+				},
+				{
+					"type": "turn_speed",
+					"value": "54.0"
+				}
+			],
+			"propertys_m1": [
+				{
+					"type": "armor",
+					"value": "2070"
+				},
+				{
+					"type": "speed",
+					"value": "4.6"
+				},
+				{
+					"type": "turn_speed",
+					"value": "64.1"
+				}
+			],
+			"propertys_m2": [
+				{
+					"type": "armor",
+					"value": "3200"
+				},
+				{
+					"type": "speed",
+					"value": "4.9"
+				},
+				{
+					"type": "turn_speed",
+					"value": "74.2"
+				}
+			],
+			"propertys_m3": [
+				{
+					"type": "armor",
+					"value": "4070"
+				},
+				{
+					"type": "speed",
+					"value": "5.0"
+				},
+				{
+					"type": "turn_speed",
+					"value": "80.0"
+				}
+			]
+		}
+	]
+}

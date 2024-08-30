@@ -1,0 +1,336 @@
+{
+  "type": "modules",
+  "items": [
+    {
+      "name_ru": "Модуль А",
+      "name_en": "Dolphin",
+      "description_ru": "Модуль А — это первый модуль.",
+      "description_en": "Protection against:\nSmoky\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "dolphin",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "mech_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "mech_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "mech_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "mech_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль B",
+      "name_en": "Fox",
+      "description_ru": "Модуль B — это второй модуль.",
+      "description_en": "Protection against:\nFirebird\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "fox",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "fire_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "fire_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "fire_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "fire_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль C",
+      "name_en": "Panther",
+      "description_ru": "Модуль C — это третий модуль.",
+      "description_en": "Protection against:\nTwins\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "panther",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "plasma_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "plasma_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "plasma_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "plasma_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль D",
+      "name_en": "Falcon",
+      "description_ru": "Модуль D — это четвертый модуль.",
+      "description_en": "Protection against:\nRailgun\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "falcon",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "rail_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "rail_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "rail_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "rail_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль E",
+      "name_en": "Ocelot",
+      "description_ru": "Модуль E — это пятый модуль.",
+      "description_en": "Protection against:\nIsida\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "ocelot",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "vampire_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "vampire_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "vampire_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "vampire_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль F",
+      "name_en": "Grizzly",
+      "description_ru": "Модуль F — это шестой модуль.",
+      "description_en": "Protection against:\nThunder\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "grizzly",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "thunder_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "thunder_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "thunder_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "thunder_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль G",
+      "name_en": "Badger",
+      "description_ru": "Модуль G — это седьмой модуль.",
+      "description_en": "Protection against:\nFreeze\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "badger",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "freeze_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "freeze_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "freeze_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "freeze_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль H",
+      "name_en": "Lion",
+      "description_ru": "Модуль H — это восьмой модуль.",
+      "description_en": "Protection against:\nRicochet\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "lion",
+      "price_m0": "5000",
+      "price_m1": "30000",
+      "price_m2": "100000",
+      "price_m3": "250000",
+      "rang_m0": "1",
+      "rang_m1": "8",
+      "rang_m2": "16",
+      "rang_m3": "26",
+      "propertys_m0": [
+        {
+          "type": "ricochet_resistance",
+          "value": "5%"
+        }
+      ],
+      "propertys_m1": [
+        {
+          "type": "ricochet_resistance",
+          "value": "15%"
+        }
+      ],
+      "propertys_m2": [
+        {
+          "type": "ricochet_resistance",
+          "value": "25%"
+        }
+      ],
+      "propertys_m3": [
+        {
+          "type": "ricochet_resistance",
+          "value": "35%"
+        }
+      ]
+    },
+    {
+      "name_ru": "Модуль А",
+      "name_en": "Standard",
+      "description_ru": "Модуль А — это первый модуль.",
+      "description_en": "Standard protection module.\n\nModules enhance the tank`s defensive systems, reducing damage from certain weapons.",
+      "modification": 0,
+      "id": "standard",
+      "price_m0": "0",
+      "rang_m0": "1",
+			"propertys_m0": []
+    }
+  ]
+}

@@ -1,0 +1,1651 @@
+		{
+	"type": "colormaps",
+
+	"items": [{
+			"name_ru": "Праздник",
+			"name_en": "Holiday",
+			"description_en": "This unique intelligent coat can change its look depending of different events. It has neutral gray color in ordinary days but in the holidays paints transforms...",
+			"description_ru": "Это уникальное «умное» покрытие умеет изменять свой вид в зависимости от конкретного повода. В обычный день это чёрно-белая клетка, но с наступлением праздника разительно преображается.",
+			"modification": 0,
+			"id": "holiday",
+
+			"price_m0": "0",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Зелёный",
+			"name_en": "Green",
+			"description_en": "Honoring the tradition of a classical tank, this simple color is an industry standart.",
+			"description_ru": "Являясь скорее данью традициям классического танкостроения, этот незамысловатый цвет, так полюбившийся конструкторам всего мира, стал своеобразным стандартом для заводских моделей. К этому легендарному цвету часто возвращаются истинные ценители, перепробовав всё на свете.",
+			"modification": 0,
+			"id": "green",
+
+			"price_m0": "0",
+
+
+			"rang_m0": "1",
+
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Красный",
+			"name_en": "Red",
+			"description_en": "The color of fury and courage has also native practicalness, hiding blood drops on armor plates.",
+			"description_ru": "Красный цвет — воплощение ярости и отваги, обладает также природной практичностью, позволяя деликатно скрывать пятна вражеской крови, неизбежно появляющиеся на корпусе, как бы вы ни аккуратничали.",
+			"modification": 0,
+			"id": "red",
+
+			"price_m0": "100",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Синий",
+			"name_en": "Blue",
+			"description_en": "This scheme was left in a memory of canceled diving ''Sheatfish'' tank development. It was supposed to use small rivers to get close to the enemy unsighted.",
+			"description_ru": "Эту расцветку оставили в официальном перечне, как память о провалившемся проекте разработки танка-амфибии «Сом». По задумке конструкторов, он должен был передвигаться по руслам неглубоких рек, и, благодаря синей расцветке, беспрепятственно проникать в глубокий вражеский тыл, оставаясь незамеченным.",
+			"modification": 0,
+			"id": "blue",
+
+			"price_m0": "100",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Чёрный",
+			"name_en": "Black",
+		    "description_en": "This color skin became non-official standard for subversive divisions, main goals of which is hidden enemy territory infiltration during dark nights. Army people named them ''black barrels of death'' covertly.",
+			"description_ru": "Данная расцветка стала негласным стандартом для диверсионных танковых дивизий, основной задачей которых является скрытное проникновение на территорию врага в темное время суток. В армейских кругах танки из таких элитных дивизий за глаза с завистью называют «чёрные пятна смерти».",
+			"modification": 0,
+			"id": "black",
+
+			"price_m0": "100",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Белый",
+			"name_en": "White",
+		    "description_en": "Special skin for winter operations in cold climate. Makes tanks almost invisible when snowing. Warm sheepskin coat and felt boot are induded it the package.",
+			"description_ru": "Специальная разработка для проведения наземных операций в странах с холодным климатом. В заснеженной местности такая расцветка способна значительно снизить вероятность обнаружения. Ради увеличения объёмов продаж производитель включил в комплект поставки теплый тулуп и валенки.",
+			"modification": 0,
+			"id": "white",
+
+			"price_m0": "100",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оранж",
+			"name_en": "Orange",
+			"description_en": "We didn't plan to include this color in the official list, since it didn't represent any practical value, probably, except for non-remarkable camouflage in desolate areas. But army experts proved that orange color positively influences the ''cannon fodder'' psyche.",
+			"description_ru": "Данную расцветку не планировалось включать в официальный перечень, так как она не представляла особой практической ценности, кроме, быть может, посредственной маскировки в пустынной местности. Но армейские мозгоправы доказали, что оранжевый цвет положительно влияет на психологическое здоровье «пушечного мяса».",
+			"modification": 0,
+			"id": "orange",
+
+			"price_m0": "100",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Флора",
+			"name_en": "Flora",
+			"description_en": "One of two skins developed specially for middle latitude climate zones. Very effective in woods and other mixed green areas.",
+			"description_ru": "Одна из двух расцветок, специально разработанных для наземных операций в средних климатических широтах. Судя по отчетам независимой организации «Верный камуфляж», такая комбинация жёлтых, зелёных и коричневых пятен снижает вероятность обнаружения танка в «родной стихии».",
+			"modification": 0,
+			"id": "flora",
+
+			"price_m0": "500",
+
+			"rang_m0": "2",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "С любовью",
+			"name_en": "In love",
+			"description_en": "Developed for romantic and glamorous persons, this color scheme will not only fulfill your refined taste, but will also help to shock the enemy with red hearts and to get some additional seconds in the heat of warfare.",
+			"description_ru": "Разработанная для натур утончённых и романтичных, эта расцветка способна не только утолить жажду к прекрасному «искушённого» армейской атрибутикой эстета, но также поможет выиграть пару секунд у ошарашенного врага, зачарованно смотрящего на феерию из красных сердечек в центре поля боя.",
+			"modification": 0,
+			"id": "withlove",
+
+			"price_m0": "15500",
+
+			"rang_m0": "10",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Металлик",
+			"name_en": "Metallic",
+			"description_en": "There's a wrong opinion on this scheme, people think that it was created in a lack paint. To be honest, this is a special covering, reflecting the light in a special manner. In a sunny weather it may cause false readings for same horning fire systems.",
+			"description_ru": "Существует ошибочное мнение, что данной расцветкой пользуются в условиях дефицита лакокрасочных материалов. На самом деле — это специальное покрытие, особым образом отражающее свет. Бликовый шум, создаваемый таким покрытием, вносит помехи в работу некоторых систем наведения.",
+			"modification": 0,
+			"id": "metallic",
+
+			"price_m0": "1000",
+
+			"rang_m0": "4",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Лесник",
+			"name_en": "Forester",
+			"description_en": "One of two skins developed specially for middle latitude climate zones. Dramatically decreases tank visibility in green areas.",
+			"description_ru": "Одна из двух расцветок, специально разработанных для наземных операций в средних климатических широтах. По результатам исследования независимой организации «Верный камуфляж», такая комбинация светло- и тёмно-зелёных пятен снижает вероятность обнаружения танка в кустах.",
+			"modification": 0,
+			"id": "forester",
+
+			"price_m0": "500",
+
+			"rang_m0": "3",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Лава",
+			"name_en": "Lava",
+			"description_en": "An experimental skin, first seen during local conflicts with backward tribals. Psychologists say it can chock religious people and cause ''inferno fear'' by itself.",
+			"description_ru": "Экспериментальный цвет, впервые опробованный во время локальных конфликтов в восточной Африке. По мнению армейских психологов, такая расцветка способна повергнуть в шок представителей некоторых радикальных религиозных организаций, вызвав у них панический страх перед инферно.",
+			"modification": 0,
+			"id": "lava",
+
+			"price_m0": "1500",
+
+			"rang_m0": "5",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Морпех",
+			"name_en": "Marine",
+			"description_en": "Special coloring for battles near water.",
+			"description_ru": "Это покрытие прекрасно держится на танке даже после продолжительного контакта с солёной водой. Хитрые танкисты покрывают танк этой краской изнутри, после чего используют его как большую бочку для засаливания огурцов на зиму.",
+			"modification": 0,
+			"id": "marine",
+
+			"price_m0": "500",
+
+			"rang_m0": "2",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Саванна",
+			"name_en": "Savanna",
+			"description_en": "This camouflage may hide you between palm-trees.",
+			"description_ru": "Этот камуфляж скроет вас среди пальм. Пляж тоже подойдёт, но, пожалуйста, не оставляйте гильзы от танковых снарядов на песке, это доставляет неудобства отдыхающим.",
+			"modification": 0,
+			"id": "savanna",
+
+			"price_m0": "129000",
+
+			"rang_m0": "23",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Урбан",
+			"name_en": "Urban",
+			"description_en": "Best coloring for urban battles.",
+			"description_ru": "Лучшая краска для сражений в городе. Особенно хорошо работает в придорожных кустах, за что любима инспекцией танкового движения.",
+			"modification": 0,
+			"id": "urban",
+
+			"price_m0": "115000",
+
+			"rang_m0": "22",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Бархан",
+			"name_en": "Desert",
+			"description_en": "Special camouflage for desert operations.",
+			"description_ru": "Это специальное покрытие с названием бархан поможет Вам прекрасно замаскироваться в песчаной и пустынной местности.",
+			"modification": 0,
+			"id": "barkhan",
+
+			"price_m0": "33300",
+
+			"rang_m0": "13",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Грязь",
+			"name_en": "Dirty",
+			"description_en": "The penopolysterol layer (one of the best heat insulators) provides high degree of protection against the weapon of ''flame thrower'' type. And the special camouflage does your tank hard to appreciable.",
+			"description_ru": "Эта краска должна была быть третьей краской, специально разработанной для наземных операций в средних климатических широтах. По решению военных покрытие не было включено в стандартный военный пакет из-за нескольких несчастных случаев на испытаниях, связанных с попыткой отчистить это покрытие от нарисованной грязи.",
+			"modification": 0,
+			"id": "dirt",
+
+			"price_m0": "17500",
+
+			"rang_m0": "11",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Болотный",
+			"name_en": "Swamp",
+			"description_en": "Special combination of colours of which the given structure consists, in a combination with high technologies, give to your tank protection against some types of the weapon of near fight.",
+			"description_ru": "Случайно заснувший ведущий танкового батальона завёл своих товарищей в болото, где проводилась тайная операция по подготовке жаб-диверсантов, и около десяти тысяч экземпляров превратились в прототип этой окраски.",
+			"modification": 0,
+			"id": "marsh",
+
+			"price_m0": "500",
+
+			"rang_m0": "2",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Карбон",
+			"name_en": "Carbon",
+			"description_en": "Combination of hi-technologies carbon fibre, and paint, which has high wear resistance. Carbon minimizes damage, given to your tank by medium caliber gun.",
+			"description_ru": "Сочетание высоких технологий, углеродного волокна и особой краски повышенной стойкости. В комплект поставки входит тонировка на прицельные комплексы, но по закону она запрещена требованиями инспекции танкового движения",
+			"modification": 0,
+			"id": "carbon",
+
+			"price_m0": "13000",
+
+			"rang_m0": "10",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Метель",
+			"name_en": "Winter",
+		  "description_en": "This paint has been developed specially for fights on snow-covered maps and in conditions of the high visibility.",
+			"description_ru": "Эта краска разработана специально для боёв на заснеженных картах и в условиях повышенной видимости. Лопата для самооткапывания танка из снега в комплект не входит по экономическим причинам.",
+			"modification": 0,
+			"id": "blizzard",
+
+			"price_m0": "102500",
+
+			"rang_m0": "21",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Сафари",
+			"name_en": "Safari",
+			"description_en": "Very stylish paint which will give to your tank unique appearance.",
+			"description_ru": "Любители пощекотать себе нервы на сафари придумали весьма эффективный способ привлекать к себе хищников. Маскировка танка под невинную зебру отлично подходит для охоты с противотанковым вооружением как на африканских хищников, так и на не очень умных танкистов.",
+			"modification": 0,
+			"id": "safari",
+
+			"price_m0": "3000",
+
+			"rang_m0": "6",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Чужой",
+			"name_en": "Alien",
+			"description_en": "This paint was developed for making your enemies scared when they see your tank. After that run away.",
+			"description_ru": "Существует легенда, что этот камуфляж копирует окраску летающей тарелки, в прошлом веке сбитой ПВО сами-знаете-кого сами-знаете-где.",
+			"modification": 0,
+			"id": "foreign",
+
+			"price_m0": "1000",
+
+			"rang_m0": "7",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Тундра",
+			"name_en": "Tundra",
+		  "description_en": "Is one of realy unitary paints. This paint have special structure, therefore your tank will be hard appreciable on open place and in the city jungle.",
+			"description_ru": "Одна из немногих по-настоящему стильных камуфляжных красок. Текстура сурова и по-мужски проста. Делает танк менее заметным на поле боя.",
+			"modification": 0,
+			"id": "tundra",
+
+			"price_m0": "35500",
+
+			"rang_m0": "13",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Дракон",
+			"name_en": "Dragon",
+			"description_en": "Prototype of this difficult texture was scales of dragon, every scales in it is hand painted on strengthened armour.",
+			"description_ru": "Прототипом при создании этой сложной композитной окраски послужила чешуя драконов, каждая чешуйка рисуется вручную на усиленной титановыми пластинами броне.",
+			"modification": 0,
+			"id": "dragon",
+
+			"price_m0": "3000",
+
+			"rang_m0": "7",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Роджер",
+			"name_en": "Roger",
+			"description_en": "The main piracy symbol of all times, now for the first time and your tank.",
+			"description_ru": "Главный пиратский символ всех времён, теперь впервые и на твоём танке.",
+			"modification": 0,
+			"id": "roger",
+
+			"price_m0": "42500",
+
+			"rang_m0": "15",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Диджитал",
+			"name_en": "Digital",
+			"description_en": "It's not just paint, it's a real protection complex. It includes the paint with high wear resistance, which has improved camouflage properties, end special nanobots. Tank covered with Digital is well protected from Smoky and Railgun shots.",
+			"description_ru": "Это не просто краска, это настоящий защитный комплекс. В его состав входят покраска особой стойкости, имеющая повышенные камуфлирующие свойства, и специальные наноботы для автоматической самоочистки краски в любых условиях боя.",
+			"modification": 0,
+			"id": "digital",
+
+			"price_m0": "79500",
+
+			"rang_m0": "19",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Ягуар",
+			"name_en": "Jaguar",
+			"description_en": "This protection system has a codename ''Jaguar''. It has spotty texture of this noble predator.",
+			"description_ru": "Вручную подогнанная под ваш танк шкура благородного хищника. Окрас истинного охотника.",
+			"modification": 0,
+			"id": "jaguar",
+
+			"price_m0": "23000",
+
+			"rang_m0": "12",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Электра",
+			"name_en": "Electra",
+			"description_en": "One of the most beautiful paints. Electra haves good camouflaging characteristics, aesthetically beautiful original appearance, and similarly gives to your tank good protecting from the weapon of infighting.",
+			"description_ru": "Одна из самых красивых красок, разработанная при участии модельных домов Франции. «Электра» имеет хорошие камуфлирующие свойства и эстетичный внешний вид. К сожалению, не все способны по достоинству оценить изящество линий и глубину работы французских мастеров.",
+			"modification": 0,
+			"id": "electra",
+
+			"price_m0": "59500",
+
+			"rang_m0": "17",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Прибой",
+			"name_en": "Swash",
+			"description_en": "Formula of «Swash» coat was stolen from the secret lab code name «Aqua». This lab specializes on genetic experiments with fish. Due to special heat reflecting capabilities «Swash» coat gives sea fresh to the air inside tank.",
+			"description_ru": "Формула покрытия «Прибой» была похищена из секретной лаборатории под кодовым названием «Аква», специализирующейся на генетических экспериментах над рыбами. Благодаря особым теплоотражающим свойствам краска придаёт воздуху внутри танка морскую свежесть",
+			"modification": 0,
+			"id": "surf",
+
+			"price_m0": "27500",
+
+			"rang_m0": "12",
+
+			"propertys_m0": []
+		},	
+		{
+			"name_ru": "Мэри",
+			"name_en": "Mary",
+			"description_en": "Tank covered with bloody-red spots must strike terror into the enemy. But wise veterans know that is not a blood but just a tomato juice. The coat is called «Mary» for a reason!",
+			"description_ru": "Покрытый кроваво-красными пятнами танк должен нагонять жути на противника, вселяя в него первобытный ужас. Хотя умудрённые опытом танкисты знают, что на корпусе вовсе не кровь, а брызги томатного сока. Недаром же краска называется «Мэри».",
+			"modification": 0,
+			"id": "mary",
+
+			"price_m0": "6500",
+
+			"rang_m0": "8",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Хохлома",
+			"name_en": "Hohloma",
+			"description_en": "«Hohloma» was created for export only. It used to underline national color of tanks in foreign countries. But now it is possible to buy «Hohloma» in the home market. Meantime that engineers already work on Matryoshka-tank project.",
+			"description_ru": "Изначально краска «Хохлома» создавалась исключительно для экспорта. Ею покрывались танки, продававшиеся за рубеж, дабы подчеркнуть исконно русское происхождение боевой техники. Теперь «Хохлому» можно достать и на внутреннем рынке, а в конструкторских бюро, по слухам, уже создаётся проект танка-матрёшки.",
+			"modification": 0,
+			"id": "khokhloma",
+
+			"price_m0": "108500",
+
+			"rang_m0": "20",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Ржавчина",
+			"name_en": "Corrosion",
+			"description_en": "Antipathos, antiglamour and defiance to fashion. Blood corrosion is the choice of rugged tankmen who scorn gloss and shine. This coat is produced of metal chips oxidizen in bath with blood. «Corrosion» shows brutality and determined character of a tankman.",
+			"description_ru": "Антипафос, антигламур и вызов моде! Кровавая ржавчина — выбор суровых танкистов, презирающих лоск и блеск. Полученная путём окисления металлической стружки в ванночках с кровью, эта краска говорит о брутальности и твёрдости характера танкиста.",
+			"modification": 0,
+			"id": "rust",
+
+			"price_m0": "34500",
+
+			"rang_m0": "10",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Буря",
+			"name_en": "Storm",
+			"description_en": "«Storm» was born in unusual circumstances. To increase cultural level of the staff administration of paint laboratory organized Pushkin evenings for the personnel. Chemists got insights from the famous «Storm has set the leavens scowling» and created «Storm» coat.",
+			"description_ru": "Отличная маскировка для секретных ночных операций. В условиях слабой освещённости эта текстура делает танк совершенно неразличимым в сумраке.",
+			"modification": 0,
+			"id": "storm",
+
+			"price_m0": "9000",
+
+			"rang_m0": "9",
+
+			"propertys_m0": []
+		},	
+		{
+			"name_ru": "Глина",
+			"name_en": "Loam",
+			"description_en": "The best way to distract enemy from your tank is to cover the tank with mud. But natural mud is unstable — it can be washed away with the water and can break away under the flaming sun. «Loam» coat was developed to provide necessary dirty color. It consists of the ceramic industry wastes from the best Chinese potteries.",
+			"description_ru": "Лучший способ отвести вражеский взгляд от своего танка — заляпать его грязью. Однако естественная грязь весьма неустойчива — легко смывается водой и даже отваливается пластами в жаркую погоду. Чтобы придать танку нужный «грязный» цвет, было разработано покрытие «Глина». В его состав включены отходы керамического производства лучших китайских гончарных мастерских.",
+			"modification": 0,
+			"id": "clay",
+
+			"price_m0": "102500",
+
+			"rang_m0": "21",
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Шелест",
+			"name_en": "Rustle",
+		  "description_en": "Tanks are ready to fight in the heat and in the frost, that's why battles continue all the year long. It means tankmen need camouflage not only for every terrain but also for every season. This coat helps to hide in a leaf litter and among the mushrooms in an autumn forest. Only if you can enter the forest on the tank, of course.",
+			"description_ru": "Танки не боятся ни жары, ни мороза, поэтому сражения бушуют круглый год. А значит, танкистам требуется маскировка не только для разной местности, но и для всех сезонов. Этот окрас поможет слиться с палой листвой и подосиновиками в осеннем лесу. При условии, что вам удастся заехать на танке в лес...",
+			"modification": 0,
+			"id": "rustle",
+
+			"price_m0": "90500",
+
+			"rang_m0": "20",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Питон",
+			"name_en": "Python",
+			"description_en": "«Python» coat is not a color stylized to snake skin but a solid skin of a real python. There is a tricky technology of covering tank with this coat. Giant Cambodian python is starved almost to death. Then he gets tank smeared with the hog fat. Snake swallows the tank and after that all unnecessary parts of the python are cut off.",
+			"description_ru": "Покрытие «Питон» — это не стилизация под змеиную шкуру, а цельная кожа настоящего питона. Покрытие ею танка производится по хитроумной технологии: камбоджийского гигантского питона морят голодом, а затем подсовывают ему обмазанный свиным жиром танк. Змея глотает его целиком, всё лишнее отрезается.",
+			"modification": 0,
+			"id": "python",
+
+			"price_m0": "50500",
+
+			"rang_m0": "16",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Galaxian Explosion",
+			"description_en": "This animated paint was created for people who are fascinated by the infinity of outer space... and maybe for fans of a certain manga series from the eighties.",
+			"modification": 0,
+			"id": "galaxian",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+
+		},
+		{
+			"name_en": "Tic-tac-toe",
+			"description_en": "Don't be surprised, if during a heated battle someone will invite you to play Tic-tac-toe. You're probably facing a professional, who left plenty of opponents defeated in the dust.",
+			"modification": 0,
+			"id": "tictactoe",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": [
+				{
+					"type": "thunder_resistance",
+					"value": "10%"
+				},
+				{
+					"type": "ricochet_resistance",
+					"value": "10%"
+				},
+				{
+					"type": "plasma_resistance",
+					"value": "10%"
+				}
+			]
+		},
+		{
+			"name_en": "Ice Flurry",
+			"description_en": "A paint with an animated pattern that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "iceflurry",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+
+		},
+		{
+			"name_en": "Lightning Storm",
+			"description_en": "A rippling electrical current flows right beneath the transparent coating of this paint, making your tank look like a mobile plasma ball of destruction.",
+			"modification": 0,
+			"id": "lightningstorm",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Matrix",
+			"description_en": "\"スプーンを試したり曲げたりしないでください。 それ無理。 代わりに、真実を実現しようとするだけです。 どのような真実？ スプーンはありません。スプーンはありませんか？それから、あなたが曲がるスプーンではないことがわかります。それは自分だけです。\"",
+			"modification": 0,
+			"id": "matrix",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Area 52",
+			"description_en": "A regular, non-animated paint that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "area52",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Recruit",
+			"description_en": "A regular, non-animated paint that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "recruit",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Shredded",
+			"description_en": "A regular, non-animated paint that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "shredded",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Gamer",
+			"description_en": "A regular, non-animated paint that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "gamer",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Secret of the aliens",
+			"description_en": "This paint reflects the suspicious alien object recovered from a crash several years ago at one of the tank polygons. The Object is coated in an unknown material — a molecular structure that couldn't be identified or recreated.",
+			"modification": 0,
+			"id": "secretaliens",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Obsidian",
+			"description_en": "Obsidian is a volcanic glass created by nature itself. Rock formation of stunning beauty is used in jewelry and even tank decoration.",
+			"modification": 0,
+			"id": "obsidian",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Goldolov",
+			"description_en": "Let it rain with Gold boxes!",
+			"modification": 0,
+			"id": "goldolov",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Lotus",
+			"description_en": "This paint is a shining flower gliding on the surface of a calm moonlight. Helps chase away bad thoughts and recover after a stressful battle.",
+			"modification": 0,
+			"id": "lotus",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Volcanic Eruption",
+			"description_en": "A regular, non-animated paint that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "volcaniceruption",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Bears",
+			"description_en": "The paint is made specifically for the Bears faction in the global event \"War: Domination\". Players of this faction have gigantic strength and ferocity. They are honorable, proud, and can endure the hardest battles.",
+			"modification": 0,
+			"id": "bears",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Glow",
+			"description_en": "A paint with an animated pattern that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "glow",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Galaxy",
+			"description_en": "If you gaze into this paint long enough, you can see a cat flying through space on a slice of pizza.",
+			"modification": 0,
+			"id": "galaxy",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Cryo",
+			"description_en": "This coating was originally intended to protect against the effects of Firebird by using a periodic cooling mechanism. Unfortunately, when actually tested in a real battle, the mechanism malfunctioned and kept freezing the tank every few seconds, turning it into a very cold sitting duck. That said, the paint still looks cool, so its creators decided to dump the cooling mechanism and keep the paint exclusively for cosmetic purposes.",
+			"modification": 0,
+			"id": "cryo",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name_en": "Turbo",
+			"description_en": "Speed through the arena like a blazing ball of fire. Let your enemies know that you're way too hot to handle.",
+			"modification": 0,
+			"id": "turbo",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "0",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Python test",
+			"description": "Turret protection:\nThunder - 20%\nRicochet - 20%\nFreeze - 20$%\n\nThis paint is our little secret. Say thanks to REDLINE :p Sergey - gey",
+			"modification": 0,
+			"id": "python2",
+			"special_item": true,
+
+			"price_m0": "0",
+
+			"rang_m0": "12",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Искра",
+			"name_en": "Spark",
+			"description_en": "Light extravaganza, fire cascade, music of the spheres.. This unique coat can be characterized with different words but not one of them is deep enough to reflect its depth. «Spark» is the choice of tankmen who see the tank not only as a war machine but also as a mean of self-expression.",
+			"description_ru": "Феерия света, каскад огней, музыка сфер — это уникальное покрытие можно описывать разными словами, но ни одно из них не отразит полностью его глубину. «Искру» выбирают танкисты, для которых танк — не просто боевая машина, но средство самовыражения.",
+			"modification": 0,
+			"id": "spark",
+
+			"price_m0": "79500",
+
+			"rang_m0": "19",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Тайга",
+			"name_en": "Taiga",
+			"description_en": "Camouflage coat «Taiga» masks tank in greenery so well that you can even hunt on elks. Timid animal doesn't see the danger and comes very close to war machine. By the way it can be other tanknan instead of elk.",
+			"description_ru": "Камуфляжное покрытие «Тайга» так хорошо маскирует танк в густой растительности, что на нём даже можно охотиться на лосей. Пугливое животное не замечает угрозу и подходит к боевой машине вплотную. Впрочем, на месте лося может оказаться и другой танкист...",
+			"modification": 0,
+			"id": "taiga",
+
+			"price_m0": "210000",
+
+			"rang_m0": "26",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Песчаник",
+			"name_en": "Sandstone",
+			"description_en": "«Sandstone» combines masking abilities of sand color and durability of stone hardened by wind. Special edition of this paint includes bathing trunks or bikini by choice, sun glasses and beach umbrella.",
+			"description_ru": "Покрытие «Песчаник» сочетает в себе маскирующие свойства песочной раскраски и прочность закалённого ветрами камня. Подарочный комплект «Песчаника» включает в себя купальные плавки или бикини на выбор, солнечные очки и пляжный зонт.",
+			"modification": 0,
+			"id": "standstone",
+
+			"price_m0": "82500",
+
+			"rang_m0": "18",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Кедр",
+			"name_en": "Cedar",
+			"description_en": "To create masking coat «Cedar» scientists use complex composition based on pounded cedar snags. Its main advantage is full ecological compatibility and two bags of pine nuts as a bonus for every second canister of paint.",
+			"description_ru": "Для создания маскирующего покрытия «Кедр» используется сложный состав на основе толчёных чешуек кедровых шишек. Его неоспоримое достоинство — стопроцентная экологичность производства и два мешка очищенных кедровых орешков в подарок за каждую вторую канистру краски.",
+			"modification": 0,
+			"id": "kedr",
+
+			"price_m0": "42500",
+
+			"rang_m0": "15",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Свинец",
+			"name_en": "Lead",
+			"description_en": "Lead - the most reliable protection from radiation, it was known even in the twentieth century. This paint is a lead-plated armor which effectively protects the reproductive system of tankmen from radiation, allowing you to maintain good spirits, even in the ''hot'' dangerous situations!",
+			"description_ru": "Свинец — самая надёжная защита от излучения, это знали ещё в двадцатом веке. Покрытая свинцовым напылением броня эффективно защищает репродуктивную систему танкиста от радиации, позволяя сохранять бодрость духа даже в самых «горячих» переделках!",
+			"modification": 0,
+			"id": "lead",
+
+			"price_m0": "2000",
+
+			"rang_m0": "6",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Продиджи",
+			"name_en": "Prodigi",
+			"description_en": "This advanced version of ''Digital'' coat is produced by secret technology «Ripples in the eyes». It not only masks a tank but also annoys enemy making it to act amiss.",
+			"description_ru": "Усовершенствованная версия стандартного «Диджитала» выполнена по секретной технологии «Рябь в глазах». Она не только надёжно маскирует танк, но и раздражает противника, заставляя его чаще ошибаться.",
+			"modification": 0,
+			"id": "prodigy",
+
+			"price_m0": "192000",
+
+			"rang_m0": "27",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Скала",
+			"name_en": "Rock",
+			"description_en": "Armor plates for coat «Rock» are extracted from rock masses by the anclent Egyptian technology. Dry wooden sticks are punched into the rock and moistened with water. Wet sticks swell and split off flat stone blocks «Rock» coat is a real handicraft!",
+			"description_ru": "Броневые пластины для покрытия «Скала» добываются в скальных массивах по древнеегипетской технологии. Сухие колышки вбиваются в скалу, смачиваются водой, разбухают и откалывают ровные каменные блоки. Этот камуфляж — настоящая ручная работа!",
+			"modification": 0,
+			"id": "rock",
+
+			"price_m0": "210000",
+
+			"rang_m0": "28",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Хвоя",
+			"name_en": "Needle",
+			"description_en": "One jar of the 'Needle' paint contains the needles from 25 square metres of pine forest. However, all snipers know that pine needles are the best camouflage!",
+			"description_ru": "Для производства одной банки краски «Хвоя», изготовленной на основе иголочек хвойных деревьев, вырубается 25 квадратных метров молодого ельника. Но каждый снайпер знает, что хвойная присыпка — лучший способ маскировки!",
+			"modification": 0,
+			"id": "needles",
+
+			"price_m0": "210000",
+
+			"rang_m0": "28",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Тина",
+			"name_en": "Clay",
+			"description_en": "Paint codenamed «Clay» was invented for diversionary units acting in the marshlands. Tanks were masked so well that even leeches didn't notice them and bumped into the hull on full speed. Now «Clay» coat is been testing in new conditions - in the arid lands.",
+			"description_ru": "Краска под кодовым названием «Тина» разрабатывалась для диверсионных танковых бригад, действующих в болотистой местности. Танки маскировались настолько хорошо, что даже пиявки не замечали их и на полном ходу врезались в бронированный корпус.",
+			"modification": 0,
+			"id": "tina",
+
+			"price_m0": "102500",
+
+			"rang_m0": "21",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Ирбис",
+			"name_en": "Irbis",
+			"description_en": "One of the most mysterious cat family member - ibris, also known as the snow leopard. Reseachers in many countries are trying unsuccessfully to catch a live snow leopard for a detailed study, but so far it was only our engineers-biologies. After a series of risky experiments, and the fifteen accidents reported they presented paint ''Irbis''. The coating contains the DNA of the snow leopard, which makes it absolutely unique and, to some extend, even ecologically green.",
+			"description_ru": "Одно из самых загадочных животных семейства кошачьих — ирбис, он же снежный барс. Исследователи многих стран безуспешно пытаются поймать живого ирбиса для детального изучения, но пока это удалось лишь нашим инженерам-биологам. После серии рискованных экспериментов и пятнадцати несчастных случаев они представили краску «Ирбис». Покрытие содержит ДНК снежного барса, что делает его абсолютно уникальным и в какой-то степени даже экологичным.",
+			"modification": 0,
+			"id": "irbis",
+
+			"price_m0": "143500",
+
+			"rang_m0": "24",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Irbis test",
+			"description": "Turret protection:\nThunder - 20%\nRicochet - 20%\nFreeze - 20%\n\nThis paint is our little secret. Thank you REDLINE.. Sergey - gey",
+			"modification": 0,
+			"id": "irbis2",
+			"special_item": true,
+
+
+			"price_m0": "0",
+
+			"rang_m0": "14",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Инферно",
+			"name_en": "Inferno",
+			"description_en": "This rare paint is developed to market as a smuggled goods right from the illegal glassblower workshops of China. It is said that inferno's daring look symbolizer power, bravery, luck and longevity. The best choice for brutal tank assault!",
+			"description_ru": "Покрытие «Инферно» контрабандой доставляется на рынок из подпольных стеклодувных мастерских Китая. По словам самих производителей, его дерзкий вид символизирует силу, отвагу, удачу и долголетие. Отличная краска для яростной атаки!",
+			"modification": 0,
+			"id": "inferno",
+
+			"price_m0": "159000",
+
+			"rang_m0": "25",
+
+			"propertys_m0": []
+		},		
+		{
+			"name_ru": "Изумруд",
+			"name_en": "Emerald",
+			"description_en": "Paint laboratory «Style and Hale» spent a lot of years to invent the coat, which has classic green color and underlines high status of its owner at the same time. Finally, Emerald paint was born. It is green but looks as if it is highlighted from inside. Impress yourself!",
+			"description_ru": "Лаборатория лакокрасочных материалов «Стиль и гриль» долго работала над покрытием, которое сохранит классические зелёные тона танка и в то же время подчеркнёт высокий статус его владельца. Итогом многолетних трудов стала краска «Изумруд», будто светящаяся изнутри. Подчеркните своё положение!",
+			"modification": 0,
+			"id": "izumurud",
+
+			"price_m0": "143500",
+
+			"rang_m0": "24",
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Зевс",
+			"name_en": "Zeus",
+			"description_en": "With Zeus paint you look like a god. Tank, covered with deadly lightings, smashes ambitions of the enemy. Also this paint attracts attention to its owner, so less spectacular comrades can use their chance and sneak unnoticed to the enemy base.",
+			"description_ru": "Краска «Зевс» названа так за свою необычную текстуру. Яркие вспышки молний на вашем танке ослабят бдительность вражеских танков и позволят вам выглядеть круто в любой битве. ",
+			"modification": 0,
+			"id": "zeus",
+
+			"price_m0": "250000",
+
+			"rang_m0": "30",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Нефрит",
+			"name_en": "Jade",
+			"description_en": "Dusting with rare brown jade makes this coating as strong as good steel. And unlike metal coating, which pollute oceans and kill low-flying birds, this stone-based coating it as ecologically clean as wheatgerm juice!",
+			"description_ru": "Напыление из редкого коричневого нефрита обеспечивает этому покрытию прочность хорошей стали. Но если производство металлсодержащих покрытий загрязняет океаны и приводит к вымиранию низколетающих птиц, то краска «Нефрит» с каменной пудрой экологически чиста, как берёзовый сок!",
+			"modification": 0,
+			"id": "nefrit",
+
+			"price_m0": "370000",
+
+			"rang_m0": "28",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Лучший помощник",
+			"name_en": "Best Helper",
+			"description_ru": "Эта краска была создана специально для самых активных, усердных и трудолюбивых помощников, для тех, кто посвятил весь год помощи танкистам и поддерживал порядок в сообществе Танков Онлайн. Обладатели этой краски — яркий пример самоотдачи и преданности, и они по-настоящему достойны титула «Лучший помощник года».",
+			"description_en": "Paint for Best Helper",
+			"modification": 0,
+			"id": "besthelper",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Лучший помощник",
+			"name_en": "Helper",
+			"description_ru": "Эта краска была создана специально для самых активных, усердных и трудолюбивых помощников, для тех, кто посвятил весь год помощи танкистам и поддерживал порядок в сообществе Танков Онлайн. Обладатели этой краски — яркий пример самоотдачи и преданности, и они по-настоящему достойны титула «Лучший помощник года».",
+			"description_en": "This paint was specially made for the helpers.",
+			"modification": 0,
+			"id": "helper",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Лучший помощник",
+			"name_en": "Neon",
+			"description_ru": "Эта краска была создана специально для самых активных, усердных и трудолюбивых помощников, для тех, кто посвятил весь год помощи танкистам и поддерживал порядок в сообществе Танков Онлайн. Обладатели этой краски — яркий пример самоотдачи и преданности, и они по-настоящему достойны титула «Лучший помощник года».",
+			"description_en": "This paint was designed specifically for those helpers who are responsible for organizing daily Events. This paint is an integral attribute of the administrative assistants who organize entertainment in the game. The bright neon-yellow color was chosen for a reason: the helpers in this paint will stand out on the battlefield, and players will always know who they can contact during a competition or event. This paint goes to all Event helpers - those who dedicate their time to designing and organizing Events to continually bring original battles to the community, as well as dealing with trolls who try to spoil the fun of honest players.",
+			"modification": 0,
+			"id": "neon",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Alligator",
+			"name_en": "Alligator",
+			"description_ru": "Эта краска была создана специально для самых активных, усердных и трудолюбивых помощников, для тех, кто посвятил весь год помощи танкистам и поддерживал порядок в сообществе Танков Онлайн. Обладатели этой краски — яркий пример самоотдачи и преданности, и они по-настоящему достойны титула «Лучший помощник года».",
+			"description_en": "An exclusive paint for chat moderators called Alligator is a result of a successful experiment of crossbreeding Black African alligators with carbon steel plates. This paint scared the researchers so much that they decided to show it only to law enforcers. Those who risk their lives every day for the wellbeing of others are hard to surprise with anything, and they have forgotten the word \"Fear\" long ago.",
+			"modification": 0,
+			"id": "alligator",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Flame",
+			"name_en": "Flame",
+			"description_ru": "Эта краска была создана специально для самых активных, усердных и трудолюбивых помощников, для тех, кто посвятил весь год помощи танкистам и поддерживал порядок в сообществе Танков Онлайн. Обладатели этой краски — яркий пример самоотдачи и преданности, и они по-настоящему достойны титула «Лучший помощник года».",
+			"description_en": "A special paint for administrators.Fire is destructive, unstoppable and it's always moving like administrators who easily change their location, from chats to forum and PM. They are everywhere. Only those who overcome their fear of fire can tame it. TO Admins can do this. The Flame coating is mixed from the hot tears of violators and the cheaters' bones crushed into fiery powder, sealed with fiery thanks from the players, instills fear and respect on the battlefields.",
+			"modification": 0,
+			"id": "flame",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Flame 2.0",
+			"name_en": "Flame 2.0",
+			"description_ru": "Эта краска была создана специально для самых активных, усердных и трудолюбивых помощников, для тех, кто посвятил весь год помощи танкистам и поддерживал порядок в сообществе Танков Онлайн. Обладатели этой краски — яркий пример самоотдачи и преданности, и они по-настоящему достойны титула «Лучший помощник года».",
+			"description_en": "An animated version of the legendary «Flame» paint. They say that nobody has managed to subdue the elements yet except from the Administrators of Tanki Online who also handle more serious tasks on a daily basis: wise and fair guardians of the game manage helper groups and are responsible for different sectors of community life. The paint commands respect to its owner and gifts an ability to predict actions and wishes of tankers.",
+			"modification": 0,
+			"id": "flame2",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Чемпион",
+			"name_en": "Champion",
+			"description_ru": "Уникальное покрытие «Чемпион» нельзя купить ни за какие деньги даже на чёрном рынке. Изготовленное из золотых и платиновых волокон, оно строго под роспись выдаётся лишь победителям межкланового чемпионата.",
+			"description_en": "Unique «Champion» coverage cannot be bought for any money even on the black market. Made of gold and platinum fibers, it is strictly for painting issued only to the winners of the inter-clan championship.",
+			"modification": 0,
+			"id": "champion",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Кислота",
+			"name_en": "Acid",
+			"description_ru": "Защита от всех пушек: 15%\n\nОсновная составляющая этого элитного покрытия — венерианский кислотный туман, состоящий из мельчайших капелек серной кислоты. Добывать и доставлять этот компонент на Землю очень дорого, именно поэтому «Кислоту» не найти в открытой продаже. Но тем, кому всё-таки удалось заполучить заветную краску, не страшны никакие природные катаклизмы!",
+			"description_en": "The main component of this high-end coating is Venusian acid mist, consisting of the smallest droplets of sulfuric acid. It is very expensive to extract and deliver this component to Earth, which is why “Acid” is not on sale. But those who still managed to get the coveted paint are not afraid of any natural disasters!",
+			"modification": 0,
+			"id": "acid",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Tester",
+			"name_en": "Tester",
+			"description_ru": "Защита от всех пушек: 15%\n\nОсновная составляющая этого элитного покрытия — венерианский кислотный туман, состоящий из мельчайших капелек серной кислоты. Добывать и доставлять этот компонент на Землю очень дорого, именно поэтому «Кислоту» не найти в открытой продаже. Но тем, кому всё-таки удалось заполучить заветную краску, не страшны никакие природные катаклизмы!",
+			"description_en": "A special paint for testers. This paint is based on principles developed by Nicola Tesla himself. Metal wrenches placed on carbon armor plates generate a magnetic resonance field with properties that haven't been studied to the full extent yet. The coating is installed on special test tanks that are controlled by pilots voluntarily taking part in experiments and risking their lives for the well-being of future generations.",
+			"modification": 0,
+			"id": "tester",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "April Fool`s",
+			"name_en": "April Fool`s",
+			"description_ru": "Защита от всех пушек: 15%\n\nОсновная составляющая этого элитного покрытия — венерианский кислотный туман, состоящий из мельчайших капелек серной кислоты. Добывать и доставлять этот компонент на Землю очень дорого, именно поэтому «Кислоту» не найти в открытой продаже. Но тем, кому всё-таки удалось заполучить заветную краску, не страшны никакие природные катаклизмы!",
+			"description_en": "A paint for the tanker who believes that laughs, fun, and pranks should happen every day, not just once a year.",
+			"modification": 0,
+			"id": "fools",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Гелиос",
+			"name_en": "Helios",
+			"description_ru": "Это уникальное покрытие найдено во время археологических раскопок древнего города, где располагался храм солнечного божества. Легенды гласят, что обладатель этой краски получает заключённую в ней безграничную энергию — и может использовать её только в созидательных целях, в творчестве. Каждый художник мечтает заполучить экземпляр, но только легионеры Творческой Лиги имеют право носить корону Гелиоса.",
+			"description_en": "This unique covering was found during the archaeological excavations of the ancient city, where the temple of the solar deity was located. Legends say that the owner of this paint gets boundless energy enclosed in it - and can use it only for creative purposes, in the works. Every artist wants to get a copy, but only the legionnaires of the Creative League have the right to wear the crown of Helios.",
+			"modification": 0,
+			"id": "helios",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Властелин",
+			"name_en": "The Lord",
+			"description_ru": "Покрытие «Властелин» не существует официально. Его нет в базах данных и каталогах комплектующих для танков. Но ходят слухи, что выпущенный в единственном экземпляре покрасочный набор — не выдумка, а реальность! Некоторые даже уверяют, что лично видели зловеще-чёрный танк, вселяющий ужас в своих врагов. Но где его найти — неизвестно...",
+			"description_en": "Covering «The Lord» does not exist officially. It is not in the databases and catalogs of components for tanks. But there are rumors that the painting set released in a single copy is not a fiction, but a reality! Some even claim that they have personally seen the ominously black tank that terrifies their enemies. But where to find him is unknown ...",
+			"modification": 0,
+			"id": "vlastelin",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Анубис",
+			"name_en": "Anubis",
+			"description_ru": "Анубис - древнее божество Египта, с головой шакала и телом человека, проводник умерших в загробный мир. Спустя долгое пребывание в загробном царстве, Анубис решил вернуться в царство живых для воплощения кары и изъятия грязных душ в царство мертвых. Его мало кто видел, но ходит легенда, что он практически бессмертный и тем кому удается его победить, выпадает счастливый билет.",
+			"description_en": "Anubis - the ancient deity of Egypt, with the head of a jackal and the body of a man, the conductor of the dead in the afterlife. After a long stay in the afterlife, Anubis decided to return to the realm of the living to incarnate the punishment and the removal of dirty souls into the realm of the dead. Few people have seen him, but the legend goes that he is almost immortal and those who manage to defeat him get a lucky ticket.",
+			"modification": 0,
+			"id": "anubis",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Глайд",
+			"name_en": "Glide",
+			"description_ru": "Покрытие, созданное для тех, кто профессионально занимается паркуром в «GTanks».",
+			"description_en": "Paint, created for those who professionally engaged in parkour in «GTanks».",
+			"modification": 0,
+			"id": "tot",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Operator",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "This paint was created specifically for the group of operators «GTanks». Its presence indicates that the owner of the coating is a true master of shooting and editing.",
+			"modification": 0,
+			"id": "spectator",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "The dima",
+			"name_en": "The dima",
+			"description_ru": "Special Edition by Gamb1k",
+			"description_en": "Special Edition by Gamb1k",
+			"modification": 0,
+			"id": "dima",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Флоу",
+			"description": "Легендарное анимированное танковое покрытие — первое в своём роде.\nУльтракомпактные генераторы Тесла производят энергию, которая растекается по корпусу танка и покрывает его ритмично движущимся полем из нестабильных частиц. Завихрения этого поля создают гипнотизирующий узор.",
+			"modification": 0,
+			"id": "flow",
+			"special_item": true,
+
+			"price_m0": "300000",
+
+			"rang_m0": "30",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Кошмар",
+			"description": "Немногие осмеливаются хотя бы приблизиться к танкам в этом покрытии. Однако те, кто найдёт в себе силы преодолеть леденящий ужас, который вселяют призрачные лица, безмолвно кричащие в бесконечной агонии, больше никогда не будут испытывать страх. Они сами станут воплощением кошмара.\n\nХодят слухи, что когда танк с этим покрытием уничтожает противника, на его корпусе становится одним кричащим лицом больше.",
+			"modification": 0,
+			"id": "nightmare",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Спектр",
+			"description": "Это покрытие разработано с учётом редчайших квантовых технологий, позволяющих переносить вероятностные эффекты в макромир. Первой мыслью создателей технологии было наконец провести реальный эксперимент с суперпозицией кота Шрёдингера, но сделать это им не позволили защитники животных. Поэтому результатом их работы стала эта краска. Несмотря на всю сложную математику и научные изыскания, она представляет собой всего лишь монотонное покрытие зелёного... нет, синего цве... нет, постойте, красного... да чтоб тебя, жёлтого! ААА! ФИОЛЕТОВОГО! Так, всё, хватит с меня, сами пишите это описание!",
+			"modification": 0,
+			"id": "spectr",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "arab",
+			"description": "for arab",
+			"modification": 0,
+			"id": "arab",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Red lightning",
+			"description": "хакер33рус",
+			"modification": 0,
+			"id": "redl",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Сияние",
+			"description": "фор гембик",
+			"modification": 0,
+			"id": "radiance",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Plexus",
+			"description": "фор гембик",
+			"modification": 0,
+			"id": "plexus",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name": "Гирлянда",
+			"description": "Подготовка к Новому году — серьёзное испытание для настоящих танкистов. Ведь весьма непросто украшать ёлку, когда у тебя лапки... То есть гусеницы! Можно и запутаться в гирляндах и мишуре. Порой танкисты настолько увлекаются, что выезжают крушить врагов, опутанные мигающими огоньками. Что, впрочем, не сказывается на их боевой эффективности.",
+			"modification": 0,
+			"id": "garland",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оливковая вдова",
+			"name_en": "Olive Widow",
+			"description_ru": "Загадочное и элегантное покрытие. Зеленоватые оттенки, переплетенные с тонкими красными нитями, напоминают узор ядовитой бабочки, внушающую страх во врагов. Этот дизайн придаёт танку изысканный и зловещий вид, словно невидимая угроза.",
+			"description_en": "Mysterious and elegant coating. The greenish shades, intertwined with thin red threads, resemble the pattern of a poisonous butterfly, inspiring fear in enemies. This design gives the tank an exquisite and sinister appearance, like an invisible threat.",
+			"modification": 0,
+			"id": "olivewidow",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Red Stoker",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A blazing blood-red coating embodying strength and determination. The bright red background, intersected by coal-black stripes, creates the image of a dangerous fighter's fire. This design gives the tank a powerful and menacing appearance, symbolizing indomitable energy and readiness for battle.",
+			"modification": 0,
+			"id": "redstoker",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Thug signs",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A coating that retains that sense of visibility of all the signs on the road. Enemies with this paint will be confused by the number of rules that should be followed. The design says so about itself that the one who put on this coating should be avoided.",
+			"modification": 0,
+			"id": "thugsigns",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "BOOM",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A bright and daring coating decorated with colorful \"BOOM\" inscriptions. Each word explodes with rich colors, creating the effect of continuous explosion and dynamics. This coating turns the tank into the embodiment of energy and power, attracting attention and instilling respect on the battlefield.",
+			"modification": 0,
+			"id": "boom",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Abstract maze",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "The coating is an artful interweaving of blue and yellow colors. Geometric patterns create the illusion of an endless maze, each turn of which causes admiration and mystery. This design gives the tank a unique and modern look, reflecting the dynamics and complexity of its character.",
+			"modification": 0,
+			"id": "abstractmaze",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Infinity",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A coating embodying infinity and cosmic power. Bright, iridescent shades of red and yellow form patterns resembling fire vortices and solar flares. The tank body is shrouded in a blazing radiance, symbolizing the energy and power hidden in the depths of space.",
+			"modification": 0,
+			"id": "infinity",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Poisonous Vine",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A coating that combines mysterious beauty and danger. Green, poisonous vines entwine the tank's body, giving it an intimidating and mysterious appearance. Each vine seems to be alive – it twists and stretches, giving the impression that the tank has merged with nature and is ready to fight in the wild.",
+			"modification": 0,
+			"id": "poisonousvine",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Latex",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "An elegant and sophisticated coating combining deep blacks and refined grays. The smooth, shiny surface recalls the luxurious texture of latex, giving the tank a stylish and modern look. This design embodies strength and grace, making your tank irresistible on the battlefield.",
+			"modification": 0,
+			"id": "latex",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Free nickname",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "Free Nickname - Paint has been developed for players whose managed to register their nickname before the game has been launched. Paired with the color green, it represents the freedom of players' nickname choices.",
+			"modification": 0,
+			"id": "freenick",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Premium nickname",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "Premium Nickname - This paint was designed for players who purchased a unique two-letter nickname. Its luxurious gilding makes your tank shine in battles, setting you apart from ordinary tankers.",
+			"modification": 0,
+			"id": "premnick",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Elite nickname",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "Elite Nickname - The darkness of red paint symbolises danger and courage, showcasing your battle actions. It was created for players who reserved a unique one-letter nickname before the game's release.",
+			"modification": 0,
+			"id": "elitenick",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Microchip",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A special paint for Discord Moderators, Content Helpers and Social Media Helpers.",
+			"modification": 0,
+			"id": "microchip",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Оператор",
+			"name_en": "Reporter",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A special paint for Wiki Editors.",
+			"modification": 0,
+			"id": "reporter",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Ruby",
+			"name_en": "Ruby",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A special paint for Forum Moderators.",
+			"modification": 0,
+			"id": "ruby",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Aramid",
+			"name_en": "Aramid",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A special paint for eSports Helpers.",
+			"modification": 0,
+			"id": "aramid",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Dead",
+			"name_en": "Dead",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A regular, non-animated paint that serves as an aesthetic coating for your tank. Its color scheme might potentially offer some camouflage benefits, but besides that, the paint does not offer any functional gameplay advantages.",
+			"modification": 0,
+			"id": "dead",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Veteran",
+			"name_en": "Veteran",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "A bonus paint awarded to well-known participants in the esports movement.",
+			"modification": 0,
+			"id": "veteran",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Phoenix",
+			"name_en": "Phoenix",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "Parkour official's program paint",
+			"modification": 0,
+			"id": "phoenix",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Aero",
+			"name_en": "Aero",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "Parkour official's program paint",
+			"modification": 0,
+			"id": "aero",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Gladiator",
+			"name_en": "Gladiator",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "Exclusive paint only for the players who have achieved great victories in eSports. The paint is given to winners of the Solo, Tandem and Trio tournaments.",
+			"modification": 0,
+			"id": "gladiator",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		},
+		{
+			"name_ru": "Best Player",
+			"name_en": "Best Player",
+			"description_ru": "Данная краска создана специально для группы операторов «GTanks». Её наличие говорит о том, что владелец покрытия — настоящий мастер съёмки и монтажа.",
+			"description_en": "To be one of the best you need to have an unwavering will and nerves of iron.",
+			"modification": 0,
+			"id": "bestplayer",
+			"special_item": true,
+
+			"price_m0": "1",
+
+			"rang_m0": "1",
+
+			"propertys_m0": []
+		}
+	]
+}
