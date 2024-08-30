@@ -11,6 +11,7 @@ import flashtanki.battles.tanks.hulls.Hull;
 import flashtanki.battles.tanks.math.Vector3;
 import flashtanki.battles.tanks.module.Module;
 import flashtanki.battles.tanks.weapons.IWeapon;
+import flashtanki.battles.tanks.weapons.flamethrower.effects.FlamethrowerEffectModel;
 import flashtanki.battles.tanks.weapons.frezee.effects.FrezeeEffectModel;
 
 import java.util.*;
@@ -23,6 +24,7 @@ public class Tank {
     public Vector3 angVel;
     public double turretDir;
     public int controllBits;
+    public FlamethrowerEffectModel flameEffect;
     private IWeapon weapon;
     private Hull hull;
     private Module module;

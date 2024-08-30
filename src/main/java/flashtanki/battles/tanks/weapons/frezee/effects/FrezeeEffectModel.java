@@ -1,17 +1,15 @@
 /*
- * Decompiled with CFR 0.150.
+ * Decompiled with CFR 0.153-SNAPSHOT (d6f6758-dirty).
  */
 package flashtanki.battles.tanks.weapons.frezee.effects;
 
 import flashtanki.battles.BattlefieldModel;
 import flashtanki.battles.tanks.Tank;
-import flashtanki.battles.tanks.weapons.effects.IEffect;
+import flashtanki.battles.tanks.weapons.frezee.effects.TemperatureCalc;
 import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
 
-public class FrezeeEffectModel
-implements IEffect {
-    private static final float MIN_VALUE = 0.5F;
+public class FrezeeEffectModel {
     public float speed;
     public float turnSpeed;
     public float turretRotationSpeed;
@@ -32,19 +30,18 @@ implements IEffect {
         this.turretRotationSpeed = this.tank.turretRotationSpeed;
     }
 
-    @Override
     public void update() {
-        this.tank.speed -= this.power * (this.speed / 100.0F * this.power);
-        this.tank.turnSpeed -= this.power * (this.turnSpeed / 100.0F * this.power);
-        this.tank.turretRotationSpeed -= this.power * (this.turretRotationSpeed / 100.0F * this.power);
-        if (this.tank.speed < MIN_VALUE) {
-            this.tank.speed = MIN_VALUE;
+        this.tank.speed -= this.power * this.speed / 100.0f * this.power;
+        this.tank.turnSpeed -= this.power * this.turnSpeed / 100.0f * this.power;
+        this.tank.turretRotationSpeed -= this.power * this.turretRotationSpeed / 100.0f * this.power;
+        if (this.tank.speed < 0.4f) {
+            this.tank.speed = 0.4f;
         }
-        if (this.tank.turnSpeed < MIN_VALUE) {
-            this.tank.turnSpeed = MIN_VALUE;
+        if (this.tank.turnSpeed < 0.4f) {
+            this.tank.turnSpeed = 0.4f;
         }
-        if (this.tank.turretRotationSpeed < MIN_VALUE) {
-            this.tank.turretRotationSpeed = MIN_VALUE;
+        if (this.tank.turretRotationSpeed < 0.4f) {
+            this.tank.turretRotationSpeed = 0.4f;
         }
         if (this.currFrezeeTimer != null) {
             this.currFrezeeTimer.stoped = true;
@@ -63,6 +60,14 @@ implements IEffect {
         this.bfModel.sendToAllPlayers(Type.BATTLE, "change_temperature_tank", this.tank.id, String.valueOf(value));
     }
 
+    public void removeFrezeeEffect() {
+        this.tank.speed = this.speed;
+        this.tank.turnSpeed = this.turnSpeed;
+        this.tank.turretRotationSpeed = this.turretRotationSpeed;
+        this.sendSpecData();
+        this.sendChangeTemperature(0.0);
+    }
+
     class FrezeeTimer
     extends Thread {
         public boolean stoped = false;
@@ -72,35 +77,19 @@ implements IEffect {
 
         @Override
         public void run() {
-            this.setName("FREZEE TIMER THREAD " + FrezeeEffectModel.this.tank);
+            this.setName("FREZEE TIMER THREAD " + String.valueOf(FrezeeEffectModel.this.tank));
             try {
-                FrezeeTimer.sleep(4000L);
+                FrezeeTimer.sleep(3000L);
+            } catch (InterruptedException var2) {
+                var2.printStackTrace();
             }
-            catch (InterruptedException e) {
-                e.printStackTrace();
+            if (!this.stoped) {
+                FrezeeEffectModel.this.tank.speed = FrezeeEffectModel.this.speed;
+                FrezeeEffectModel.this.tank.turnSpeed = FrezeeEffectModel.this.turnSpeed;
+                FrezeeEffectModel.this.tank.turretRotationSpeed = FrezeeEffectModel.this.turretRotationSpeed;
+                FrezeeEffectModel.this.sendSpecData();
+                FrezeeEffectModel.this.sendChangeTemperature(0.0);
             }
-            if (this.stoped) {
-                return;
-            }
-            ((FrezeeEffectModel)FrezeeEffectModel.this).tank.speed = (((FrezeeEffectModel)FrezeeEffectModel.this).tank.speed + FrezeeEffectModel.this.speed) / 2;
-            ((FrezeeEffectModel)FrezeeEffectModel.this).tank.turnSpeed = (((FrezeeEffectModel)FrezeeEffectModel.this).tank.turnSpeed + FrezeeEffectModel.this.turnSpeed) / 2;
-            ((FrezeeEffectModel)FrezeeEffectModel.this).tank.turretRotationSpeed = (((FrezeeEffectModel)FrezeeEffectModel.this).tank.turretRotationSpeed + FrezeeEffectModel.this.turretRotationSpeed) / 2;
-            FrezeeEffectModel.this.sendSpecData();
-            
-            try {
-                FrezeeTimer.sleep(1500L);
-            }
-            catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            if (this.stoped) {
-                return;
-            }
-            ((FrezeeEffectModel)FrezeeEffectModel.this).tank.speed = FrezeeEffectModel.this.speed;
-            ((FrezeeEffectModel)FrezeeEffectModel.this).tank.turnSpeed = FrezeeEffectModel.this.turnSpeed;
-            ((FrezeeEffectModel)FrezeeEffectModel.this).tank.turretRotationSpeed = FrezeeEffectModel.this.turretRotationSpeed;
-            FrezeeEffectModel.this.sendSpecData();
-            FrezeeEffectModel.this.sendChangeTemperature(0.0);
         }
     }
 }

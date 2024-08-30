@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.tanks.weapons.flamethrower;
 
 import flashtanki.battles.tanks.weapons.EntityType;
@@ -8,7 +5,7 @@ import flashtanki.battles.tanks.weapons.IEntity;
 import flashtanki.battles.tanks.weapons.ShotData;
 
 public class FlamethrowerEntity
-implements IEntity {
+        implements IEntity {
     public int targetDetectionInterval;
     public float range;
     public float coneAngle;
@@ -42,4 +39,5 @@ implements IEntity {
         return this.type;
     }
 }
+
 

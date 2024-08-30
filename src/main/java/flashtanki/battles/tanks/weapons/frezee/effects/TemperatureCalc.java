@@ -1,26 +1,25 @@
 /*
- * Decompiled with CFR 0.150.
+ * Decompiled with CFR 0.153-SNAPSHOT (d6f6758-dirty).
  */
 package flashtanki.battles.tanks.weapons.frezee.effects;
 
 import flashtanki.battles.tanks.Tank;
 
 public class TemperatureCalc {
-   private static final double MIN_TEMPERATURE = -2.0D;
+    private static final double MIN_TEMPERATURE = -2.0;
 
-   public static double getTemperature(Tank currState, float speed, float turnSpeed, float turretRotationSpeed) {
-      double temperature_speed = (double)((speed - currState.speed) * (speed / 30.0F));
-      double temperature_turn = (double)((turnSpeed - currState.turnSpeed) * (turnSpeed / 10.0F));
-      double temperature_turret = (double)((turretRotationSpeed - currState.turretRotationSpeed) * (turretRotationSpeed / 10.0F));
-      double temperature = -(temperature_speed + temperature_turn + temperature_turret);
-      if (temperature < MIN_TEMPERATURE) {
-         temperature = MIN_TEMPERATURE;
-      }
-
-      if (temperature > 0.0D) {
-         temperature = 0.0D;
-      }
-
-      return temperature;
-   }
+    public static double getTemperature(Tank currState, float speed, float turnSpeed, float turretRotationSpeed) {
+        double temperature_speed = (speed - currState.speed) * (speed / 30.0f);
+        double temperature_turn = (turnSpeed - currState.turnSpeed) * (turnSpeed / 10.0f);
+        double temperature_turret = (turretRotationSpeed - currState.turretRotationSpeed) * (turretRotationSpeed / 10.0f);
+        double temperature = -(temperature_speed + temperature_turn + temperature_turret);
+        if (temperature < -2.0) {
+            temperature = -2.0;
+        }
+        if (temperature > 0.0) {
+            temperature = 0.0;
+        }
+        return temperature;
+    }
 }
+

@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="277b6907-4be7-4ae1-a00c-15ad0981c799" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfx/sfx_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/sfx/sfx_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/loaders/WeaponsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/loaders/WeaponsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/EntityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/EntityType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/snowman/SnowmanEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/snowman/SnowmanModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/json/JSONUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/json/JSONUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turrets.json" beforeDir="false" afterPath="$PROJECT_DIR$/turrets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weapons/snowman.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/effects/IEffect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/flamethrower/FlamethrowerEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/flamethrower/FlamethrowerModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/FrezeeEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/FrezeeModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/effects/FrezeeEffectModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/effects/TemperatureCalc.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +101,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bodya\Documents\GitHub\FlashTanki-java\src\main\java\flashtanki\battles\tanks\weapons" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -132,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725044314574</updated>
       <workItem from="1725044316857" duration="390000" />
-      <workItem from="1725047029327" duration="428000" />
+      <workItem from="1725047029327" duration="850000" />
     </task>
     <servers />
   </component>

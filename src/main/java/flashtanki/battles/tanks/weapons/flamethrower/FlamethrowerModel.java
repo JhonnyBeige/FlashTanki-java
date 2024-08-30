@@ -1,5 +1,5 @@
 /*
- * Decompiled with CFR 0.150.
+ * Decompiled with CFR 0.153-SNAPSHOT (d6f6758-dirty).
  */
 package flashtanki.battles.tanks.weapons.flamethrower;
 
@@ -8,17 +8,21 @@ import flashtanki.battles.BattlefieldPlayerController;
 import flashtanki.battles.tanks.weapons.IEntity;
 import flashtanki.battles.tanks.weapons.IWeapon;
 import flashtanki.battles.tanks.weapons.anticheats.TickableWeaponAnticheatModel;
+import flashtanki.battles.tanks.weapons.flamethrower.FlamethrowerEntity;
+import flashtanki.battles.tanks.weapons.flamethrower.effects.FlamethrowerEffectModel;
+import flashtanki.utils.RandomUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class FlamethrowerModel
-extends TickableWeaponAnticheatModel
-implements IWeapon {
+        extends TickableWeaponAnticheatModel
+        implements IWeapon {
     private FlamethrowerEntity entity;
     public BattlefieldModel bfModel;
     public BattlefieldPlayerController player;
+    private boolean hasFired = false;
 
     public FlamethrowerModel(FlamethrowerEntity entity, BattlefieldModel bfModel, BattlefieldPlayerController player) {
         super(entity.targetDetectionInterval);
@@ -29,11 +33,17 @@ implements IWeapon {
 
     @Override
     public void startFire(String json) {
+        if (this.hasFired) {
+            this.bfModel.cheatDetected(this.player, this.getClass());
+            return;
+        }
+        this.hasFired = true;
         this.bfModel.startFire(this.player);
     }
 
     @Override
     public void stopFire() {
+        this.hasFired = false;
         this.bfModel.stopFire(this.player);
     }
 
@@ -56,28 +66,39 @@ implements IWeapon {
                 targetVictim[i] = target;
             }
             this.onTarget(targetVictim, 0);
-        }
-        catch (ParseException e) {
+        } catch (ParseException e) {
             e.printStackTrace();
         }
     }
 
     @Override
+    public void quickFire(String var1) {
+    }
+
+    @Override
     public void onTarget(BattlefieldPlayerController[] targetsTanks, int distance) {
-        BattlefieldPlayerController[] arrbattlefieldPlayerController = targetsTanks;
-        int n = targetsTanks.length;
-        for (int i = 0; i < n; ++i) {
-            BattlefieldPlayerController victim = arrbattlefieldPlayerController[i];
-            this.bfModel.tanksKillModel.damageTank(victim, this.player, this.entity.damage_max, true);
+        float damage = RandomUtils.getRandom(this.entity.damage_min, this.entity.damage_min) / 2.0f;
+        this.bfModel.tanksKillModel.damageTank(targetsTanks[0], this.player, damage, true);
+        BattlefieldPlayerController victim = targetsTanks[0];
+        FlamethrowerEffectModel.player = this.player;
+        FlamethrowerEffectModel.victim = victim;
+        if (victim != null && victim.tank != null) {
+            boolean canFlame = true;
+            if (this.bfModel.battleInfo.team) {
+                boolean bl = canFlame = !this.player.playerTeamType.equals(victim.playerTeamType);
+            }
+            if (canFlame) {
+                if (victim.tank.flameEffect == null) {
+                    victim.tank.flameEffect = new FlamethrowerEffectModel(this.entity.coolingSpeed, victim.tank, this.bfModel);
+                }
+                victim.tank.flameEffect.update();
+            }
         }
     }
 
     @Override
     public IEntity getEntity() {
         return this.entity;
-    }
-
-    public void quickFire(String var1) {
     }
 }
 
