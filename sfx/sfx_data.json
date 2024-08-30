@@ -154,56 +154,6 @@
 			]
 		},
 		{
-			"turret": "snowman_m0_muzzle",
-			"animation": [
-				{
-					"attenuationBegin": 300,
-					"attenuationEnd": 500,
-					"color": 65535,
-					"intensity": 0.3,
-					"time": 0
-				},
-				{
-					"attenuationBegin": 1,
-					"attenuationEnd": 2,
-					"color": 65535,
-					"intensity": 0,
-					"time": 300
-				}
-			]
-		},
-		{
-			"turret": "snowman_m0_shot",
-			"animation": [
-				{
-					"attenuationBegin": 100,
-					"attenuationEnd": 300,
-					"color": 65535,
-					"intensity": 0.5,
-					"time": 0
-				}
-			]
-		},
-		{
-			"turret": "snowman_m0_explosion",
-			"animation": [
-				{
-					"attenuationBegin": 200,
-					"attenuationEnd": 400,
-					"color": 65535,
-					"intensity": 0.3,
-					"time": 0
-				},
-				{
-					"attenuationBegin": 1,
-					"attenuationEnd": 2,
-					"color": 65535,
-					"intensity": 0,
-					"time": 300
-				}
-			]
-		},
-		{
 			"turret": "twins_m0_muzzle",
 			"animation": [
 				{

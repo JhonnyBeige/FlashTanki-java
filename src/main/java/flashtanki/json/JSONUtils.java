@@ -24,7 +24,6 @@ import flashtanki.battles.tanks.weapons.frezee.FrezeeEntity;
 import flashtanki.battles.tanks.weapons.isida.IsidaEntity;
 import flashtanki.battles.tanks.weapons.ricochet.RicochetEntity;
 import flashtanki.battles.tanks.weapons.shaft.ShaftEntity;
-import flashtanki.battles.tanks.weapons.snowman.SnowmanEntity;
 import flashtanki.battles.tanks.weapons.thunder.ThunderEntity;
 import flashtanki.battles.tanks.weapons.twins.TwinsEntity;
 import flashtanki.collections.FastHashMap;
@@ -1039,13 +1038,6 @@ public class JSONUtils {
                 j.put("shotDistance", Float.valueOf(ricochetEntity.shotDistance));
                 j.put("shotRadius", Float.valueOf(ricochetEntity.shotRadius));
                 j.put("shotSpeed", Float.valueOf(ricochetEntity.shotSpeed));
-                break;
-            }
-            case SNOWMAN: {
-                SnowmanEntity se = (SnowmanEntity) entity;
-                j.put("shot_radius", Float.valueOf(se.shotRadius));
-                j.put("shot_range", Float.valueOf(se.shotRange));
-                j.put("shot_speed", Float.valueOf(se.shotSpeed));
                 break;
             }
             case SHAFT: {

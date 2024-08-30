@@ -5,254 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="277b6907-4be7-4ae1-a00c-15ad0981c799" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/configurations/runner/mine.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/runner/mine.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/runner/netty.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/runner/netty.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/utils/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/utils/RankEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/RankUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/utils/RankUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/utils/StringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/auth/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/auth/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/auth/GetStarsRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/auth/GetStarsRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/BattlefieldModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/BattlefieldModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/BattlefieldPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/BattlefieldPlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/TankKillModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/TankKillModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/anticheats/AnticheatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/anticheats/AnticheatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/bonuses/Bonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/Bonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/bonuses/BonusRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/BonusRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/bonuses/BonusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/BonusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/bonuses/BonusesSpawnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/BonusesSpawnService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/bonuses/GoldSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/GoldSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/bonuses/model/BonusTakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/model/BonusTakeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/chat/BattleChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/chat/BattleChatMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/chat/BattlefieldChatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/chat/BattlefieldChatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/ctf/CTFModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/ctf/CTFModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/ctf/FlagReturnTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/ctf/FlagReturnTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/ctf/anticheats/CaptureTheFlagAnticheatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/ctf/anticheats/CaptureTheFlagAnticheatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/ctf/flags/FlagServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/ctf/flags/FlagServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/ctf/flags/FlagState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/ctf/flags/FlagState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/dom/DominationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/dom/DominationModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/dom/DominationPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/dom/DominationPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/dom/spawn/FreeSpawnPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/dom/spawn/FreeSpawnPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/Effect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/EffectType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/EffectType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/activator/EffectActivatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/activator/EffectActivatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/impl/ArmorEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/impl/ArmorEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/impl/DamageEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/impl/DamageEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/impl/HealthEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/impl/HealthEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/impl/Mine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/impl/Mine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/impl/NitroEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/impl/NitroEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/effects/model/EffectsVisualizationModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/effects/model/EffectsVisualizationModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/inventory/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/inventory/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/managers/SpawnManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/managers/SpawnManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/managers/SpawnPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/managers/SpawnPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/IMapConfigItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/IMapConfigItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/MapChecksumModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/MapChecksumModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/MapsLoaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/MapsLoaderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/Vector3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/Vector3d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/BonusRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/BonusRegions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/DOMKeypoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/DOMKeypoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/FlagsPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/FlagsPositions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/SpawnPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/SpawnPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/bonus/BonusRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/bonus/BonusRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/bonus/BonusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/bonus/BonusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/keypoints/DOMKeypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/keypoints/DOMKeypoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/spawn/SpawnPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/spawn/SpawnPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/parser/map/spawn/SpawnPositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/parser/map/spawn/SpawnPositionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/themes/MapTheme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/themes/MapTheme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/maps/themes/MapThemeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/maps/themes/MapThemeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/mines/ServerMine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/mines/ServerMine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/mines/activator/MineActivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/mines/activator/MineActivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/mines/activator/MinesActivatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/mines/activator/MinesActivatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/mines/model/BattleMinesModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/mines/model/BattleMinesModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/spectator/SpectatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/spectator/SpectatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/spectator/SpectatorModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/spectator/SpectatorModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/spectator/chat/SpectatorChatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/spectator/chat/SpectatorChatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/TankState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/TankState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/TankStateConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/TankStateConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/data/DamageTankData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/data/DamageTankData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/hulls/Hull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/hulls/Hull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/loaders/HullsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/loaders/HullsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/loaders/SFXDataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/loaders/SFXDataFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/loaders/WeaponsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/loaders/WeaponsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/math/Vector3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/math/Vector3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/module/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/module/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/module/ModuleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/module/ModuleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/module/ModuleResistanceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/module/ModuleResistanceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/statistic/PlayerStatistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/statistic/PlayerStatistic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/statistic/PlayersStatisticModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/statistic/PlayersStatisticModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/statistic/prizes/BattlePrizeCalculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/statistic/prizes/BattlePrizeCalculate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/EntityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/EntityType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/IEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/IEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/IWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/IWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/ShotData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/ShotData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/WeaponDamageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/WeaponDamageData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/WeaponUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/WeaponUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/WeaponWeakeningData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/WeaponWeakeningData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/anticheats/FireableWeaponAnticheatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/anticheats/FireableWeaponAnticheatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/anticheats/TickableWeaponAnticheatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/anticheats/TickableWeaponAnticheatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/effects/IEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/effects/IEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/flamethrower/FlamethrowerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/flamethrower/FlamethrowerEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/flamethrower/FlamethrowerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/flamethrower/FlamethrowerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/frezee/FrezeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/FrezeeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/frezee/FrezeeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/FrezeeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/frezee/effects/FrezeeEffectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/effects/FrezeeEffectModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/frezee/effects/TemperatureCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/frezee/effects/TemperatureCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/isida/IsidaActionTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/isida/IsidaActionTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/isida/IsidaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/isida/IsidaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/isida/IsidaModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/isida/IsidaModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/railgun/RailgunEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/railgun/RailgunEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/railgun/RailgunModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/railgun/RailgunModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/ricochet/RicochetEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/ricochet/RicochetEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/ricochet/RicochetModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/ricochet/RicochetModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/shaft/ShaftEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/shaft/ShaftEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/shaft/ShaftModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/shaft/ShaftModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/smoky/SmokyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/smoky/SmokyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/smoky/SmokyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/smoky/SmokyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/snowman/SnowmanEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/snowman/SnowmanEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/snowman/SnowmanModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/snowman/SnowmanModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/thunder/ThunderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/thunder/ThunderEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/thunder/ThunderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/thunder/ThunderModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/twins/TwinsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/twins/TwinsEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/tanks/weapons/twins/TwinsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/twins/TwinsModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/timer/schedulers/bonuses/BonusesScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/timer/schedulers/bonuses/BonusesScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/battles/timer/schedulers/runtime/TankRespawnScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/timer/schedulers/runtime/TankRespawnScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/bugs/BugInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/bugs/BugReport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/bugs/screenshots/BufferScreenshotTransfer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/captcha/Captcha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/captcha/Captcha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/captcha/CaptchaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/captcha/CaptchaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/challenges/GetChallengeInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/challenges/GetChallengeInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/challenges/UpdateStarsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/challenges/UpdateStarsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/collections/CaseInsensitiveMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/collections/CaseInsensitiveMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/collections/FastHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/collections/FastHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/collections/strings/CaseInsensitiveString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/collections/strings/CaseInsensitiveString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/commands/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/commands/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/commands/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/commands/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/ContainerSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/ContainerSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/ListContainerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/ListContainerResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/OpenContainerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/OpenContainerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/PopulateContainerWindowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/PopulateContainerWindowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/list/ContainerAssortmentRespository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/list/ContainerAssortmentRespository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/list/ContainerItemInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/list/ContainerItemInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/users/UserContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/users/UserContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/containers/users/UserContainerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/containers/users/UserContainerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/dumpers/Dumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/dumpers/Dumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/groups/UserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/groups/UserGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/groups/UserGroupsLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/groups/UserGroupsLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/json/ContainerItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/json/ContainerItemsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/json/JSONUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/json/JSONUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/json/NewsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/json/NewsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/json/ShopFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/json/ShopFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/kafka/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/kafka/KafkaTemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/kafka/KafkaTemplateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/kafka/MessageConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/kafka/MessageConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/kafka/MessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/kafka/MessageProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/kafka/extermalMessage/GetChallengeInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/kafka/extermalMessage/GetChallengeInfoRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/LobbyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/LobbyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/battles/BattleInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/battles/BattleInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/battles/BattleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/battles/BattleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/battles/BattlesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/battles/BattlesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/battles/MapInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/battles/MapInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/chat/ChatLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/chat/ChatLobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/chat/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/chat/ChatMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/chat/controllers/ChatMessageControllerConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/chat/controllers/ChatMessageControllerConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/chat/flood/FloodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/chat/flood/FloodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/shop/GiveItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/shop/GiveItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/lobby/top/HallOfFame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/top/HallOfFame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/logger/LogObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/logger/LogObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/logger/LogType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/logger/LogType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/logger/LoggerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/logger/LoggerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/logger/RemoteDatabaseLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/logger/RemoteDatabaseLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/database/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/database/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/database/impl/DatabaseManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/database/impl/DatabaseManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/netty/NettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/NettyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/netty/NettyPipelineFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/NettyPipelineFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/netty/NettyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/NettyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/netty/NettyUsersHandlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/NettyUsersHandlerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/netty/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/netty/blackip/BlackIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/blackip/BlackIP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/netty/blackip/model/BlackIPService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/blackip/model/BlackIPService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/params/OnlineStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/params/OnlineStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/main/params/ServerStateInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/params/ServerStateInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/premium/Premium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/premium/Premium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/premium/PremiumDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/premium/PremiumDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/premium/PremiumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/premium/PremiumService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/AutoEntryServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/AutoEntryServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/BanServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/BanServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/GiftsServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/GiftsServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/LobbysServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/LobbysServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/TanksServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/TanksServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/annotations/ServicesInject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/annotations/ServicesInject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/ban/BanChatCommads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/ban/BanChatCommads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/ban/BanTimeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/ban/BanTimeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/ban/BanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/ban/BanType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/ban/DateFormater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/ban/DateFormater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/ban/block/BlockGameReason.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/ban/block/BlockGameReason.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/services/hibernate/HibernateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/services/hibernate/HibernateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/shoteffect/ItemShotEffectObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/shoteffect/ItemShotEffectObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/shoteffect/ShotEffectSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/shoteffect/ShotEffectSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/shoteffect/list/ShotEffectItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/shoteffect/list/ShotEffectItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/shoteffect/list/ShotEffectItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/shoteffect/list/ShotEffectItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/shoteffect/user/UserShotEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/shoteffect/user/UserShotEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/shoteffect/user/UserShotEffectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/shoteffect/user/UserShotEffectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/skin/ItemSkinsObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/skin/ItemSkinsObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/skin/SkinSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/skin/SkinSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/skin/list/SkinItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/skin/list/SkinItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/skin/list/SkinItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/skin/list/SkinItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/skin/user/UserSkin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/skin/user/UserSkin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/skin/user/UserSkinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/skin/user/UserSkinRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/BattlesGC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/BattlesGC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/SystemBattlesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/SystemBattlesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/SystemClientMessagesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/SystemClientMessagesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/dailybonus/BonusListItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/dailybonus/BonusListItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/dailybonus/DailyBonusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/dailybonus/DailyBonusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/dailybonus/crystalls/CrystallsBonusModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/dailybonus/crystalls/CrystallsBonusModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/dailybonus/ui/DailyBonusUIModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/dailybonus/ui/DailyBonusUIModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/destroy/Destroyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/destroy/Destroyable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/localization/Localization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/localization/Localization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/localization/strings/LocalizedString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/localization/strings/LocalizedString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/localization/strings/StringsLocalizationBundle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/localization/strings/StringsLocalizationBundle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/quartz/QuartzJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/quartz/QuartzJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/quartz/QuartzService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/quartz/QuartzService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/quartz/TimeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/quartz/TimeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/quartz/impl/QuartzJobRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/quartz/impl/QuartzJobRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/quartz/impl/QuartzServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/quartz/impl/QuartzServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/timers/SystemTimerScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/timers/SystemTimerScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/timers/TimerTaskExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/timers/TimerTaskExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/system/timers/exceptions/TimerCausedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/timers/exceptions/TimerCausedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/test/osgi/OSGi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/configurator/osgi/OSGi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/test/server/configuration/ConfigurationsLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/configurator/server/configuration/ConfigurationsLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/test/server/configuration/entitys/MineConfiguratorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/configurator/server/configuration/entitys/MineConfiguratorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/test/server/configuration/entitys/NettyConfiguratorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/configurator/server/configuration/entitys/NettyConfiguratorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/TypeUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/TypeUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/anticheat/AntiCheatData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/anticheat/AntiCheatData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/friends/Friends.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/friends/Friends.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/friends/FriendsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/friends/FriendsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/friends/FriendsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/friends/FriendsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/friends/dto/FriendsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/friends/dto/FriendsResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/Garage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/Garage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/GarageItemsLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/GarageItemsLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/enums/ItemType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/enums/ItemType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/enums/PropertyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/enums/PropertyType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/items/ItemInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/items/ItemInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/items/PropertyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/items/PropertyItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/garage/items/modification/ModificationInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/garage/items/modification/ModificationInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/karma/Karma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/karma/Karma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/karma/UserKarmaAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/karma/UserKarmaAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/karma/UserKarmaActionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/karma/UserKarmaActionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/karma/UserKarmaActionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/karma/UserKarmaActionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/users/locations/UserLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/users/locations/UserLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gtanks/utils/RandomUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfx/sfx_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/sfx/sfx_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/loaders/WeaponsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/loaders/WeaponsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/EntityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/EntityType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/snowman/SnowmanEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/tanks/weapons/snowman/SnowmanModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/json/JSONUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/json/JSONUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turrets.json" beforeDir="false" afterPath="$PROJECT_DIR$/turrets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weapons/snowman.cfg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,9 +35,28 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="server" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="server" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="server" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -279,22 +66,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "zxcExcellent"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zxcExcellent&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zxcExcellent/FlashTanki-java.git",
-    "accountId": "9feb7b29-68c3-499e-aef7-c75d12c4c7e9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zxcExcellent/FlashTanki-java.git&quot;,
+    &quot;accountId&quot;: &quot;9feb7b29-68c3-499e-aef7-c75d12c4c7e9&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2lOHgERPaTvR7EhX6LpAZ9s9TRY" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -306,7 +93,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.FlashTanki-java [:Main.main()].executor": "Run",
+    "Gradle.FlashTanki-java [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -320,38 +109,11 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="nim.task.build.to.cache" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlashTanki-java [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.FlashTanki-java [clean]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -370,6 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725044314574</updated>
       <workItem from="1725044316857" duration="390000" />
+      <workItem from="1725047029327" duration="428000" />
     </task>
     <servers />
   </component>

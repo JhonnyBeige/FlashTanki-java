@@ -25,8 +25,6 @@ import flashtanki.battles.tanks.weapons.shaft.ShaftEntity;
 import flashtanki.battles.tanks.weapons.shaft.ShaftModel;
 import flashtanki.battles.tanks.weapons.smoky.SmokyEntity;
 import flashtanki.battles.tanks.weapons.smoky.SmokyModel;
-import flashtanki.battles.tanks.weapons.snowman.SnowmanEntity;
-import flashtanki.battles.tanks.weapons.snowman.SnowmanModel;
 import flashtanki.battles.tanks.weapons.thunder.ThunderEntity;
 import flashtanki.battles.tanks.weapons.thunder.ThunderModel;
 import flashtanki.battles.tanks.weapons.twins.TwinsEntity;
@@ -102,10 +100,6 @@ public class WeaponsFactory {
             }
             case "shaft": {
                 weapon = new ShaftModel((ShaftEntity) getEntity(turretId), getWwd(turretId), battle, tank);
-                break;
-            }
-            case "snowman": {
-                weapon = new SnowmanModel((SnowmanEntity) getEntity(turretId), getWwd(turretId), tank, battle);
                 break;
             }
             default: {
@@ -195,11 +189,6 @@ public class WeaponsFactory {
                     entity = new ShaftEntity((float) ((Double)jitem.get("min_damage")).doubleValue(), (float) ((Double)jitem.get("max_damage")).doubleValue(), (float) ((Double)jitem.get("fov_max_damage")).doubleValue(), (float) ((Double)jitem.get("max_energy")).doubleValue(), (float) ((Double)jitem.get("charge_rate")).doubleValue(), (float) ((Double)jitem.get("discharge_rate")).doubleValue(), (float) ((Double)jitem.get("elevation_angle_up")).doubleValue(), (float) ((Double)jitem.get("elevation_angle_down")).doubleValue(), (float) ((Double)jitem.get("vertical_targeting_speed")).doubleValue(), (float) ((Double)jitem.get("horizontal_targeting_speed")).doubleValue(), (float) ((Double)jitem.get("inital_fov")).doubleValue(), (float) ((Double)jitem.get("minimum_fov")).doubleValue(), (float) ((Double)jitem.get("shrubs_hiding_radius_min")).doubleValue(), (float) ((Double)jitem.get("shrubs_hiding_radius_max")).doubleValue(), (float) ((Double)jitem.get("impact_quick_shot")).doubleValue(), shotData);
                     wwd.put(id, wwdShaft);
                     break;
-                }
-                case "snowman": {
-                    WeaponWeakeningData wwdSnowman = new WeaponWeakeningData((Double) jitem.get("max_damage_radius"), (Double) jitem.get("min_damage_percent"), (Double) jitem.get("min_damage_radius"));
-                    entity = new SnowmanEntity((float) ((Double) jitem.get("shot_range")).doubleValue(), (float) ((Double) jitem.get("shot_speed")).doubleValue(), (float) ((Double) jitem.get("shot_radius")).doubleValue(), (float) ((Double) jitem.get("min_damage")).doubleValue(), (float) ((Double) jitem.get("max_damage")).doubleValue(), (float) ((Double) jitem.get("frezee_speed")).doubleValue(), shotData);
-                    wwd.put(id, wwdSnowman);
                 }
             }
             weapons.put(id, entity);
