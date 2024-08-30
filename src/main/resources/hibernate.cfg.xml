@@ -27,13 +27,13 @@
 		<property name="hibernate.c3p0.testConnectionOnCheckin">true</property>
 		<property name="hibernate.c3p0.timeout">1800</property> 
 		
-        <mapping class="gtanks.Main"/>
-        <mapping class="gtanks.users.User"/>
-        <mapping class="gtanks.users.garage.Garage"/>
-        <mapping class="gtanks.users.karma.Karma"/>
-        <mapping class="gtanks.main.netty.blackip.BlackIP"/>
-        <mapping class="gtanks.logger.LogObject"/>
-        <mapping class="gtanks.rmi.payments.mapping.Payment"/>
-        <mapping class="gtanks.system.dailybonus.mapping.DailyBonusInfo"/>
+        <mapping class="flashtanki.Main"/>
+        <mapping class="flashtanki.users.User"/>
+        <mapping class="flashtanki.users.garage.Garage"/>
+        <mapping class="flashtanki.users.karma.Karma"/>
+        <mapping class="flashtanki.main.netty.blackip.BlackIP"/>
+        <mapping class="flashtanki.logger.LogObject"/>
+        <mapping class="flashtanki.rmi.payments.mapping.Payment"/>
+        <mapping class="flashtanki.system.dailybonus.mapping.DailyBonusInfo"/>
      </session-factory>
 </hibernate-configuration>
