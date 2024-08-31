@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.effects.impl;
 
 import flashtanki.battles.effects.Effect;
@@ -34,10 +31,8 @@ public class HealthEffect extends Effect {
                     }
                     this.healTank(250);
                     this.accumulatedResource += 250;
-                    if (this.player.tank.healthPoints == Tank.MAX_HEALTH_TANK) {
-                        break;
-                    }
                     Thread.sleep(500L);
+                    if (this.accumulatedResource <= this.resource) continue;
                 }
                 if (!this.deactivated) {
                     this.deactivate();
@@ -73,4 +68,5 @@ public class HealthEffect extends Effect {
         return 6000;
     }
 }
+
 
