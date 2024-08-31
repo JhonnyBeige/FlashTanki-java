@@ -32,11 +32,9 @@ public class SystemClientMessagesHandler {
     public void executeCommand(Command cmd, Session session) {
         try {
             if (cmd.args[0].equals("create_captcha_session")) {
-                CaptchaService.CreateCaptchaResponse createCaptchaResponse = captchaService.generateCaptcha();
+                CaptchaService.CreateCaptchaResponse createCaptchaResponse = captchaService.generateCaptcha(CaptchaService.FontStyle.PLAIN);
                 if (createCaptchaResponse != null) {
                     byte[] image = createCaptchaResponse.getImage();
-                    // Convert byte array to string ffe0a4
-
                     session.send(Type.SYSTEM, "captcha_session_created",
                             String.valueOf(createCaptchaResponse.getId()),
                             bytesToHex(image));
@@ -47,4 +45,5 @@ public class SystemClientMessagesHandler {
             e.getCause().printStackTrace();
         }
     }
+
 }
