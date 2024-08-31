@@ -4,13 +4,12 @@
 package flashtanki.users.garage.items;
 
 import flashtanki.utils.StringUtils;
-import flashtanki.dumpers.Dumper;
 import flashtanki.system.localization.Localization;
 import flashtanki.system.localization.strings.LocalizedString;
 import flashtanki.users.garage.enums.ItemType;
 import flashtanki.users.garage.items.modification.ModificationInfo;
 
-public class Item implements Dumper {
+public class Item {
     public String id;
     public LocalizedString description;
     public boolean isInventory;
@@ -83,10 +82,4 @@ public class Item implements Dumper {
                 this.microUpgradePrice,
                 this.time);
     }
-
-    @Override
-    public String dump() {
-        return StringUtils.concatStrings("-------DUMP GARAGE ITEM------\n", "\tid: ", this.id, "\n", "\tinventoryItem: ", String.valueOf(this.isInventory), "\n", "\tindex: ", String.valueOf(this.index), "\n", "\tname: ", this.name.localizatedString(Localization.RU), "\n", "\tprice: ", String.valueOf(this.price), "\n", "\trandId: ", String.valueOf(this.rankId), "\n", "\tspecialItem: ", String.valueOf(this.specialItem), "\n", "-------------------------------", "\n");
-    }
 }
-
