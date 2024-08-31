@@ -9,16 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/auth/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/auth/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/BattlefieldModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/BattlefieldModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/BattlefieldPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/BattlefieldPlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/LobbyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/lobby/LobbyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/NettyUsersHandlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/NettyUsersHandlerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/netty/ProtocolTransfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/system/SystemClientMessagesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/SystemClientMessagesHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/captcha/BlackTextCaptchaStrategy.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +143,7 @@
       <workItem from="1725100174153" duration="1726000" />
       <workItem from="1725127005422" duration="2736000" />
       <workItem from="1725136442779" duration="2411000" />
-      <workItem from="1725139934836" duration="972000" />
+      <workItem from="1725139934836" duration="1337000" />
     </task>
     <servers />
   </component>
