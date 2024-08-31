@@ -42,6 +42,8 @@ dependencies {
     //jackson
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
 
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
 
 
 }

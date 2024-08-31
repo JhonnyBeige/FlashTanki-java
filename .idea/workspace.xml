@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="277b6907-4be7-4ae1-a00c-15ad0981c799" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/flashtanki/captcha/BlackTextCaptchaStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,18 +13,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/server.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/server.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/captcha/CaptchaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/captcha/CaptchaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/system/SystemClientMessagesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/system/SystemClientMessagesHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/CaptchaClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/bean/CaptchaBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/service/AbstractCaptchaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/service/ICaptchaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/service/SimpleCaptchaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/strategy/CalculateCaptchaStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/strategy/ChineseCaptchaStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/strategy/ICaptchaStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orclight/java/util/captha/strategy/SimpleCaptchaStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/ItemList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/JSONArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/JSONAware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/JSONObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/JSONStreamAware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/JSONValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/parser/ContainerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/parser/ContentHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/parser/JSONParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/parser/ParseException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/parser/Yylex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/json/simple/parser/Yytoken.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,9 +133,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="nim.task.build.to.cache" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -158,6 +160,7 @@
       <workItem from="1725100174153" duration="1726000" />
       <workItem from="1725127005422" duration="2736000" />
       <workItem from="1725136442779" duration="2411000" />
+      <workItem from="1725139934836" duration="200000" />
     </task>
     <servers />
   </component>
