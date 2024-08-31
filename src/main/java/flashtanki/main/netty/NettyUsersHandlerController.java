@@ -23,8 +23,8 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class NettyUsersHandlerController {
-    private Map<Channel, Session> sessions = new HashMap<>();
-    private Map<Long, Session> authorizedSessions = new HashMap<>();
+    private Map<Channel, ProtocolTransfer> sessions = new HashMap<>();
+    private Map<Long, ProtocolTransfer> authorizedSessions = new HashMap<>();
     private static QuartzServiceImpl quartzService = QuartzServiceImpl.getInstance();
     private static final LoggerService loggerService = LoggerService.getInstance();
     private static NettyUsersHandlerController instance;
@@ -33,7 +33,7 @@ public class NettyUsersHandlerController {
         quartzService.addJobInterval("sessionDdosCleaner", "sessionDdosCleaner",
                 jobExecutionContext -> sessions.values()
                 .stream()
-                .forEach(Session::resetCountPackage), TimeType.SEC, 1);
+                .forEach(ProtocolTransfer::resetCountPackage), TimeType.SEC, 1);
     }
 
     public static NettyUsersHandlerController getInstance() {
@@ -44,7 +44,7 @@ public class NettyUsersHandlerController {
     }
 
     public void onClientConnected(ChannelHandlerContext ctx) {
-        this.sessions.put(ctx.getChannel(), new Session(ctx.getChannel()));
+        this.sessions.put(ctx.getChannel(), new ProtocolTransfer(ctx.getChannel()));
     }
 
     public void onClientDisconnect(ChannelHandlerContext ctx) {
@@ -98,13 +98,13 @@ public class NettyUsersHandlerController {
         return data;
     }
 
-    public void authorizeSession(Session session, long userId) {
+    public void authorizeSession(ProtocolTransfer protocolTransfer, long userId) {
         if (this.authorizedSessions.containsKey(userId)) {
-            Session activeSession = this.authorizedSessions.remove(userId);
-            this.sessions.get(activeSession.getChannel()).onDisconnect();
-            activeSession.closeConnection();
+            ProtocolTransfer activeProtocolTransfer = this.authorizedSessions.remove(userId);
+            this.sessions.get(activeProtocolTransfer.getChannel()).onDisconnect();
+            activeProtocolTransfer.closeConnection();
         }
-        this.authorizedSessions.put(userId, session);
+        this.authorizedSessions.put(userId, protocolTransfer);
     }
 
     public String ddosLog(){
@@ -112,7 +112,7 @@ public class NettyUsersHandlerController {
                 .stream()
                 //DESC by total packate count
                 .sorted((s1, s2) -> Long.compare(s2.getTotalPackageCount(), s1.getTotalPackageCount()))
-                .map(session -> session.getTotalPackageCount() + " " + session.getIP()+ " " + session.getParam("userId"))
+                .map(protocolTransfer -> protocolTransfer.getTotalPackageCount() + " " + protocolTransfer.getIP()+ " " + protocolTransfer.getParam("userId"))
                 .collect(Collectors.joining("|"));
     }
 }

@@ -424,14 +424,14 @@ public class BattlefieldModel implements Destroyable {
     public void cheatDetected(BattlefieldPlayerController player, Class<?> anticheat) {
         AnticheatModel[] model = (AnticheatModel[]) anticheat.getAnnotationsByType(AnticheatModel.class);
         if (model != null && model.length >= 1) {
-            loggerService.log(LogType.INFO, "Detected cheater![" + model[0].name() + "] " + player.getUser().getNickname() + " " + player.parentLobby.session.getIP());
+            loggerService.log(LogType.INFO, "Detected cheater![" + model[0].name() + "] " + player.getUser().getNickname() + " " + player.parentLobby.protocolTransfer.getIP());
         }
         this.kickPlayer(player);
     }
 
     public void kickPlayer(BattlefieldPlayerController player) {
         player.send(Type.BATTLE, "kick_for_cheats");
-        player.parentLobby.session.closeConnection();
+        player.parentLobby.protocolTransfer.closeConnection();
     }
 
     public void setTank(BattlefieldPlayerController player, Tank newTank) {

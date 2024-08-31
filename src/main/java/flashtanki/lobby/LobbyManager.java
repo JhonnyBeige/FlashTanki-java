@@ -28,7 +28,7 @@ import flashtanki.logger.LoggerService;
 import flashtanki.logger.RemoteDatabaseLogger;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
-import flashtanki.main.netty.Session;
+import flashtanki.main.netty.ProtocolTransfer;
 import flashtanki.main.params.OnlineStats;
 import flashtanki.premium.PremiumService;
 import flashtanki.services.AutoEntryServices;
@@ -58,7 +58,7 @@ import org.json.simple.parser.ParseException;
 
 public class LobbyManager {
     private final User localUser;
-    public Session session;
+    public ProtocolTransfer protocolTransfer;
     private final FloodController chatFloodController;
 
     public BattlefieldPlayerController battle;
@@ -81,8 +81,8 @@ public class LobbyManager {
     private final static String ADDED_BATTLE_SCORE_TOPIC = "added-battle-score-request";
     private final static PremiumService premiumService = PremiumService.getInstance();
 
-    public LobbyManager(Session session, User localUser) {
-        this.session = session;
+    public LobbyManager(ProtocolTransfer protocolTransfer, User localUser) {
+        this.protocolTransfer = protocolTransfer;
         this.localUser = localUser;
         this.chatFloodController = new FloodController();
         this.localUser.setUserLocation(UserLocation.BATTLESELECT);
@@ -93,7 +93,7 @@ public class LobbyManager {
 
     public void send(Type type, String... args) {
         try {
-            this.session.send(type, args);
+            this.protocolTransfer.send(type, args);
         } catch (IOException iOException) {
             iOException.printStackTrace();
         }
@@ -1102,7 +1102,7 @@ public class LobbyManager {
     }
 
     public void kick() {
-        this.session.closeConnection();
+        this.protocolTransfer.closeConnection();
     }
 
     public User getLocalUser() {

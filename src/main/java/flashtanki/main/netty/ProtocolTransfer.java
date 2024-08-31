@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.main.netty;
 
 import flashtanki.utils.StringUtils;
@@ -26,7 +23,7 @@ import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Session {
+public class ProtocolTransfer {
     public static final AuthService authService = AuthService.getInstance();
     private static final LoggerService loggerService = LoggerService.getInstance();
     private static final NettyUsersHandlerController nettyUsersHandlerController = NettyUsersHandlerController
@@ -35,16 +32,15 @@ public class Session {
             .getInstance();
     private static final String encryptionKey = "084B255737229811CF454AF2AE99B20E";
     private static final String encryptionIv = "D8BF3DF78364B5CC";
-    private static final int MAX_PACKAGE_COUNT_PS = 10;//Integer.parseInt(System.getenv("MAX_PACKAGE_COUNT_PS"));
+    private static final int MAX_PACKAGE_COUNT_PS = 10;
     public LobbyManager lobby;
     private Channel channel;
     private Map<String, Object> sessionData = new HashMap<>();
-    // count pacakge in second
     private int countPackageLastSec = 0;
     @Getter
     private long totalPackageCount = 0;
 
-    public Session(Channel channel) {
+    public ProtocolTransfer(Channel channel) {
         this.channel = channel;
     }
 
@@ -54,8 +50,6 @@ public class Session {
 
     public void decryptProtocol(String request) {
         if (!request.contains("move;")) {
-            // loggerService.log(LogType.INFO,
-            //         this.getIP() + " send request: " + request + " " + this.getParam("userId"));
             this.countPackageLastSec++;
             if (this.countPackageLastSec > MAX_PACKAGE_COUNT_PS) {
                 loggerService.log(LogType.WARNING,
@@ -103,7 +97,6 @@ public class Session {
         }
         request.append(args[args.length - 1]);
         if (this.channel.isWritable() && this.channel.isConnected() && this.channel.isOpen()) {
-
             this.channel.write(encode(request.toString(), encryptionKey, Base64.getEncoder().encodeToString(encryptionIv.getBytes())));
         }
         request = null;

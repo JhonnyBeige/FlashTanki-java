@@ -238,7 +238,7 @@ public class BattlefieldPlayerController implements  Comparable<BattlefieldPlaye
                     break;
                 }
                 default: {
-                    loggerService.log(LogType.ERROR, "User " + this.parentLobby.getLocalUser().getNickname() + "[" + this.parentLobby.session.toString() + "] send unknowed request!");
+                    loggerService.log(LogType.ERROR, "User " + this.parentLobby.getLocalUser().getNickname() + "[" + this.parentLobby.protocolTransfer.toString() + "] send unknowed request!");
                     break;
                 }
             }
