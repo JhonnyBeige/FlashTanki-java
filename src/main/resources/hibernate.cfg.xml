@@ -26,14 +26,12 @@
 		<property name="hibernate.c3p0.min_size">10</property>
 		<property name="hibernate.c3p0.testConnectionOnCheckin">true</property>
 		<property name="hibernate.c3p0.timeout">1800</property> 
-		
-        <mapping class="flashtanki.Main"/>
+
         <mapping class="flashtanki.users.User"/>
         <mapping class="flashtanki.users.garage.Garage"/>
         <mapping class="flashtanki.users.karma.Karma"/>
         <mapping class="flashtanki.main.netty.blackip.BlackIP"/>
         <mapping class="flashtanki.logger.LogObject"/>
-        <mapping class="flashtanki.rmi.payments.mapping.Payment"/>
-        <mapping class="flashtanki.system.dailybonus.mapping.DailyBonusInfo"/>
+        <!--<mapping class="flashtanki.system.dailybonus.mapping.DailyBonusInfo"/>-->
      </session-factory>
 </hibernate-configuration>

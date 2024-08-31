@@ -32,6 +32,10 @@ implements QuartzService {
         }
     }
 
+    public static QuartzService inject() {
+        return instance;
+    }
+
     private JobDetail createJob(String name, String group, QuartzJob object) {
         JobDetail job = JobBuilder.newJob(QuartzJobRunner.class)
                 .withIdentity(name, group)

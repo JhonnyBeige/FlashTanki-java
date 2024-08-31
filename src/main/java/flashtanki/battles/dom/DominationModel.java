@@ -16,24 +16,25 @@ import flashtanki.system.destroy.Destroyable;
 import flashtanki.system.quartz.QuartzService;
 import flashtanki.system.quartz.TimeType;
 import flashtanki.system.quartz.impl.QuartzServiceImpl;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 public class DominationModel
-implements Destroyable {
+        implements Destroyable {
     private static final int POINT_RADIUS = 1000;
     public static final String QUARTZ_GROUP = DominationModel.class.getName();
     public final String QUARTZ_NAME;
     private FastHashMap<String, DominationPoint> points;
     private List<DominationPointHandler> pointsHandlers;
     private final BattlefieldModel bfModel;
-    @ServicesInject(target=TanksServices.class)
+    @ServicesInject(target = TanksServices.class)
     private final TanksServices tanksServices = TanksServices.getInstance();
-    @ServicesInject(target=QuartzService.class)
-    private final QuartzService quartzService = QuartzServiceImpl.getInstance();
+    @ServicesInject(target = QuartzService.class)
+    private final QuartzService quartzService = QuartzServiceImpl.inject();
     private float scoreRed = 0.0f;
     private float scoreBlue = 0.0f;
 
@@ -126,8 +127,7 @@ implements Destroyable {
     public void restartBattle() {
         for (DominationPoint point : this.points.values()) {
             point.setScore(0.0);
-            this.bfModel.sendToAllPlayers(Type.BATTLE, "set_point_score", String.valueOf(point.getId()), String.valueOf((int)point.getScore()));
-            this.bfModel.sendToAllPlayers(Type.BATTLE, "disable_tanks_capturing_points");
+            this.bfModel.sendToAllPlayers(Type.BATTLE, "set_point_score", String.valueOf(point.getId()), String.valueOf((int) point.getScore()));
             point.setCountBlue(0);
             point.setCountRed(0);
             point.setPointCapturedByBlue(false);
@@ -142,6 +142,7 @@ implements Destroyable {
 
     private void addPlayerScore(BattlefieldPlayerController player, int score) {
         this.tanksServices.addScore(player.parentLobby, score);
+        player.statistic.addScore(score);
         this.bfModel.statistics.changeStatistic(player);
     }
 
@@ -165,98 +166,147 @@ implements Destroyable {
         }
 
         public void update() {
+            // Check if battle information is available and the battle is not finished
             if (DominationModel.this.bfModel.battleInfo != null && !DominationModel.this.bfModel.battleFinish) {
-                if (DominationModel.this.bfModel.battleInfo.numFlags != 0 && (DominationModel.this.scoreBlue >= (float)DominationModel.this.bfModel.battleInfo.numFlags || DominationModel.this.scoreRed >= (float)DominationModel.this.bfModel.battleInfo.numFlags)) {
+
+                // Check if any team has captured all flags
+                if (DominationModel.this.bfModel.battleInfo.numFlags != 0 &&
+                        (DominationModel.this.scoreBlue >= (float) DominationModel.this.bfModel.battleInfo.numFlags ||
+                                DominationModel.this.scoreRed >= (float) DominationModel.this.bfModel.battleInfo.numFlags)) {
                     DominationModel.this.bfModel.tanksKillModel.restartBattle(false);
                 }
+
+                // Adjust point score boundaries
                 if (this.point.getScore() >= 100.0 || this.point.getScore() <= -100.0) {
                     this.point.setScore(this.point.getScore() >= 100.0 ? 100.0 : -100.0);
                 }
+
+                // Handle point capture by the blue team
                 if (this.point.getScore() == 100.0) {
                     if (!this.point.isPointCapturedByBlue()) {
-                        float score = 0.2f * (float)DominationModel.this.bfModel.battleInfo.redPeople * 10.0f / (float)this.point.getCountBlue();
+                        // Calculate score for blue team based on captured point and other team's ranks
+                        float score = 0.2f * (float) DominationModel.this.bfModel.battleInfo.redPeople * 10.0f /
+                                (float) this.point.getCountBlue();
                         for (BattlefieldPlayerController player : this.point.getBlues()) {
                             DominationModel.this.addPlayerScore(player, Math.round(score));
                         }
+
+                        // Calculate fund based on other team's ranks
                         double fund = 0.0;
                         ArrayList<BattlefieldPlayerController> otherTeam = new ArrayList<BattlefieldPlayerController>();
                         for (BattlefieldPlayerController otherPlayer : DominationModel.this.bfModel.players) {
-                            if (otherPlayer.playerTeamType.equals("BLUE") || otherPlayer.playerTeamType.equals("NONE")) continue;
+                            if (otherPlayer.playerTeamType.equals("BLUE") || otherPlayer.playerTeamType.equals("NONE"))
+                                continue;
                             otherTeam.add(otherPlayer);
                         }
                         for (BattlefieldPlayerController otherPlayer : otherTeam) {
-                            fund += Math.sqrt((double)otherPlayer.getUser().getRang() * 0.25);
+                            fund += Math.sqrt((double) otherPlayer.getUser().getRang() * 0.25);
                         }
+
+                        // Add fund and mark point as captured by blue
                         DominationModel.this.bfModel.tanksKillModel.addFund(fund);
                         DominationModel.this.pointCapturedBy(this.point, "blue");
                     }
                     this.point.setPointCapturedByBlue(true);
                     this.point.setPointCapturedByRed(false);
                     DominationModel.this.scoreBlue += 0.02f;
-                } else if (this.point.getScore() == -100.0) {
+                }
+
+                // Handle point capture by the red team
+                else if (this.point.getScore() == -100.0) {
                     if (!this.point.isPointCapturedByRed()) {
-                        float score = 0.2f * (float)DominationModel.this.bfModel.battleInfo.bluePeople * 10.0f / (float)this.point.getCountRed();
+                        // Calculate score for red team based on captured point and other team's ranks
+                        float score = 0.2f * (float) DominationModel.this.bfModel.battleInfo.bluePeople * 10.0f /
+                                (float) this.point.getCountRed();
                         for (BattlefieldPlayerController player : this.point.getReds()) {
                             DominationModel.this.addPlayerScore(player, Math.round(score));
                         }
+
+                        // Calculate fund based on other team's ranks
                         double fund = 0.0;
                         ArrayList<BattlefieldPlayerController> otherTeam = new ArrayList<BattlefieldPlayerController>();
                         for (BattlefieldPlayerController otherPlayer : DominationModel.this.bfModel.players) {
-                            if (otherPlayer.playerTeamType.equals("RED") || otherPlayer.playerTeamType.equals("NONE")) continue;
+                            if (otherPlayer.playerTeamType.equals("RED") || otherPlayer.playerTeamType.equals("NONE"))
+                                continue;
                             otherTeam.add(otherPlayer);
                         }
                         for (BattlefieldPlayerController otherPlayer : otherTeam) {
-                            fund += Math.sqrt((double)otherPlayer.getUser().getRang() * 0.25);
+                            fund += Math.sqrt((double) otherPlayer.getUser().getRang() * 0.25);
                         }
+
+                        // Add fund and mark point as captured by red
                         DominationModel.this.bfModel.tanksKillModel.addFund(fund);
                         DominationModel.this.pointCapturedBy(this.point, "red");
                     }
                     this.point.setPointCapturedByRed(true);
                     this.point.setPointCapturedByBlue(false);
                     DominationModel.this.scoreRed += 0.02f;
-                } else if (this.point.getScore() == 0.0) {
-                    ArrayList<BattlefieldPlayerController> otherTeam;
-                    double fund;
+                }
+
+                // Handle neutral point
+                else if (this.point.getScore() == 0.0) {
                     float score;
+                    double fund;
+                    ArrayList<BattlefieldPlayerController> otherTeam;
+
+                    // Handle blue team losing the point
                     if (this.point.isPointCapturedByBlue()) {
-                        score = 0.2f * (float)DominationModel.this.bfModel.battleInfo.bluePeople * 10.0f / (float)this.point.getCountRed();
+                        score = 0.2f * (float) DominationModel.this.bfModel.battleInfo.bluePeople * 10.0f /
+                                (float) this.point.getCountRed();
                         for (BattlefieldPlayerController player : this.point.getReds()) {
                             DominationModel.this.addPlayerScore(player, Math.round(score));
                         }
+
+                        // Calculate fund based on other team's ranks
                         fund = 0.0;
                         otherTeam = new ArrayList<BattlefieldPlayerController>();
                         for (BattlefieldPlayerController otherPlayer : DominationModel.this.bfModel.players) {
-                            if (otherPlayer.playerTeamType.equals("RED") || otherPlayer.playerTeamType.equals("NONE")) continue;
+                            if (otherPlayer.playerTeamType.equals("RED") || otherPlayer.playerTeamType.equals("NONE"))
+                                continue;
                             otherTeam.add(otherPlayer);
                         }
                         for (BattlefieldPlayerController otherPlayer : otherTeam) {
-                            fund += Math.sqrt((double)otherPlayer.getUser().getRang() * 0.25);
+                            fund += Math.sqrt((double) otherPlayer.getUser().getRang() * 0.25);
                         }
+
+                        // Add fund, decrease red score, and mark point as lost by blue
                         DominationModel.this.bfModel.tanksKillModel.addFund(fund);
                         DominationModel.this.scoreRed += 0.02f;
                         DominationModel.this.pointLostBy(this.point, "blue");
                     }
+
+                    // Handle red team losing the point
                     if (this.point.isPointCapturedByRed()) {
-                        score = 0.2f * (float)DominationModel.this.bfModel.battleInfo.redPeople * 10.0f / (float)this.point.getCountBlue();
+                        score = 0.2f * (float) DominationModel.this.bfModel.battleInfo.redPeople * 10.0f /
+                                (float) this.point.getCountBlue();
                         for (BattlefieldPlayerController player : this.point.getBlues()) {
                             DominationModel.this.addPlayerScore(player, Math.round(score));
                         }
+
+                        // Calculate fund based on other team's ranks
                         fund = 0.0;
-                        otherTeam = new ArrayList();
+                        otherTeam = new ArrayList<BattlefieldPlayerController>();
                         for (BattlefieldPlayerController otherPlayer : DominationModel.this.bfModel.players) {
-                            if (otherPlayer.playerTeamType.equals("BLUE") || otherPlayer.playerTeamType.equals("NONE")) continue;
+                            if (otherPlayer.playerTeamType.equals("BLUE") || otherPlayer.playerTeamType.equals("NONE"))
+                                continue;
                             otherTeam.add(otherPlayer);
                         }
                         for (BattlefieldPlayerController otherPlayer : otherTeam) {
-                            fund += Math.sqrt((double)otherPlayer.getUser().getRang() * 0.25);
+                            fund += Math.sqrt((double) otherPlayer.getUser().getRang() * 0.25);
                         }
+
+                        // Add fund, decrease blue score, and mark point as lost by red
                         DominationModel.this.bfModel.tanksKillModel.addFund(fund);
                         DominationModel.this.scoreBlue += 0.02f;
                         DominationModel.this.pointLostBy(this.point, "red");
                     }
+
+                    // Reset point ownership
                     this.point.setPointCapturedByRed(false);
                     this.point.setPointCapturedByBlue(false);
                 }
+
+                // Calculate added score based on the difference in team counts
                 double addedScore = 0.0;
                 if (this.point.getCountBlue() > this.point.getCountRed()) {
                     int countPeople = this.point.getCountBlue() - this.point.getCountRed();
@@ -284,20 +334,29 @@ implements Destroyable {
                             }
                         }
                     } else {
-                        double d = this.point.getCountBlue() == 0 ? (this.point.getScore() > 0.0 ? -1.0 : 1.0) : (addedScore = 0.0);
+                        // Handle neutral point with no ownership
+                        addedScore = this.point.getCountBlue() == 0 ? (this.point.getScore() > 0.0 ? -1.0 : 1.0) : 0.0;
                     }
                 }
+
+                // Update team scores and inform players
                 if (DominationModel.this.scoreBlue > 0.0f) {
-                    DominationModel.this.bfModel.battleInfo.scoreBlue = (int)DominationModel.this.scoreBlue;
-                    DominationModel.this.bfModel.sendToAllPlayers(Type.BATTLE, "change_team_scores", "BLUE", String.valueOf(DominationModel.this.scoreBlue));
+                    DominationModel.this.bfModel.battleInfo.scoreBlue = (int) DominationModel.this.scoreBlue;
+                    DominationModel.this.bfModel.sendToAllPlayers(Type.BATTLE, "change_team_scores", "BLUE",
+                            String.valueOf(DominationModel.this.scoreBlue));
                 }
                 if (DominationModel.this.scoreRed > 0.0f) {
-                    DominationModel.this.bfModel.battleInfo.scoreRed = (int)DominationModel.this.scoreRed;
-                    DominationModel.this.bfModel.sendToAllPlayers(Type.BATTLE, "change_team_scores", "RED", String.valueOf(DominationModel.this.scoreRed));
+                    DominationModel.this.bfModel.battleInfo.scoreRed = (int) DominationModel.this.scoreRed;
+                    DominationModel.this.bfModel.sendToAllPlayers(Type.BATTLE, "change_team_scores", "RED",
+                            String.valueOf(DominationModel.this.scoreRed));
                 }
+
+                // Reset score if point score exceeds boundaries
                 if (this.point.getScore() > 100.0 || this.point.getScore() < -100.0) {
                     addedScore = 0.0;
                 }
+
+                // Handle zero speed score
                 if (addedScore == 0.0) {
                     if (this.sendedZeroSpeedScore) {
                         return;
@@ -306,10 +365,13 @@ implements Destroyable {
                 } else {
                     this.sendedZeroSpeedScore = false;
                 }
+
+                // Update point score and inform players
                 this.point.setScore(this.point.getScore() + addedScore);
-                DominationModel.this.bfModel.sendToAllPlayers(Type.BATTLE, "set_point_score", String.valueOf(this.point.getId()), String.valueOf((int)this.point.getScore()), String.valueOf(addedScore));
+                DominationModel.this.bfModel.sendToAllPlayers(Type.BATTLE, "set_point_score",
+                        String.valueOf(this.point.getId()), String.valueOf((int) this.point.getScore()),
+                        String.valueOf(addedScore));
             }
         }
     }
 }
-

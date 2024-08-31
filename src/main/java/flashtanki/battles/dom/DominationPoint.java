@@ -5,6 +5,7 @@ package flashtanki.battles.dom;
 
 import flashtanki.battles.BattlefieldPlayerController;
 import flashtanki.battles.tanks.math.Vector3;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
