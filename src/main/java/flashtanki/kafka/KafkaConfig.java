@@ -16,7 +16,7 @@ public class KafkaConfig {
     private static final String SASL_JAAS = "org.apache.kafka.common.security.plain.PlainLoginModule required";
     private static final String KAFKA_USERNAME = "admin";
     private static final String KAFKA_PASSWORD = "fdsa432tFDSfdsf43f3";
-    private static final String GROUP_ID = "gtanks-group";
+    private static final String GROUP_ID = "flashtanki-group";
 
     private Properties properties;
 
