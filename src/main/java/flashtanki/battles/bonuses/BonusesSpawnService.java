@@ -111,8 +111,6 @@ public class BonusesSpawnService
                     return this.battlefieldModel.battleInfo.map.nitrosRegions;
                 case HEALTH:
                     return this.battlefieldModel.battleInfo.map.healthsRegions;
-                case CRYSTALL:
-                    return this.battlefieldModel.battleInfo.map.crystallsRegions;
                 default:
                     return null;
             }
@@ -183,17 +181,6 @@ public class BonusesSpawnService
                 GoldSchedule goldSchedule = new GoldSchedule(this.battlefieldModel, bonus, this.inc);
             } else {
                 loggerService.log(LogType.INFO, "Regions for gold do not exist");
-            }
-        } else if (type == BonusType.CRYSTALL) {
-            if (this.battlefieldModel.battleInfo.map.goldsRegions.size() > 0) {
-                region = getSpawnPos(type, 0);
-                if (region == null) {
-                    return;
-                }
-                bonus = new Bonus(this.getRandomSpawnPostiton(region), type, region, "crystal", this.inc);
-                this.battlefieldModel.spawnBonus(bonus, this.inc, 9999);
-            } else {
-                loggerService.log(LogType.INFO, "Regions for crystal do not exist");
             }
         } else {
             if (!(regionType.size() <= 0)) {
@@ -466,12 +453,6 @@ public class BonusesSpawnService
             this.spawnBonus(BonusType.GOLD);
             this.nextGoldFund = (int) RandomUtils.getRandom(7000.0f, 7300.0f);
             this.goldFund = 0;
-        }
-        if (this.crystallFund >= 6) {
-            for (int i = 0; i < (int) RandomUtils.getRandom(1.0f, 6.0f); ++i) {
-                this.spawnBonus(BonusType.CRYSTALL);
-            }
-            this.crystallFund = 0;
         }
         this.prevFund = (int) this.battlefieldModel.tanksKillModel.getBattleFund();
     }

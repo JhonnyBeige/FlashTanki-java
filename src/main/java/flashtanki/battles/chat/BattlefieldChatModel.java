@@ -183,12 +183,6 @@ public class BattlefieldChatModel {
                         }
                         break;
                     }
-                    case "spawncry": {
-                        for (int i = 0; i < Integer.parseInt(arguments[1]); ++i) {
-                            this.bfModel.bonusesSpawnService.spawnBonus(BonusType.CRYSTALL);
-                        }
-                        break;
-                    }
                     case "kick": {
                         User _userForKick = this.database.getUserByNickName(arguments[1]);
                         if (_userForKick == null) {

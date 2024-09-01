@@ -11,13 +11,6 @@ public enum BonusType {
         }
     }
     ,
-    CRYSTALL{
-
-        public String toString() {
-            return "crystall";
-        }
-    }
-    ,
     ARMOR{
 
         public String toString() {

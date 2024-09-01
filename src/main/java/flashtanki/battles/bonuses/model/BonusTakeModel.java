@@ -18,7 +18,6 @@ import flashtanki.main.database.impl.DatabaseManagerImpl;
 public class BonusTakeModel {
     private static final String SET_CRY = "set_cry";
     private static final String ENABLE_EFFECT_COMAND = "enable_effect";
-    private static final int CRYSTALL_BONUS_COST = 10;
     private static final int GOLD_BONUS_COST = 1000;
     private static DatabaseManager database = DatabaseManagerImpl.instance();
     private static BonusTakeModel instance;
@@ -36,12 +35,6 @@ public class BonusTakeModel {
     public boolean onTakeBonus(Bonus bonus, BattlefieldPlayerController player) {
         player.battle.bonusesSpawnService.removeRegion(bonus.bonusRegion);
         switch (bonus.type) {
-            case CRYSTALL: {
-                player.parentLobby.getLocalUser().addCrystall(CRYSTALL_BONUS_COST);
-                player.send(Type.BATTLE, SET_CRY, String.valueOf(player.parentLobby.getLocalUser().getCrystall()));
-                this.database.update(player.getUser());
-                break;
-            }
             case GOLD: {
                 player.battle.sendUserLogMessage(player.parentLobby.getLocalUser().getNickname(),
                         "has taken the gold box");

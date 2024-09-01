@@ -115,12 +115,6 @@ public class SpectatorChatModel {
                         }
                         break;
                     }
-                    case "spawncry": {
-                        for (int i = 0; i < Integer.parseInt(arguments[1]); ++i) {
-                            this.spModel.getBattleModel().bonusesSpawnService.spawnBonus(BonusType.CRYSTALL);
-                        }
-                        break;
-                    }
                     case "kick": {
                         LobbyManager _lobby;
                         User _userForKick = this.database.getUserByNickName(arguments[1]);
