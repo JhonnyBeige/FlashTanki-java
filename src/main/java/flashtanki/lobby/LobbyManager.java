@@ -181,8 +181,8 @@ public class LobbyManager {
             //                         "text", "Your confirmation code: " + this.localUser.getEmailConfirmationCode())),
             //         SYSTEM_MAIL_REQUEST_TOPIC);
         }
-        if (cmd.args[0].equals("confirm_email")) {
-            if (cmd.args[1].equals(this.localUser.getEmailConfirmationCode())) {
+        if (cmd.args.length > 0 && cmd.args[0].equals("confirm_email")) {
+            if (cmd.args.length > 1 && cmd.args[1].equals(this.localUser.getEmailConfirmationCode())) {
                 this.localUser.setEmailConfirmed(true);
                 this.localUser.setEmailConfirmationCode(null);
                 this.database.update(this.localUser);
@@ -190,6 +190,8 @@ public class LobbyManager {
             } else {
                 this.send(Type.LOBBY, "wrong_email_confirmation_code");
             }
+        } else {
+            this.send(Type.LOBBY, "invalid_command");
         }
         if (cmd.args[0].equals("get_challenges_info")) {
             this.send(Type.LOBBY, "init_challenges_panel" , JSONUtils.parseChallenges());
