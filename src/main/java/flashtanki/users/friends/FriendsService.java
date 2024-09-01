@@ -101,13 +101,15 @@ public class FriendsService {
 
     @SneakyThrows
     public void addFriend(long userId, String friendNick) {
+        User newFriend = userRepository.findUserByNickname(friendNick);
+
+        if (newFriend == null || newFriend.getId() == userId) {
+            return;
+        }
+
         Friends friendsFirst = friendsRepository.getFriendsByUser(userId)
                 .orElseGet(() -> getDefaultFriends(userId));
 
-        User newFriend = userRepository.findUserByNickname(friendNick);
-        if (newFriend == null) {
-            return;
-        }
         Friends friendsSecond = friendsRepository.getFriendsByUser(newFriend.getId())
                 .orElseGet(() -> getDefaultFriends(newFriend.getId()));
 
@@ -127,7 +129,6 @@ public class FriendsService {
         if (OnlineStats.inOnline(friendNick)) {
             LobbysServices.getInstance().getLobbyByUser(newFriend).send(Type.LOBBY, "show_friends_warning", friendsSecond.getIncoming());
         }
-
     }
 
     @SneakyThrows
