@@ -65,7 +65,7 @@ public class CaptchaService {
         code = code.toUpperCase();
         try (Session session = HibernateService.getSessionFactory().getCurrentSession()) {
             Transaction tx = session.beginTransaction();
-            List<Captcha> captchas = session.createQuery("from Captcha where id = :id and code = :code", Captcha.class)
+            List<Captcha> captchas = session.createQuery("FROM flashtanki.captcha.CaptchaService$Captcha WHERE id = :id AND code = :code", Captcha.class)
                     .setParameter("id", id)
                     .setParameter("code", code)
                     .list();
@@ -167,12 +167,7 @@ public class CaptchaService {
         g.setColor(Color.BLACK);
 
         final double offset = 0.5;
-
-        if (g.getFont().isBold()) {
-            drawBoldText(g, text, x, y, offset);
-        } else {
-            drawBoldText(g, text, x, y, offset);
-        }
+        drawBoldText(g, text, x, y, offset);
     }
 
     private void drawBoldText(Graphics2D g, String text, int x, int y, double offset) {
@@ -262,8 +257,10 @@ public class CaptchaService {
     public static class Captcha {
         @Id
         @GeneratedValue(generator = "increment")
+        //@GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "id")
         private Long id;
+
         @Column(name = "code")
         private String code;
     }

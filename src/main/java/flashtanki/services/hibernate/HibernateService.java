@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.services.hibernate;
 
 import flashtanki.captcha.CaptchaService;
@@ -43,13 +40,12 @@ public class HibernateService {
             cfg.addAnnotatedClass(ShotEffectItem.class);
 
             cfg.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
-            cfg.setProperty("hibernate.connection.url", "jdbc:mysql://127.0.0.1:"
-                    + "3306" + "/" + "gtanks");
+            cfg.setProperty("hibernate.connection.url", "jdbc:mysql://127.0.0.1:3306/gtanks");
             cfg.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
             cfg.setProperty("hibernate.connection.username", "root");
             cfg.setProperty("hibernate.connection.password", "");
-            cfg.setProperty("show_sql", "true");
-            cfg.setProperty("hbm2ddl.auto", "update");
+            cfg.setProperty("hibernate.show_sql", "true");
+            cfg.setProperty("hibernate.hbm2ddl.auto", "update");
             cfg.setProperty("hibernate.current_session_context_class", "thread");
             cfg.setProperty("hibernate.c3p0.acquire_increment", "1");
             cfg.setProperty("hibernate.c3p0.idle_test_period", "100");
@@ -58,11 +54,9 @@ public class HibernateService {
             cfg.setProperty("hibernate.c3p0.min_size", "10");
             cfg.setProperty("hibernate.c3p0.testConnectionOnCheckin", "true");
             cfg.setProperty("hibernate.c3p0.timeout", "1800");
-            cfg.setProperty("hbm2ddl.auto", "create");
-            
             cfg.setProperty("hibernate.jdbc.batch_size", "100");
             cfg.setProperty("hibernate.format_sql", "true");
-            cfg.setProperty("hibernate.use_sql_comments", "1800");
+            cfg.setProperty("hibernate.use_sql_comments", "true");
 
             sessionFactory = cfg.buildSessionFactory();
         } catch (Throwable ex) {
