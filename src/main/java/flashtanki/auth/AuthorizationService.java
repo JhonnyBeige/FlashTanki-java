@@ -32,7 +32,7 @@ import java.util.regex.Pattern;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class AuthService {
+public class AuthorizationService {
     private static final DatabaseManager database = DatabaseManagerImpl.instance();
     private static final ChatLobby chatLobby = ChatLobby.getInstance();
     private static final AutoEntryServices autoEntryServices = AutoEntryServices.getInstance();
@@ -43,14 +43,14 @@ public class AuthService {
     private final static String GET_STARS_TOPIC = "get-stars-request";
     private final static String SYSTEM_MAIL_REQUEST_TOPIC = "send-system-mail-request";
 
-    private static AuthService instance;
+    private static AuthorizationService instance;
 
-    private AuthService() {
+    private AuthorizationService() {
     }
 
-    public static AuthService getInstance() {
+    public static AuthorizationService getInstance() {
         if (instance == null) {
-            instance = new AuthService();
+            instance = new AuthorizationService();
         }
         return instance;
     }

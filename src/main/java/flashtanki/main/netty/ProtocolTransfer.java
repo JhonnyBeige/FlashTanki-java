@@ -1,7 +1,7 @@
 package flashtanki.main.netty;
 
 import flashtanki.utils.StringUtils;
-import flashtanki.auth.AuthService;
+import flashtanki.auth.AuthorizationService;
 import flashtanki.commands.Command;
 import flashtanki.commands.Commands;
 import flashtanki.commands.Type;
@@ -24,7 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ProtocolTransfer {
-    public static final AuthService authService = AuthService.getInstance();
+    public static final AuthorizationService AUTHORIZATION_SERVICE = AuthorizationService.getInstance();
     private static final LoggerService loggerService = LoggerService.getInstance();
     private static final NettyUsersHandlerController nettyUsersHandlerController = NettyUsersHandlerController
             .getInstance();
@@ -63,7 +63,7 @@ public class ProtocolTransfer {
 
         switch (cmd.type) {
             case AUTH, PING, REGISTRATON: {
-                authService.executeCommand(cmd, this);
+                AUTHORIZATION_SERVICE.executeCommand(cmd, this);
                 break;
             }
             case CHAT, BATTLE, GARAGE, LOBBY_CHAT, LOBBY: {
@@ -75,7 +75,7 @@ public class ProtocolTransfer {
             }
             case SYSTEM: {
                 systemClientMessagesHandler.executeCommand(cmd, this);
-                authService.executeCommand(cmd, this);
+                AUTHORIZATION_SERVICE.executeCommand(cmd, this);
                 if (this.lobby == null)
                     break;
                 this.lobby.executeCommand(cmd);

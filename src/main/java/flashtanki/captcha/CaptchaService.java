@@ -9,6 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import javax.imageio.ImageIO;
+import javax.persistence.*;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.*;
@@ -251,5 +252,19 @@ public class CaptchaService {
     public static class CreateCaptchaResponse {
         private Long id;
         private byte[] image;
+    }
+
+    @Entity
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @Table(name = "captcha")
+    public static class Captcha {
+        @Id
+        @GeneratedValue(generator = "increment")
+        @Column(name = "id")
+        private Long id;
+        @Column(name = "code")
+        private String code;
     }
 }

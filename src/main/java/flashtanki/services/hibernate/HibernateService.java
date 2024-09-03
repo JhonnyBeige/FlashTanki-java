@@ -3,7 +3,7 @@
  */
 package flashtanki.services.hibernate;
 
-import flashtanki.captcha.Captcha;
+import flashtanki.captcha.CaptchaService;
 import flashtanki.containers.list.ContainerItemInfo;
 import flashtanki.containers.users.UserContainer;
 import flashtanki.logger.LogObject;
@@ -38,7 +38,7 @@ public class HibernateService {
             cfg.addAnnotatedClass(ContainerItemInfo.class);
             cfg.addAnnotatedClass(UserContainer.class);
             cfg.addAnnotatedClass(Premium.class);
-            cfg.addAnnotatedClass(Captcha.class);
+            cfg.addAnnotatedClass(CaptchaService.Captcha.class);
             cfg.addAnnotatedClass(UserShotEffect.class);
             cfg.addAnnotatedClass(ShotEffectItem.class);
 
