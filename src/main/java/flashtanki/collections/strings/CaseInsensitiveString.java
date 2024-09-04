@@ -21,8 +21,7 @@ public class CaseInsensitiveString {
         if (this == o) {
             return true;
         }
-        if (o instanceof CaseInsensitiveString) {
-            CaseInsensitiveString that = (CaseInsensitiveString)o;
+        if (o instanceof CaseInsensitiveString that) {
             return this.value.equalsIgnoreCase(that.value);
         }
         return false;

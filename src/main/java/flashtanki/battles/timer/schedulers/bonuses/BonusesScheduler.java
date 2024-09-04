@@ -11,14 +11,14 @@ import java.util.TimerTask;
 
 public class BonusesScheduler {
     private static final Timer TIMER = new Timer("BonusesScheduler timer");
-    private static HashMap<String, RemoveBonusTask> tasks = new HashMap();
+    private static final HashMap<String, RemoveBonusTask> tasks = new HashMap();
 
     public static void runRemoveTask(BattlefieldModel bfModel, String bonusId, long disappearingTime) {
         RemoveBonusTask rbt = new RemoveBonusTask();
         rbt.bfModel = bfModel;
         rbt.bonusId = bonusId;
         tasks.put(bonusId, rbt);
-        TIMER.schedule((TimerTask)rbt, disappearingTime * 1000L - 1250L);
+        TIMER.schedule(rbt, disappearingTime * 1000L - 1250L);
     }
 
     static class RemoveBonusTask

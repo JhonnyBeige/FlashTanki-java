@@ -12,6 +12,6 @@ public enum EntityType {
     THUNDER,
     FREZZE,
     RICOCHET,
-    SHAFT;
+    SHAFT
 }
 

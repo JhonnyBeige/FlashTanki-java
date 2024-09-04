@@ -82,7 +82,7 @@ public enum Type {
     };
 
 
-    private Type() {
+    Type() {
     }
 
     /* synthetic */ Type(String string, int n, Type type) {

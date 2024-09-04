@@ -15,7 +15,7 @@ public class ModuleFactory {
     }
     private ModuleFactory() {
     }
-    private Map<String, Module> modules = new HashMap<String, Module>();
+    private final Map<String, Module> modules = new HashMap<String, Module>();
 
     public  void addColormap(String id, Module colormap) {
         modules.put(id, colormap);

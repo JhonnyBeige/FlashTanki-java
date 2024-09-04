@@ -6,7 +6,7 @@ package flashtanki.configurator.osgi;
 import java.util.HashMap;
 
 public class OSGi {
-    private static HashMap<Class<?>, Object> models = new HashMap();
+    private static final HashMap<Class<?>, Object> models = new HashMap();
 
     public static void registerModel(Object model, Class<?> _interface) {
         models.put(_interface, model);

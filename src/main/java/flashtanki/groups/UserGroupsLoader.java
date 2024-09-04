@@ -15,10 +15,10 @@ import java.util.List;
 public class UserGroupsLoader {
     private static final LoggerService loggerService = LoggerService.getInstance();
     private static final String FILE_FORMAT = ".group";
-    private static HashMap<TypeUser, UserGroup> usersGroups = new HashMap();
+    private static final HashMap<TypeUser, UserGroup> usersGroups = new HashMap();
 
     public static UserGroup getUserGroup(TypeUser typeUser) {
-        return usersGroups.get((Object)typeUser);
+        return usersGroups.get(typeUser);
     }
 
     public static void load(String path) {
@@ -39,7 +39,7 @@ public class UserGroupsLoader {
             UserGroup userGroup = new UserGroup(avaliableChatCommands);
             userGroup.setGroupName(typeUser.toString());
             usersGroups.put(typeUser, userGroup);
-            loggerService.log(LogType.INFO,"User group " + typeUser.toString() + " has been inited.");
+            loggerService.log(LogType.INFO,"User group " + typeUser + " has been inited.");
         }
         catch (IOException e) {
             e.printStackTrace();

@@ -4,6 +4,6 @@
 package flashtanki.services.annotations;
 
 public @interface ServicesInject {
-    public Class<?> target();
+    Class<?> target();
 }
 

@@ -17,9 +17,9 @@ public class SpectatorController {
     private static final LoggerService loggerService = LoggerService.getInstance();
     private static final WeaponsFactory weaponsFactory = WeaponsFactory.getInstance();
     private static final String NULL_JSON_STRING = "{}";
-    private LobbyManager lobby;
-    private BattlefieldModel bfModel;
-    private SpectatorModel specModel;
+    private final LobbyManager lobby;
+    private final BattlefieldModel bfModel;
+    private final SpectatorModel specModel;
     private boolean inited;
 
     public SpectatorController(LobbyManager lobby, BattlefieldModel bfModel, SpectatorModel specModel) {

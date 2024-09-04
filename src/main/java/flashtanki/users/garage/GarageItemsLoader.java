@@ -56,7 +56,7 @@ public class GarageItemsLoader {
                                         (i == 1 ? turrets :
                                                 (i == 2 ? hulls :
                                                         (i == 3 ? colormaps : moduules)))),
-                        StandardCharsets.UTF_8));) {
+                        StandardCharsets.UTF_8))) {
                     String line;
                     while ((line = reader.readLine()) != null) {
                         builder.append(line);
@@ -145,15 +145,15 @@ public class GarageItemsLoader {
                     propertysItemM3 = propertysItemM0;
                 }
                 ModificationInfo[] mods = new ModificationInfo[4];
-                mods[0] = new ModificationInfo(String.valueOf(id) + "_m0", priceM0, rangM0);
+                mods[0] = new ModificationInfo(id + "_m0", priceM0, rangM0);
                 mods[0].propertys = propertysItemM0;
-                mods[1] = new ModificationInfo(String.valueOf(id) + "_m1", priceM1, rangM1);
+                mods[1] = new ModificationInfo(id + "_m1", priceM1, rangM1);
                 mods[1].propertys = propertysItemM1;
-                mods[2] = new ModificationInfo(String.valueOf(id) + "_m2", priceM2, rangM2);
+                mods[2] = new ModificationInfo(id + "_m2", priceM2, rangM2);
                 mods[2].propertys = propertysItemM2;
-                mods[3] = new ModificationInfo(String.valueOf(id) + "_m3", priceM3, rangM3);
+                mods[3] = new ModificationInfo(id + "_m3", priceM3, rangM3);
                 mods[3].propertys = propertysItemM3;
-                boolean specialItem = item.get("special_item") == null ? false : (Boolean) item.get("special_item");
+                boolean specialItem = item.get("special_item") != null && (Boolean) item.get("special_item");
                 int microUpgrades = item.get("microUpgrades") != null ? Integer.parseInt((String) item.get("microUpgrades")) : 0;
                 int microUpgradePrice = item.get("microUpgradePrice") != null ? Integer.parseInt((String) item.get("microUpgradePrice")) : 100;
                 long time = 0L;
@@ -176,7 +176,7 @@ public class GarageItemsLoader {
                     module.addResistance(moduleFactory.getResistanceType(_property.property),
                             getInt(_property.value.replace("%", "")));
                 }
-                moduleFactory.addColormap(String.valueOf(id) + "_m0", module);
+                moduleFactory.addColormap(id + "_m0", module);
             }
         } catch (ParseException e) {
             e.printStackTrace();

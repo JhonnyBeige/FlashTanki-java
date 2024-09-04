@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlElement;
 public class BonusRegion {
     private Vector3d max;
     private Vector3d min;
-    private ArrayList<BonusType> type = new ArrayList();
+    private final ArrayList<BonusType> type = new ArrayList();
 
     public Vector3d getMax() {
         return this.max;

@@ -8,8 +8,8 @@ import flashtanki.battles.ctf.flags.FlagServer;
 public class FlagReturnTimer
 extends Thread {
     public boolean stop = false;
-    private CTFModel ctfModel;
-    private FlagServer flag;
+    private final CTFModel ctfModel;
+    private final FlagServer flag;
 
     public FlagReturnTimer(CTFModel ctfModel, FlagServer flag) {
         super.setName("FlagReturnTimer THREAD");

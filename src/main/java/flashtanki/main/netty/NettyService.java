@@ -30,7 +30,7 @@ public class NettyService implements Destroyable {
         this.initParams();
         OrderedMemoryAwareThreadPoolExecutor bossExec = new OrderedMemoryAwareThreadPoolExecutor(1, 400000000L, 2000000000L, 60L, TimeUnit.SECONDS);
         OrderedMemoryAwareThreadPoolExecutor ioExec = new OrderedMemoryAwareThreadPoolExecutor(4, 400000000L, 2000000000L, 60L, TimeUnit.SECONDS);
-        NioServerSocketChannelFactory factory = new NioServerSocketChannelFactory((Executor) bossExec, ioExec, 4);
+        NioServerSocketChannelFactory factory = new NioServerSocketChannelFactory(bossExec, ioExec, 4);
         this.bootstrap = new ServerBootstrap(factory);
         this.bootstrap.setPipelineFactory(new NettyPipelineFactory());
         this.bootstrap.setOption("child.tcpNoDelay", true);

@@ -4,6 +4,7 @@
 package flashtanki.main.netty;
 
 
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.HashMap;
 import java.util.List;
@@ -23,9 +24,9 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class NettyUsersHandlerController {
-    private Map<Channel, ProtocolTransfer> sessions = new HashMap<>();
-    private Map<Long, ProtocolTransfer> authorizedSessions = new HashMap<>();
-    private static QuartzServiceImpl quartzService = QuartzServiceImpl.getInstance();
+    private final Map<Channel, ProtocolTransfer> sessions = new HashMap<>();
+    private final Map<Long, ProtocolTransfer> authorizedSessions = new HashMap<>();
+    private static final QuartzServiceImpl quartzService = QuartzServiceImpl.getInstance();
     private static final LoggerService loggerService = LoggerService.getInstance();
     private static NettyUsersHandlerController instance;
 
@@ -78,7 +79,7 @@ public class NettyUsersHandlerController {
     @SneakyThrows
     public static String decrypt(String input, String key, String initVector)  {
         IvParameterSpec iv = new IvParameterSpec(Base64.getDecoder().decode(initVector));
-        SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes("UTF-8"), "AES");
+        SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8), "AES");
 
         Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
         cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);

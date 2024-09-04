@@ -18,7 +18,7 @@ public class KafkaConfig {
     private static final String KAFKA_PASSWORD = "fdsa432tFDSfdsf43f3";
     private static final String GROUP_ID = "flashtanki-group";
 
-    private Properties properties;
+    private final Properties properties;
 
     public KafkaConfig() {
         properties = new Properties();

@@ -14,7 +14,7 @@ public class ContainerItemsFactory {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                stringBuilder.append(line).append("");
+                stringBuilder.append(line);
             }
         } catch (IOException e) {
             e.printStackTrace();

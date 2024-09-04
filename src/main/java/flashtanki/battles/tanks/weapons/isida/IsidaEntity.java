@@ -17,7 +17,7 @@ public class IsidaEntity implements IEntity {
     public float maxAngle;
     public float maxAngleCos;
     public float maxRadius;
-    private ShotData shotData;
+    private final ShotData shotData;
     public float damage_min;
     public float damage_max;
 

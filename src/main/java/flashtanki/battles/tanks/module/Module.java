@@ -5,14 +5,14 @@ import flashtanki.battles.tanks.weapons.EntityType;
 import java.util.HashMap;
 
 public class Module {
-    private HashMap<ModuleResistanceType, Integer> resistances = new HashMap();
+    private final HashMap<ModuleResistanceType, Integer> resistances = new HashMap();
 
     public void addResistance(ModuleResistanceType type, int percent) {
         this.resistances.put(type, percent);
     }
 
     public Integer getResistance(EntityType weaponType) {
-        return this.resistances.getOrDefault((Object)this.getResistanceTypeByWeapon(weaponType),0);
+        return this.resistances.getOrDefault(this.getResistanceTypeByWeapon(weaponType),0);
     }
 
     private ModuleResistanceType getResistanceTypeByWeapon(EntityType weaponType) {

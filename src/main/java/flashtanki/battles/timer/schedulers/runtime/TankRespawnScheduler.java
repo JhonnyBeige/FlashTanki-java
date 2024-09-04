@@ -20,7 +20,7 @@ public class TankRespawnScheduler {
     private static final Timer TIMER = new Timer("TankRespawnScheduler timer");
     private static final long TIME_TO_PREPARE_SPAWN = 3000L;
     private static final long TIME_TO_SPAWN = 5000L;
-    private static HashMap<BattlefieldPlayerController, PrepareToSpawnTask> tasks = new HashMap();
+    private static final HashMap<BattlefieldPlayerController, PrepareToSpawnTask> tasks = new HashMap();
     private static boolean disposed;
 
     public static void startRespawn(BattlefieldPlayerController player, boolean onlySpawn) {
@@ -38,7 +38,7 @@ public class TankRespawnScheduler {
             task.player = player;
             task.onlySpawn = onlySpawn;
             tasks.put(player, task);
-            TIMER.schedule((TimerTask)task, onlySpawn ? 1L : TIME_TO_PREPARE_SPAWN);
+            TIMER.schedule(task, onlySpawn ? 1L : TIME_TO_PREPARE_SPAWN);
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -103,7 +103,7 @@ public class TankRespawnScheduler {
                 }
                 this.spawnTask = new SpawnTask();
                 this.spawnTask.preparedSpawnTask = this;
-                TIMER.schedule((TimerTask)this.spawnTask, TIME_TO_SPAWN);
+                TIMER.schedule(this.spawnTask, TIME_TO_SPAWN);
             }
             catch (Exception ex) {
                 ex.printStackTrace();

@@ -24,10 +24,10 @@ public class DailyBonusService {
     private static final DailyBonusService instance = new DailyBonusService();
     private static final DatabaseManager databaseManager = DatabaseManagerImpl.instance();
     public static final String[] SUPPLIES_IDS = new String[]{"armor", "double_damage", "n2o"};
-    private static Map<LobbyManager, Data> waitingUsers = new HashMap<LobbyManager, Data>();
-    private static DailyBonusUIModel uiModel = new DailyBonusUIModel();
-    private static CrystallsBonusModel crystallsBonus = new CrystallsBonusModel();
-    private static Random random = new Random();
+    private static final Map<LobbyManager, Data> waitingUsers = new HashMap<LobbyManager, Data>();
+    private static final DailyBonusUIModel uiModel = new DailyBonusUIModel();
+    private static final CrystallsBonusModel crystallsBonus = new CrystallsBonusModel();
+    private static final Random random = new Random();
 
     public static DailyBonusService getInstance() {
         return instance;

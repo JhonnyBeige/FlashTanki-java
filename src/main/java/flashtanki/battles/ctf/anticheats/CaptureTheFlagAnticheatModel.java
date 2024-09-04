@@ -11,8 +11,8 @@ import java.util.HashMap;
 
 public class CaptureTheFlagAnticheatModel {
     private static final long MIN_TIME_DELIVERED = 4000L;
-    private HashMap<BattlefieldPlayerController, Data> datas = new HashMap();
-    private BattlefieldModel bfModel;
+    private final HashMap<BattlefieldPlayerController, Data> datas = new HashMap();
+    private final BattlefieldModel bfModel;
 
     public CaptureTheFlagAnticheatModel(BattlefieldModel bfModel) {
         this.bfModel = bfModel;

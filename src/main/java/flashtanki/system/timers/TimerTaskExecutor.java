@@ -4,6 +4,6 @@
 package flashtanki.system.timers;
 
 public interface TimerTaskExecutor {
-    public void run();
+    void run();
 }
 

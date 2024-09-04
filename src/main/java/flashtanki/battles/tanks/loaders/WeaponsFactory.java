@@ -46,13 +46,13 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class WeaponsFactory {
-    private HashMap<String, IEntity> weapons = new HashMap();
-    private HashMap<String, WeaponWeakeningData> wwd = new HashMap();
+    private final HashMap<String, IEntity> weapons = new HashMap();
+    private final HashMap<String, WeaponWeakeningData> wwd = new HashMap();
     private String jsonListWeapons;
-    private String sfxData = SFXDataFactory.getData();
+    private final String sfxData = SFXDataFactory.getData();
     private static final LoggerService loggerService = LoggerService.getInstance();
     private static WeaponsFactory instance;
-    private static HashMap<String, WeaponDamageData> weaponsDamageData = new HashMap<>();
+    private static final HashMap<String, WeaponDamageData> weaponsDamageData = new HashMap<>();
 
     public static WeaponsFactory getInstance() {
         if (instance == null) {
@@ -138,11 +138,11 @@ public class WeaponsFactory {
             JSONObject jitem = (JSONObject) item;
             String modification = (String) jitem.get("modification");
             String id = StringUtils.concatStrings(type, "_", modification);
-            String justId = StringUtils.concatStrings(type, (String) modification.split("m")[1]);
+            String justId = StringUtils.concatStrings(type, modification.split("m")[1]);
             ShotData shotData = new ShotData(id, getDouble(jitem.get("autoAimingAngleDown")), getDouble(jitem.get("autoAimingAngleUp")), (int) ((Long) jitem.get("numRaysDown")).longValue(), (int) ((Long) jitem.get("numRaysUp")).longValue(), (int) ((Long) jitem.get("reloadMsec")).longValue(), (float) ((Double) jitem.get("impactCoeff")).doubleValue(), (float) ((Double) jitem.get("kickback")).doubleValue(), (float) ((Double) jitem.get("turretRotationAccel")).doubleValue(), (float) ((Double) jitem.get("turretRotationSpeed")).doubleValue());
             IEntity entity = null;
-            weaponsDamageData.put((String) id, new WeaponDamageData((float) ((Double) jitem.get("max_damage")).doubleValue()));
-            weaponsDamageData.put((String) justId, new WeaponDamageData((float) ((Double) jitem.get("max_damage")).doubleValue()));
+            weaponsDamageData.put(id, new WeaponDamageData((float) ((Double) jitem.get("max_damage")).doubleValue()));
+            weaponsDamageData.put(justId, new WeaponDamageData((float) ((Double) jitem.get("max_damage")).doubleValue()));
             switch (type) {
                 case "railgun": {
                     entity = new RailgunEntity(shotData, (int) ((Long) jitem.get("charingTime")).longValue(), (int) ((Long) jitem.get("weakeningCoeff")).longValue(), (float) ((Double) jitem.get("min_damage")).doubleValue(), (float) ((Double) jitem.get("max_damage")).doubleValue());

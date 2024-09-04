@@ -58,11 +58,11 @@ import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
 public class JSONUtils {
-    private static AutoEntryServices autoEntryServices = AutoEntryServices.getInstance();
-    private static DatabaseManager databaseManager = DatabaseManagerImpl.instance();
-    private static BattlesList battlesList = BattlesList.getInstance();
-    private static SkinSystem skinSystem = SkinSystem.getInstance();
-    private static ShotEffectSystem shotEffectSystem = ShotEffectSystem.getInstance();
+    private static final AutoEntryServices autoEntryServices = AutoEntryServices.getInstance();
+    private static final DatabaseManager databaseManager = DatabaseManagerImpl.instance();
+    private static final BattlesList battlesList = BattlesList.getInstance();
+    private static final SkinSystem skinSystem = SkinSystem.getInstance();
+    private static final ShotEffectSystem shotEffectSystem = ShotEffectSystem.getInstance();
 
     public static String parseConfiguratorEntity(Object entity, Class clazz) {
         JSONObject jobj = new JSONObject();
@@ -644,7 +644,7 @@ public class JSONUtils {
         json.put("battleId", battle.battleId);
         json.put("mapId", battle.map.id);
         json.put("name", battle.name);
-        json.put("previewId", String.valueOf(battle.map.id) + "_preview");
+        json.put("previewId", battle.map.id + "_preview");
         json.put("team", battle.team);
         json.put("redPeople", battle.redPeople);
         json.put("bluePeople", battle.bluePeople);
@@ -661,7 +661,7 @@ public class JSONUtils {
         json.put("battleId", battle.battleId);
         json.put("mapId", battle.map.id);
         json.put("name", battle.name);
-        json.put("previewId", String.valueOf(battle.map.id) + "_preview");
+        json.put("previewId", battle.map.id + "_preview");
         json.put("team", battle.team);
         json.put("redPeople", battle.redPeople);
         json.put("bluePeople", battle.bluePeople);
@@ -726,7 +726,7 @@ public class JSONUtils {
             json.put("userAlreadyPaid", true);
             json.put("fullCash", true);
             json.put("spectator", spectator);
-            json.put("previewId", String.valueOf(battle.map.id) + "_preview");
+            json.put("previewId", battle.map.id + "_preview");
         } catch (Exception ex) {
             ex.printStackTrace();
             return json.toString();
@@ -816,7 +816,7 @@ public class JSONUtils {
         if (pos == null) {
             pos = new Vector3(0.0f, 0.0f, 0.0f);
         }
-        json.put("position", String.valueOf(pos.x) + "@" + pos.y + "@" + pos.z + "@" + pos.rot);
+        json.put("position", pos.x + "@" + pos.y + "@" + pos.z + "@" + pos.rot);
         json.put("tank_id", idTank);
         json.put("nickname", nickname);
         json.put("state", controller.tank.state);
@@ -952,7 +952,7 @@ public class JSONUtils {
 
     public static String parseBonusInfo(Bonus bonus, int inc, int disappearingTime) {
         JSONObject jobj = new JSONObject();
-        jobj.put("id", String.valueOf(bonus.type.toString()) + "_" + inc);
+        jobj.put("id", bonus.type.toString() + "_" + inc);
         jobj.put("x", Float.valueOf(bonus.position.x));
         jobj.put("y", Float.valueOf(bonus.position.y));
         jobj.put("z", Float.valueOf(bonus.position.z));
@@ -962,7 +962,7 @@ public class JSONUtils {
 
     public static String parseBonusInfoOnJoin(Bonus bonus, int inc, int disappearingTime) {
         JSONObject jobj = new JSONObject();
-        jobj.put("id", String.valueOf(bonus.type.toString()) + "_" + inc);
+        jobj.put("id", bonus.type.toString() + "_" + inc);
         jobj.put("x", Float.valueOf(bonus.position.x));
         jobj.put("y", Float.valueOf(bonus.position.y));
         jobj.put("z", Float.valueOf(bonus.position.z));

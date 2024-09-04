@@ -8,8 +8,8 @@ import flashtanki.battles.effects.Effect;
 import java.util.Timer;
 
 public class EffectActivatorService {
-    private static EffectActivatorService instance = new EffectActivatorService();
-    private static Timer TIMER = new Timer();
+    private static final EffectActivatorService instance = new EffectActivatorService();
+    private static final Timer TIMER = new Timer();
 
     private EffectActivatorService() {
     }

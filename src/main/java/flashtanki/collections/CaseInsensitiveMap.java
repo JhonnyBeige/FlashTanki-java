@@ -15,11 +15,11 @@ extends HashMap<CaseInsensitiveString, T> {
     }
 
     public T get(CaseInsensitiveString key) {
-        return (T)super.get(key);
+        return super.get(key);
     }
 
     public T remove(CaseInsensitiveString key) {
-        return (T)super.remove(key);
+        return super.remove(key);
     }
 }
 

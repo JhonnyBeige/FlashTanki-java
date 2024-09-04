@@ -12,7 +12,7 @@ import flashtanki.main.database.impl.DatabaseManagerImpl;
 import flashtanki.users.User;
 
 public class TanksServices {
-    private static TanksServices instance = new TanksServices();
+    private static final TanksServices instance = new TanksServices();
     private final DatabaseManager database = DatabaseManagerImpl.instance();
 
     public static TanksServices getInstance() {
@@ -35,7 +35,7 @@ public class TanksServices {
             lobby.battle.statistic.addScore(score);
         }
         boolean increase = user.getScore() >= user.getNextScore();
-        boolean bl = fall = user.getScore() < RankUtils.getRankByIndex((int)user.getRang()).min;
+        boolean bl = fall = user.getScore() < RankUtils.getRankByIndex(user.getRang()).min;
         if (increase || fall) {
             if(lobby.battle != null){
                 if (lobby.battle.battle != null) {
@@ -47,7 +47,7 @@ public class TanksServices {
                 }
             }
             user.setRang(RankUtils.getNumberRank(RankUtils.getRankByScore(user.getScore())));
-            user.setNextScore(user.getRang() == 29 ? RankUtils.getRankByIndex((int)user.getRang()).max : RankUtils.getRankByIndex((int)user.getRang()).max + 1);
+            user.setNextScore(user.getRang() == 29 ? RankUtils.getRankByIndex(user.getRang()).max : RankUtils.getRankByIndex(user.getRang()).max + 1);
             lobby.send(Type.LOBBY, "update_rang_progress", String.valueOf(10000));
             lobby.send(Type.LOBBY, "update_rang", String.valueOf(user.getRang() + 1), String.valueOf(user.getNextScore()));
             addCrystall(lobby, RankUtils.rankupRewards[user.getRang()]);

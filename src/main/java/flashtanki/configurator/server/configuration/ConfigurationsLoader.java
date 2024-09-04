@@ -85,19 +85,19 @@ public class ConfigurationsLoader {
                         returnValue = (int)((Long)this.value).longValue();
                         break;
                     }
-                    returnValue = (int)((Integer)this.value);
+                    returnValue = (Integer)this.value;
                     break;
                 }
                 case "java.lang.String": {
-                    returnValue = (String)this.value;
+                    returnValue = this.value;
                     break;
                 }
                 case "java.lang.Long": {
-                    returnValue = (long)((Long)this.value);
+                    returnValue = (Long)this.value;
                     break;
                 }
                 case "java.lang.Double": {
-                    returnValue = (double)((Double)this.value);
+                    returnValue = (Double)this.value;
                     break;
                 }
                 case "java.lang.Float": {
@@ -105,7 +105,7 @@ public class ConfigurationsLoader {
                     break;
                 }
                 case "java.lang.Byte": {
-                    returnValue = (byte)((Byte)this.value);
+                    returnValue = (Byte)this.value;
                     break;
                 }
                 default: {

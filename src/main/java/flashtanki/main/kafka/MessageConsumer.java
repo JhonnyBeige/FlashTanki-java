@@ -8,9 +8,9 @@ import java.time.Duration;
 import java.util.*;
 
 public class MessageConsumer {
-    private KafkaConfig kafkaConfig;
+    private final KafkaConfig kafkaConfig;
 
-    private Map<String, List<ExternalMessageListener>> messageListeners;
+    private final Map<String, List<ExternalMessageListener>> messageListeners;
 
     public MessageConsumer(KafkaConfig kafkaConfig) {
         this.kafkaConfig = kafkaConfig;

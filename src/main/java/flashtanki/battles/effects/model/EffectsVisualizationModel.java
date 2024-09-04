@@ -13,7 +13,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 public class EffectsVisualizationModel {
-    private BattlefieldModel bfModel;
+    private final BattlefieldModel bfModel;
 
     public EffectsVisualizationModel(BattlefieldModel bfModel) {
         this.bfModel = bfModel;

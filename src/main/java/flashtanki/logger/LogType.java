@@ -8,7 +8,7 @@ public enum LogType {
     WARNING,
     ERROR,
     DEBUG,
-    CRITICAL_ERROR;
+    CRITICAL_ERROR
 
 }
 

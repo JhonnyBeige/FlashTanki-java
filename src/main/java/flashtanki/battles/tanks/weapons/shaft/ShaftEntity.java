@@ -20,7 +20,7 @@ public class ShaftEntity implements IEntity {
    public float shrubsHidingRadiusMax;
    public float impactQuickShot;
    public float fov_damage_max;
-   private ShotData shotData;
+   private final ShotData shotData;
    public final EntityType type;
 
    public ShaftEntity(float damage_min, float damage_max, float fov_damage_max, float maxEnergy, float chargeRate, float dischargeRate, float elevationAngleUp, float elevationAngleDown, float verticalTargetingSpeed, float horizontalTargetingSpeed, float initialFOV, float minimumFOV, float shrubsHidingRadiusMin, float shrubsHidingRadiusMax, float impactQuickShot, ShotData shotData) {

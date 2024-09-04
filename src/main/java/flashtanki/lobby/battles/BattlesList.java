@@ -15,9 +15,9 @@ import java.util.List;
 import java.util.Random;
 
 public class BattlesList {
-    private ArrayList<BattleInfo> battles = new ArrayList();
+    private final ArrayList<BattleInfo> battles = new ArrayList();
     private static int countBattles = 0;
-    private LobbysServices lobbysServices = LobbysServices.getInstance();
+    private final LobbysServices lobbysServices = LobbysServices.getInstance();
     private static  BattlesList instance ;
     public static BattlesList getInstance() {
         if (instance == null) {

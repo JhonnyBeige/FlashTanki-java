@@ -18,10 +18,10 @@ import org.json.simple.parser.ParseException;
 public class IsidaModel
 extends TickableWeaponAnticheatModel
 implements IWeapon {
-    private static TanksServices tanksServices = TanksServices.getInstance();
-    private BattlefieldModel bfModel;
-    private BattlefieldPlayerController player;
-    private IsidaEntity entity;
+    private static final TanksServices tanksServices = TanksServices.getInstance();
+    private final BattlefieldModel bfModel;
+    private final BattlefieldPlayerController player;
+    private final IsidaEntity entity;
     private double accumulatedPointsForHealing = 0.0;
 
     public IsidaModel(IsidaEntity entity, BattlefieldPlayerController player, BattlefieldModel bfModel) {

@@ -12,9 +12,9 @@ import flashtanki.system.SystemBattlesHandler;
 import java.util.HashMap;
 
 public class SpectatorModel {
-    private HashMap<String, SpectatorController> spectators;
-    private BattlefieldModel bfModel;
-    private SpectatorChatModel chatModel;
+    private final HashMap<String, SpectatorController> spectators;
+    private final BattlefieldModel bfModel;
+    private final SpectatorChatModel chatModel;
     private final BattlesGC battlesGC = BattlesGC.getInstance();
 
     public SpectatorModel(BattlefieldModel bfModel) {

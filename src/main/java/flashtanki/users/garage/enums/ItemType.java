@@ -44,6 +44,6 @@ public enum ItemType {
         public String toString() {
             return "7";
         }
-    };
+    }
 }
 

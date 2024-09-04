@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 public class CTFModel
 extends CaptureTheFlagAnticheatModel {
-    private BattlefieldModel bfModel;
-    private FlagServer blueFlag = new FlagServer();
-    private FlagServer redFlag = new FlagServer();
-    private TanksServices tanksServices = TanksServices.getInstance();
+    private final BattlefieldModel bfModel;
+    private final FlagServer blueFlag = new FlagServer();
+    private final FlagServer redFlag = new FlagServer();
+    private final TanksServices tanksServices = TanksServices.getInstance();
 
     public CTFModel(BattlefieldModel bfModel) {
         super(bfModel);

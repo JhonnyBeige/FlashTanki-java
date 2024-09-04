@@ -21,10 +21,10 @@ import org.json.simple.parser.ParseException;
 public class TwinsModel
 extends FireableWeaponAnticheatModel
 implements IWeapon {
-    private BattlefieldModel bfModel;
-    private BattlefieldPlayerController player;
-    private WeaponWeakeningData weakeingData;
-    private TwinsEntity entity;
+    private final BattlefieldModel bfModel;
+    private final BattlefieldPlayerController player;
+    private final WeaponWeakeningData weakeingData;
+    private final TwinsEntity entity;
 
     public TwinsModel(TwinsEntity twinsEntity, WeaponWeakeningData weakeingData, BattlefieldPlayerController tank, BattlefieldModel battle) {
         super(twinsEntity.getShotData().reloadMsec);

@@ -13,7 +13,7 @@ implements IEntity {
     public int weakeningCoeff;
     public float damage_min;
     public float damage_max;
-    private ShotData shotData;
+    private final ShotData shotData;
     public final EntityType type = EntityType.RAILGUN;
 
     public RailgunEntity(ShotData shotData, int charingTime, int weakeningCoeff, float damage_min, float damage_max) {

@@ -7,7 +7,7 @@ import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 public class MessageProducer {
-    private KafkaConfig kafkaConfig;
+    private final KafkaConfig kafkaConfig;
     private final static LoggerService loggerService = LoggerService.getInstance();
 
     public MessageProducer(KafkaConfig kafkaConfig) {

@@ -15,7 +15,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 public class Parser {
-    private Unmarshaller unmarshaller;
+    private final Unmarshaller unmarshaller;
 
     public Parser() throws JAXBException {
         JAXBContext jc = JAXBContext.newInstance(Map.class);

@@ -24,11 +24,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class GiveItemService implements MessageConsumer.ExternalMessageListener {
     private static GiveItemService instance;
     private final KafkaTemplateService kafkaTemplateService = KafkaTemplateService.getInstance();
-    private LobbysServices lobbysServices = LobbysServices.getInstance();
-    private DatabaseManager databaseManager = DatabaseManagerImpl.instance();
-    private SkinSystem skinSystem = SkinSystem.getInstance();
-    private ShotEffectSystem shotEffectSystem = ShotEffectSystem.getInstance();
-    private ContainerSystem containerSystem = ContainerSystem.getInstance();
+    private final LobbysServices lobbysServices = LobbysServices.getInstance();
+    private final DatabaseManager databaseManager = DatabaseManagerImpl.instance();
+    private final SkinSystem skinSystem = SkinSystem.getInstance();
+    private final ShotEffectSystem shotEffectSystem = ShotEffectSystem.getInstance();
+    private final ContainerSystem containerSystem = ContainerSystem.getInstance();
 
     public static GiveItemService getInstance() {
         if (instance == null) {
@@ -55,7 +55,7 @@ public class GiveItemService implements MessageConsumer.ExternalMessageListener 
             PremiumService.getInstance().activatePremium(request.getUserId(), (long) request.getCount());
         } else if (fullItemId.equals("crystalls")) {
             Optional.ofNullable(lobbysServices.getLobbyByUserId(request.getUserId()))
-                    .ifPresentOrElse(lobbyManager -> lobbyManager.addCrystall((int) request.count),
+                    .ifPresentOrElse(lobbyManager -> lobbyManager.addCrystall(request.count),
                             () -> {
                                 User user = databaseManager.getUserById(request.getUserId());
                                 user.addCrystall(request.count);
@@ -85,7 +85,7 @@ public class GiveItemService implements MessageConsumer.ExternalMessageListener 
                         return garage;
                     });
 
-            garageByUser.giveItem(fullItemId, (int) request.getCount(), () -> {
+            garageByUser.giveItem(fullItemId, request.getCount(), () -> {
             }, () -> {
             });
         }

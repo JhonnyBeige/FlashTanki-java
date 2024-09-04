@@ -30,7 +30,7 @@ public class MinesActivatorService {
 
     public void activate(BattlefieldModel model, ServerMine mine) {
         MineActivator activator = new MineActivator(model, mine);
-        TIMER.schedule((TimerTask)activator, ACTIVATION_TIME);
+        TIMER.schedule(activator, ACTIVATION_TIME);
         activator.putMine();
     }
 }

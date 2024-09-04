@@ -197,6 +197,6 @@ public enum PropertyType {
         public String toString() {
             return "unknown";
         }
-    };
+    }
 }
 

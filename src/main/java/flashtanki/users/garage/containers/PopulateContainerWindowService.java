@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.ArrayList;
 
 public class PopulateContainerWindowService implements MessageConsumer.ExternalMessageListener {
-   private KafkaTemplateService kafkaTemplateService = KafkaTemplateService.getInstance();
+   private final KafkaTemplateService kafkaTemplateService = KafkaTemplateService.getInstance();
    private static PopulateContainerWindowService instance;
    private final String CONTAINER_WINDOW_RESPONSE_TOPIC = "container-window-response";
 

@@ -16,10 +16,10 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class ShaftModel extends FireableWeaponAnticheatModel implements IWeapon {
-   private BattlefieldModel bfModel;
-   private BattlefieldPlayerController player;
-   private ShaftEntity entity;
-   private WeaponWeakeningData weakeingData;
+   private final BattlefieldModel bfModel;
+   private final BattlefieldPlayerController player;
+   private final ShaftEntity entity;
+   private final WeaponWeakeningData weakeingData;
 
    public ShaftModel(ShaftEntity entity, WeaponWeakeningData weakeingData, BattlefieldModel bfModel, BattlefieldPlayerController player) {
       super(entity.getShotData().reloadMsec);
@@ -55,11 +55,11 @@ public class ShaftModel extends FireableWeaponAnticheatModel implements IWeapon 
       BattlefieldPlayerController[] tanks_array = new BattlefieldPlayerController[ids.size()];
       if (target != null) {
          for(int i = 0; i < ids.size(); ++i) {
-            tanks_array[i] = (BattlefieldPlayerController)this.bfModel.players.get(ids.get(i));
+            tanks_array[i] = this.bfModel.players.get(ids.get(i));
          }
       }
 
-      this.onTargetDamage(tanks_array, 0, ((Number)energy).doubleValue());
+      this.onTargetDamage(tanks_array, 0, energy.doubleValue());
    }
 
    public void quickFire(String json) {
@@ -86,7 +86,7 @@ public class ShaftModel extends FireableWeaponAnticheatModel implements IWeapon 
       BattlefieldPlayerController[] tanks_array = new BattlefieldPlayerController[targetIds.size()];
       if (target != null) {
          for(int i = 0; i < targetIds.size(); ++i) {
-            tanks_array[i] = (BattlefieldPlayerController)this.bfModel.players.get(targetIds.get(i));
+            tanks_array[i] = this.bfModel.players.get(targetIds.get(i));
          }
       }
 

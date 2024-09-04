@@ -10,7 +10,7 @@ import flashtanki.main.netty.blackip.BlackIP;
 
 public class BlackIPService {
     private final DatabaseManager database = DatabaseManagerImpl.instance();
-    private FastHashMap<String, Boolean> cache = new FastHashMap();
+    private final FastHashMap<String, Boolean> cache = new FastHashMap();
 
     private static BlackIPService instance;
 

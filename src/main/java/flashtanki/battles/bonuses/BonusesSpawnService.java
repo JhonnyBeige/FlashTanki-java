@@ -119,7 +119,7 @@ public class BonusesSpawnService
         }
     }
 
-    private ArrayList<BonusRegion> usedRegions = new ArrayList<>();
+    private final ArrayList<BonusRegion> usedRegions = new ArrayList<>();
 
     public void removeRegion(BonusRegion region) {
         usedRegions.remove(region);
@@ -175,9 +175,9 @@ public class BonusesSpawnService
                     return;
                 }
                 this.battlefieldModel.sendToAllPlayers(flashtanki.commands.Type.BATTLE, "gold_spawn;SYSTEM");
-                this.addGoldDroppzone(region, "gold" + String.valueOf(this.inc));
+                this.addGoldDroppzone(region, "gold" + this.inc);
                 bonus = new Bonus(this.getSpawnPostitonGold(region), BonusType.GOLD, region,
-                        "gold" + String.valueOf(this.inc), this.inc);
+                        "gold" + this.inc, this.inc);
                 GoldSchedule goldSchedule = new GoldSchedule(this.battlefieldModel, bonus, this.inc);
             } else {
                 loggerService.log(LogType.INFO, "Regions for gold do not exist");

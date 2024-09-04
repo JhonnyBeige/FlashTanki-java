@@ -34,7 +34,7 @@ import org.json.simple.parser.ParseException;
 public class MapsLoaderService {
     private static final LoggerService loggerService = LoggerService.getInstance();
     public static HashMap<String, Map> maps = new HashMap();
-    private static ArrayList<IMapConfigItem> configItems = new ArrayList();
+    private static final ArrayList<IMapConfigItem> configItems = new ArrayList();
     private static Parser parser;
 
     public static void initFactoryMaps() {

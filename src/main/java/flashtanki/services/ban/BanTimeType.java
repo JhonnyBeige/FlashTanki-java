@@ -17,8 +17,8 @@ public class BanTimeType {
     public static final BanTimeType FOREVER = new BanTimeType("forever.", 1,
             2);
     private final String nameType;
-    private int field;
-    private int amount;
+    private final int field;
+    private final int amount;
 
     private BanTimeType(String nameType, int field, int amount) {
         this.nameType = nameType;

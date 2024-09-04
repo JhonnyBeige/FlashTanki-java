@@ -38,8 +38,8 @@ public class ContainerSystem {
     private final String CONTAINER_WINDOW_REQUEST_TOPIC = "container-window-request";
     private final String CONTAINER_OPEN_REQUEST_TOPIC = "container-open-request";
     private final KafkaTemplateService kafkaTemplateService = KafkaTemplateService.getInstance();
-    private static SkinSystem skinSystem = SkinSystem.getInstance();
-    private static ShotEffectSystem shotEffectSystem = ShotEffectSystem.getInstance();
+    private static final SkinSystem skinSystem = SkinSystem.getInstance();
+    private static final ShotEffectSystem shotEffectSystem = ShotEffectSystem.getInstance();
 
     public static ContainerSystem getInstance() {
         if (ContainerSystem.instance == null) {

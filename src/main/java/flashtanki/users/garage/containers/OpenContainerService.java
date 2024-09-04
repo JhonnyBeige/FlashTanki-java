@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.ArrayList;
 
 public class OpenContainerService implements MessageConsumer.ExternalMessageListener {
-   private KafkaTemplateService kafkaTemplateService = KafkaTemplateService.getInstance();
+   private final KafkaTemplateService kafkaTemplateService = KafkaTemplateService.getInstance();
    private static OpenContainerService instance;
    private final String CONTAINER_OPEN_RESPONSE_TOPIC = "container-open-response";
 
