@@ -1,7 +1,7 @@
 /*
  * Decompiled with CFR 0.150.
  */
-package flashtanki.auth;
+package flashtanki.authorization;
 
 import flashtanki.utils.RankUtils;
 import flashtanki.captcha.CaptchaService;

@@ -1,7 +1,7 @@
 package flashtanki.main.netty;
 
 import flashtanki.utils.StringUtils;
-import flashtanki.auth.AuthorizationService;
+import flashtanki.authorization.AuthorizationService;
 import flashtanki.commands.Command;
 import flashtanki.commands.Commands;
 import flashtanki.commands.Type;

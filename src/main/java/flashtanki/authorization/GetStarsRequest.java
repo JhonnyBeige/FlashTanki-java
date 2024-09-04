@@ -1,4 +1,4 @@
-package flashtanki.auth;
+package flashtanki.authorization;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
