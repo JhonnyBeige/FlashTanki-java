@@ -22,7 +22,6 @@ import flashtanki.lobby.battles.BattlesList;
 import flashtanki.lobby.chat.ChatLobby;
 import flashtanki.lobby.chat.ChatMessage;
 import flashtanki.lobby.chat.flood.FloodController;
-import flashtanki.lobby.top.HallOfFame;
 import flashtanki.logger.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.logger.RemoteDatabaseLogger;
@@ -66,7 +65,6 @@ public class LobbyManager {
     private final static DatabaseManager database = DatabaseManagerImpl.instance();
     private final static FriendsService friendsService = FriendsService.getInstance();
     private final static BattlesList battlesList = BattlesList.getInstance();
-    private final static HallOfFame top = HallOfFame.getInstance();
     private final static SkinSystem skinSystem = SkinSystem.getInstance();
     private final static ShotEffectSystem shotEffectSystem = ShotEffectSystem.getInstance();
     private final static LobbysServices lobbysServices = LobbysServices.getInstance();
@@ -198,10 +196,6 @@ public class LobbyManager {
             //getChallengesInfo();
         }
 
-        if (cmd.args[0].equals("get_hall_of_fame_data")) {
-            this.localUser.setUserLocation(UserLocation.HALL_OF_FAME);
-            this.send(Type.LOBBY, "init_hall_of_fame", JSONUtils.parseHallOfFame(top));
-        }
         if (cmd.args[0].equals("get_garage_data")) {
             this.sendGarage();
         }
