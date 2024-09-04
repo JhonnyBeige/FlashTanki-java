@@ -112,46 +112,35 @@ public class ContainerSystem {
             userContainerRepository.decrementContainer(userId, containers.get(clientContainerId));
             String userContainers = getUserContainersResponse(userId);
 
-            Localization localization = lobbysServices.getLobbyByUserId(userId).getLocalUser().getLocalization();
+            lobbysServices.getLobbyByUserId(userId).send(Type.GARAGE,
+                    "init_containers",
+                    userContainers);
 
-            List<String> ownedItems = new ArrayList<>();
+            // ObjectMapper objectMapper = new ObjectMapper();
+            // List<String> outItems = new ArrayList<String>();
 
-            for (Item item : user.getGarage().items) {
-                ownedItems.add(item.getId());
-            }
+            // for (Item item : user.getGarage().items) {
+            //     outItems.add(item.getId());
+            // }
+            // Map<Long, ShotEffectItem> allShotEffects = shotEffectSystem.getAllShotEffects();
+            // List<UserShotEffect> userShotEffects = shotEffectSystem.getAllUserShotEffects(user.getId());
+            // Map<Long, SkinItem> allSkins = skinSystem.getAllSkins();
+            // List<UserSkin> userSkins = skinSystem.getAllUserSkins(user.getId());
 
-            Map<Long, ShotEffectItem> allShotEffects = shotEffectSystem.getAllShotEffects();
-            List<UserShotEffect> userShotEffects = shotEffectSystem.getAllUserShotEffects(userId);
-            for (UserShotEffect userShotEffect : userShotEffects) {
-                ownedItems.add(allShotEffects.get(userShotEffect.getShotEffectId()).getClientId());
-            }
+            // for (UserShotEffect userShotEffect : userShotEffects) {
+            //     outItems.add(allShotEffects.get(userShotEffect.getShotEffectId()).getClientId());
+            // }
+            // for (UserSkin userSkin : userSkins) {
+            //     outItems.add(allSkins.get(userSkin.getSkinId()).getClientId());
+            // }
 
-            Map<Long, SkinItem> allSkins = skinSystem.getAllSkins();
-            List<UserSkin> userSkins = skinSystem.getAllUserSkins(userId);
-            for (UserSkin userSkin : userSkins) {
-                ownedItems.add(allSkins.get(userSkin.getSkinId()).getClientId());
-            }
+            // ContainerWindowRequest containerWindowRequest = ContainerWindowRequest.builder()
+            //         .userId(user.getId())
+            //         .containerId(clientContainerId)
+            //         .items(outItems)
+            //         .build();
 
-            List<Item> possibleRewards = (List<Item>) containerAssortmentRespository.findByClientId(clientContainerId)
-                    .map(ContainerItemInfo::getItems)
-                    .orElse(new ArrayList<>());
-
-            List<Item> availableRewards = possibleRewards.stream()
-                    .filter(item -> !ownedItems.contains(item.getId()))
-                    .collect(Collectors.toList());
-
-            if (!availableRewards.isEmpty()) {
-                Item reward = availableRewards.get((int) (Math.random() * availableRewards.size()));
-                user.getGarage().addItem(reward);
-
-                userContainers = getUserContainersResponse(userId);
-                lobbysServices.getLobbyByUserId(userId).send(Type.GARAGE, "init_containers", userContainers);
-
-                // TODO: отправка сообщения о выдаче награды (если нужно)
-            } else {
-                // TODO: обработка случая, когда нет доступных наград
-            }
-
+            // String outStr = objectMapper.writeValueAsString(containerWindowRequest);
             //FIXME: no kafka
             //kafkaTemplateService.getProducer().send(outStr, CONTAINER_OPEN_REQUEST_TOPIC);
         }

@@ -336,15 +336,5 @@ public class Garage implements Serializable {
         this.userId = userId;
     }
 
-    public void addItem(Item reward) {
-        for (Item item : items) {
-            if (item.getId().equals(reward.getId())) {
-                item.incrementQuantity(reward.getQuantity());
-                return;
-            }
-        }
-
-        items.add(reward);
-    }
 }
 
