@@ -8,7 +8,7 @@ import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
 import flashtanki.services.LobbysServices;
-import flashtanki.skin.SkinSystem;
+import flashtanki.battles.tanks.skin.SkinSystem;
 import flashtanki.users.garage.enums.ItemType;
 import flashtanki.users.garage.items.Item;
 

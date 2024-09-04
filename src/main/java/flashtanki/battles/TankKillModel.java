@@ -19,7 +19,7 @@ import flashtanki.json.JSONUtils;
 import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.lobby.battles.BattleInfo;
 import flashtanki.logger.RemoteDatabaseLogger;
-import flashtanki.premium.PremiumService;
+import flashtanki.users.premium.PremiumService;
 import flashtanki.services.TanksServices;
 import flashtanki.system.destroy.Destroyable;
 import flashtanki.system.quartz.QuartzService;

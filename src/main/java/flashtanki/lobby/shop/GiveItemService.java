@@ -1,14 +1,14 @@
 package flashtanki.lobby.shop;
 
-import flashtanki.containers.ContainerSystem;
+import flashtanki.users.garage.containers.ContainerSystem;
 import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.main.kafka.MessageConsumer;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
-import flashtanki.premium.PremiumService;
+import flashtanki.users.premium.PremiumService;
 import flashtanki.services.LobbysServices;
-import flashtanki.shoteffect.ShotEffectSystem;
-import flashtanki.skin.SkinSystem;
+import flashtanki.battles.tanks.shoteffect.ShotEffectSystem;
+import flashtanki.battles.tanks.skin.SkinSystem;
 import flashtanki.users.User;
 import flashtanki.users.garage.Garage;
 import flashtanki.users.garage.GarageItemsLoader;

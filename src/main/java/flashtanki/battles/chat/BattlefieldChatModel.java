@@ -14,7 +14,7 @@ import flashtanki.lobby.LobbyManager;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
 import flashtanki.main.params.OnlineStats;
-import flashtanki.premium.PremiumService;
+import flashtanki.users.premium.PremiumService;
 import flashtanki.services.BanServices;
 import flashtanki.services.LobbysServices;
 import flashtanki.services.TanksServices;

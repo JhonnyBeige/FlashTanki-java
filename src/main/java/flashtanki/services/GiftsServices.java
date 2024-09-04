@@ -4,7 +4,7 @@
 package flashtanki.services;
 
 import flashtanki.commands.Type;
-import flashtanki.containers.ContainerSystem;
+import flashtanki.users.garage.containers.ContainerSystem;
 import flashtanki.json.ContainerItemsFactory;
 import flashtanki.lobby.LobbyManager;
 import flashtanki.lobby.shop.GiveItemService;

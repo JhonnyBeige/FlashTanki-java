@@ -1,15 +1,15 @@
 package flashtanki.services.hibernate;
 
 import flashtanki.captcha.CaptchaService;
-import flashtanki.containers.list.ContainerItemInfo;
-import flashtanki.containers.users.UserContainer;
+import flashtanki.users.garage.containers.list.ContainerItemInfo;
+import flashtanki.users.garage.containers.users.UserContainer;
 import flashtanki.logger.LogObject;
 import flashtanki.main.netty.blackip.BlackIP;
-import flashtanki.premium.Premium;
-import flashtanki.shoteffect.list.ShotEffectItem;
-import flashtanki.shoteffect.user.UserShotEffect;
-import flashtanki.skin.list.SkinItem;
-import flashtanki.skin.user.UserSkin;
+import flashtanki.users.premium.Premium;
+import flashtanki.battles.tanks.shoteffect.list.ShotEffectItem;
+import flashtanki.battles.tanks.shoteffect.user.UserShotEffect;
+import flashtanki.battles.tanks.skin.list.SkinItem;
+import flashtanki.battles.tanks.skin.user.UserSkin;
 import flashtanki.users.User;
 import flashtanki.users.friends.Friends;
 import flashtanki.users.garage.Garage;

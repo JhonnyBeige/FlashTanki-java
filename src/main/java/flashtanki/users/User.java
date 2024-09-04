@@ -6,7 +6,7 @@ package flashtanki.users;
 import flashtanki.utils.StringUtils;
 import flashtanki.groups.UserGroup;
 import flashtanki.logger.RemoteDatabaseLogger;
-import flashtanki.premium.PremiumService;
+import flashtanki.users.premium.PremiumService;
 import flashtanki.system.localization.Localization;
 import flashtanki.users.anticheat.AntiCheatData;
 import flashtanki.users.garage.Garage;

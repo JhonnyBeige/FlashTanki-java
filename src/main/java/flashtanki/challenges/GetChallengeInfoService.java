@@ -1,13 +1,13 @@
 package flashtanki.challenges;
 
 import flashtanki.commands.Type;
-import flashtanki.containers.ContainerSystem;
+import flashtanki.users.garage.containers.ContainerSystem;
 import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.main.kafka.MessageConsumer;
 import flashtanki.lobby.LobbyManager;
 import flashtanki.services.LobbysServices;
-import flashtanki.shoteffect.ShotEffectSystem;
-import flashtanki.skin.SkinSystem;
+import flashtanki.battles.tanks.shoteffect.ShotEffectSystem;
+import flashtanki.battles.tanks.skin.SkinSystem;
 import flashtanki.system.localization.Localization;
 import flashtanki.users.garage.GarageItemsLoader;
 import flashtanki.users.garage.items.Item;

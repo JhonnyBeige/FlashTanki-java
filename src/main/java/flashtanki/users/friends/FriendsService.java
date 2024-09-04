@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import flashtanki.commands.Type;
 import flashtanki.lobby.LobbyManager;
 import flashtanki.main.params.OnlineStats;
-import flashtanki.premium.PremiumService;
+import flashtanki.users.premium.PremiumService;
 import flashtanki.services.LobbysServices;
 import flashtanki.users.User;
 import flashtanki.users.UserRepository;
