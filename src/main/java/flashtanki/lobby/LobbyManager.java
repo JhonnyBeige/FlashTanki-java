@@ -36,7 +36,7 @@ import flashtanki.services.GiftsServices;
 import flashtanki.services.LobbysServices;
 import flashtanki.battles.tanks.shoteffect.ShotEffectSystem;
 import flashtanki.battles.tanks.skin.SkinSystem;
-import flashtanki.system.dailybonus.DailyBonusService;
+import flashtanki.system.missions.dailybonus.DailyBonusService;
 import flashtanki.users.TypeUser;
 import flashtanki.users.User;
 import flashtanki.users.friends.FriendsService;

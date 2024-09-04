@@ -1,7 +1,7 @@
 /*
  * Decompiled with CFR 0.150.
  */
-package flashtanki.system.dailybonus;
+package flashtanki.system.missions.dailybonus;
 
 import flashtanki.users.garage.items.Item;
 import lombok.AllArgsConstructor;

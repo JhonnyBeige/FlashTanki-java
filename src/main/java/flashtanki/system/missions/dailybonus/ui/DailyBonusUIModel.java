@@ -1,11 +1,11 @@
 /*
  * Decompiled with CFR 0.150.
  */
-package flashtanki.system.dailybonus.ui;
+package flashtanki.system.missions.dailybonus.ui;
 
 import flashtanki.commands.Type;
 import flashtanki.lobby.LobbyManager;
-import flashtanki.system.dailybonus.BonusListItem;
+import flashtanki.system.missions.dailybonus.BonusListItem;
 import java.util.List;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;

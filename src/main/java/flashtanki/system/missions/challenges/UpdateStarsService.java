@@ -1,4 +1,4 @@
-package flashtanki.system.challenges;
+package flashtanki.system.missions.challenges;
 
 import flashtanki.commands.Type;
 import flashtanki.main.kafka.KafkaTemplateService;

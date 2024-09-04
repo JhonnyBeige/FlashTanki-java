@@ -1,7 +1,7 @@
 /*
  * Decompiled with CFR 0.150.
  */
-package flashtanki.system.dailybonus.crystalls;
+package flashtanki.system.missions.dailybonus.crystalls;
 
 import flashtanki.lobby.LobbyManager;
 import flashtanki.services.TanksServices;

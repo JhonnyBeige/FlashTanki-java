@@ -1,13 +1,13 @@
 /*
  * Decompiled with CFR 0.150.
  */
-package flashtanki.system.dailybonus;
+package flashtanki.system.missions.dailybonus;
 
 import flashtanki.lobby.LobbyManager;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
-import flashtanki.system.dailybonus.crystalls.CrystallsBonusModel;
-import flashtanki.system.dailybonus.ui.DailyBonusUIModel;
+import flashtanki.system.missions.dailybonus.crystalls.CrystallsBonusModel;
+import flashtanki.system.missions.dailybonus.ui.DailyBonusUIModel;
 import flashtanki.users.User;
 import flashtanki.users.garage.Garage;
 import flashtanki.users.garage.GarageItemsLoader;
