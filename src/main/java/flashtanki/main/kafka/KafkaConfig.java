@@ -1,4 +1,4 @@
-package flashtanki.kafka;
+package flashtanki.main.kafka;
 
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.consumer.ConsumerConfig;

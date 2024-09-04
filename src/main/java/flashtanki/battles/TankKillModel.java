@@ -16,7 +16,7 @@ import flashtanki.battles.tanks.statistic.prizes.BattlePrizeCalculate;
 import flashtanki.battles.tanks.weapons.WeaponUtils;
 import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
-import flashtanki.kafka.KafkaTemplateService;
+import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.lobby.battles.BattleInfo;
 import flashtanki.logger.RemoteDatabaseLogger;
 import flashtanki.premium.PremiumService;

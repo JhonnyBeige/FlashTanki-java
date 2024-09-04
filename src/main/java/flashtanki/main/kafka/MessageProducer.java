@@ -1,4 +1,4 @@
-package flashtanki.kafka;
+package flashtanki.main.kafka;
 
 import flashtanki.logger.LogType;
 import flashtanki.logger.LoggerService;

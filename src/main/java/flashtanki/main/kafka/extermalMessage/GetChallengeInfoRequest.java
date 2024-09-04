@@ -1,4 +1,4 @@
-package flashtanki.kafka.extermalMessage;
+package flashtanki.main.kafka.extermalMessage;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

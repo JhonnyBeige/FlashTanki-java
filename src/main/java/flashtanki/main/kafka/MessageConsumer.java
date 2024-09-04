@@ -1,4 +1,4 @@
-package flashtanki.kafka;
+package flashtanki.main.kafka;
 
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecords;

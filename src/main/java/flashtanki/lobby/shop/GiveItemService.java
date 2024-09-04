@@ -1,8 +1,8 @@
 package flashtanki.lobby.shop;
 
 import flashtanki.containers.ContainerSystem;
-import flashtanki.kafka.KafkaTemplateService;
-import flashtanki.kafka.MessageConsumer;
+import flashtanki.main.kafka.KafkaTemplateService;
+import flashtanki.main.kafka.MessageConsumer;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
 import flashtanki.premium.PremiumService;

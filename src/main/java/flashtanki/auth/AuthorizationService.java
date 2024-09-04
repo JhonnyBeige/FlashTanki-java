@@ -9,7 +9,7 @@ import flashtanki.commands.Command;
 import flashtanki.commands.Type;
 import flashtanki.groups.UserGroupsLoader;
 import flashtanki.json.JSONUtils;
-import flashtanki.kafka.KafkaTemplateService;
+import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.lobby.LobbyManager;
 import flashtanki.lobby.chat.ChatLobby;
 import flashtanki.logger.LogType;

@@ -1,4 +1,4 @@
-package flashtanki.kafka;
+package flashtanki.main.kafka;
 
 public class KafkaTemplateService {
     private static KafkaTemplateService instance;

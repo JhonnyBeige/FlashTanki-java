@@ -2,8 +2,8 @@ package flashtanki.challenges;
 
 import flashtanki.commands.Type;
 import flashtanki.containers.ContainerSystem;
-import flashtanki.kafka.KafkaTemplateService;
-import flashtanki.kafka.MessageConsumer;
+import flashtanki.main.kafka.KafkaTemplateService;
+import flashtanki.main.kafka.MessageConsumer;
 import flashtanki.lobby.LobbyManager;
 import flashtanki.services.LobbysServices;
 import flashtanki.shoteffect.ShotEffectSystem;

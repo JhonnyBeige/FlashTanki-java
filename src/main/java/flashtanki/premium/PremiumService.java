@@ -2,7 +2,7 @@ package flashtanki.premium;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import flashtanki.commands.Type;
-import flashtanki.kafka.MessageConsumer;
+import flashtanki.main.kafka.MessageConsumer;
 import flashtanki.services.LobbysServices;
 import flashtanki.services.hibernate.HibernateService;
 import lombok.AllArgsConstructor;

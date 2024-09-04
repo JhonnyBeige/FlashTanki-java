@@ -7,7 +7,7 @@ import flashtanki.containers.list.ContainerItemInfo;
 import flashtanki.containers.list.ContainerAssortmentRespository;
 import flashtanki.containers.users.UserContainer;
 import flashtanki.containers.users.UserContainerRepository;
-import flashtanki.kafka.KafkaTemplateService;
+import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.services.LobbysServices;
 import flashtanki.shoteffect.ShotEffectSystem;
 import flashtanki.shoteffect.list.ShotEffectItem;
