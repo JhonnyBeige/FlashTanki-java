@@ -40,7 +40,7 @@ public class HibernateService {
             cfg.addAnnotatedClass(ShotEffectItem.class);
 
             cfg.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
-            cfg.setProperty("hibernate.connection.url", "jdbc:mysql://127.0.0.1:3306/gtanks");
+            cfg.setProperty("hibernate.connection.url", "jdbc:mysql://127.0.0.1:3306/flashtanki");
             cfg.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
             cfg.setProperty("hibernate.connection.username", "root");
             cfg.setProperty("hibernate.connection.password", "");

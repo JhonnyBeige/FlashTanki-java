@@ -57,7 +57,7 @@ public class User
     @Setter
     private boolean isEmailConfirmed = false;
     @Column(name = "email", unique = true, nullable = true)
-    private String email = "default@gtanks.com";
+    private String email = "default@flashtanki.com";
     @Setter
     @Getter
     @Column(name = "email_confirmation_code", unique = false, nullable = true)

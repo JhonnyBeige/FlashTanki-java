@@ -5,7 +5,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/gtanks</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/flashtanki</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <property name="hibernate.jdbc.batch_size">100</property>
