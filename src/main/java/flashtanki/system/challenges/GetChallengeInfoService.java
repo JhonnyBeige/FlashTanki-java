@@ -1,4 +1,4 @@
-package flashtanki.challenges;
+package flashtanki.system.challenges;
 
 import flashtanki.commands.Type;
 import flashtanki.users.garage.containers.ContainerSystem;
