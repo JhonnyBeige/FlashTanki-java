@@ -1,11 +1,14 @@
 package flashtanki.users.garage.containers.list;
 
+import flashtanki.users.garage.items.Item;
 import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "container_assortment")
@@ -24,4 +27,9 @@ public class ContainerItemInfo {
     private String descRu;
     @Column(name = "desc_en")
     private String descEn;
+
+    public List<Item> getItems() {
+        int items = 0;
+        return new ArrayList<>(items);
+    }
 }

@@ -82,4 +82,12 @@ public class Item {
                 this.microUpgradePrice,
                 this.time);
     }
+
+    public int getQuantity() {
+        return this.count;
+    }
+
+    public void incrementQuantity(int quantity) {
+        this.count += quantity;
+    }
 }
