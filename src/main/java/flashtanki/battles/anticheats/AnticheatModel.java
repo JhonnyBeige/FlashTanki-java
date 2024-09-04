@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.anticheats;
 
 import java.lang.annotation.ElementType;
@@ -11,8 +8,7 @@ import java.lang.annotation.Target;
 @Target(value={ElementType.TYPE})
 @Retention(value=RetentionPolicy.RUNTIME)
 public @interface AnticheatModel {
-    String name();
+    public String name();
 
-    String actionInfo();
+    public String actionInfo();
 }
-

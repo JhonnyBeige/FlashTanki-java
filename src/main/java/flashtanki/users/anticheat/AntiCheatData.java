@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.users.anticheat;
 
 public class AntiCheatData {
@@ -9,4 +6,3 @@ public class AntiCheatData {
     public int countWarningForFludCreateBattle;
     public String ip;
 }
-
