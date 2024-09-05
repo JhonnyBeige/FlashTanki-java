@@ -1,7 +1,4 @@
-/*
- * Decompiled with CFR 0.150.
- */
-package flashtanki.groups;
+package flashtanki.users.groups;
 
 import java.util.Collections;
 import java.util.List;

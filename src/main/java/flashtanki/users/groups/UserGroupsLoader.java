@@ -1,7 +1,4 @@
-/*
- * Decompiled with CFR 0.150.
- */
-package flashtanki.groups;
+package flashtanki.users.groups;
 
 import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;

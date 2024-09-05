@@ -7,7 +7,7 @@ import flashtanki.utils.RankUtils;
 import flashtanki.captcha.CaptchaService;
 import flashtanki.commands.Command;
 import flashtanki.commands.Type;
-import flashtanki.groups.UserGroupsLoader;
+import flashtanki.users.groups.UserGroupsLoader;
 import flashtanki.json.JSONUtils;
 import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.lobby.LobbyManager;

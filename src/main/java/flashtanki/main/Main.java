@@ -8,7 +8,7 @@ import flashtanki.system.missions.challenges.GetChallengeInfoService;
 import flashtanki.system.missions.challenges.UpdateStarsService;
 import flashtanki.users.garage.containers.OpenContainerService;
 import flashtanki.users.garage.containers.PopulateContainerWindowService;
-import flashtanki.groups.UserGroupsLoader;
+import flashtanki.users.groups.UserGroupsLoader;
 import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.lobby.shop.GiveItemService;
 import flashtanki.logger.remote.RemoteDatabaseLogger;

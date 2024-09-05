@@ -4,7 +4,7 @@
 package flashtanki.users;
 
 import flashtanki.utils.StringUtils;
-import flashtanki.groups.UserGroup;
+import flashtanki.users.groups.UserGroup;
 import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.users.premium.PremiumService;
 import flashtanki.system.localization.Localization;

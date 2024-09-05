@@ -5,7 +5,7 @@ package flashtanki.lobby.chat;
 
 import flashtanki.utils.StringUtils;
 import flashtanki.commands.Type;
-import flashtanki.groups.UserGroupsLoader;
+import flashtanki.users.groups.UserGroupsLoader;
 import flashtanki.json.JSONUtils;
 import flashtanki.lobby.LobbyManager;
 import flashtanki.lobby.battles.BattleInfo;
