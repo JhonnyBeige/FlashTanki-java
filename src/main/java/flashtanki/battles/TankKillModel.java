@@ -18,7 +18,7 @@ import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
 import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.lobby.battles.BattleInfo;
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.users.premium.PremiumService;
 import flashtanki.services.TanksServices;
 import flashtanki.system.destroy.Destroyable;

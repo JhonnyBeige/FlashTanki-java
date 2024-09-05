@@ -1,26 +1,42 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.logger;
 
+import flashtanki.logger.remote.types.LogType;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class LoggerService {
-    private static LoggerService instance;
+    private static volatile LoggerService instance;
+
     public static LoggerService getInstance() {
         if (instance == null) {
-            instance = new LoggerService();
+            synchronized (LoggerService.class) {
+                if (instance == null) {
+                    instance = new LoggerService();
+                }
+            }
         }
         return instance;
     }
 
-    public  void log(LogType type, String msg) {
-        System.err.println("[" + type.name() + "] " + msg);
+    public static void log(LogType info, String msg) {
+        log(Type.INFO, msg);
     }
 
-
-    public  void error(Throwable tw) {
-        tw.printStackTrace();
+    public static void log(Type type, String msg) {
+        Log tempLog = new Log(type, msg);
+        System.out.println("[" + getCurrentTimeStamp() + "] " + tempLog);
     }
 
+    public static void debug(String msg) {
+        log(Type.INFO, msg);
+    }
 
+    public static void debug(Type type, String msg) {
+        log(type, msg);
+    }
+
+    private static String getCurrentTimeStamp() {
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.S").format(LocalDateTime.now());
+    }
 }
-

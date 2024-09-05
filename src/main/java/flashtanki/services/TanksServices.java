@@ -6,7 +6,7 @@ package flashtanki.services;
 import flashtanki.utils.RankUtils;
 import flashtanki.commands.Type;
 import flashtanki.lobby.LobbyManager;
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
 import flashtanki.users.User;

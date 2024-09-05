@@ -3,7 +3,7 @@
  */
 package flashtanki.main.database;
 
-import flashtanki.logger.LogObject;
+import flashtanki.logger.remote.LogObject;
 import flashtanki.main.netty.blackip.BlackIP;
 import flashtanki.users.User;
 import flashtanki.users.friends.Friends;

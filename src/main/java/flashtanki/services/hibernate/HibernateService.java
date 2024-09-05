@@ -3,7 +3,7 @@ package flashtanki.services.hibernate;
 import flashtanki.captcha.CaptchaService;
 import flashtanki.users.garage.containers.list.ContainerItemInfo;
 import flashtanki.users.garage.containers.users.UserContainer;
-import flashtanki.logger.LogObject;
+import flashtanki.logger.remote.LogObject;
 import flashtanki.main.netty.blackip.BlackIP;
 import flashtanki.users.premium.Premium;
 import flashtanki.battles.tanks.shoteffect.list.ShotEffectItem;

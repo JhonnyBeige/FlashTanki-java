@@ -11,7 +11,7 @@ import flashtanki.users.garage.containers.PopulateContainerWindowService;
 import flashtanki.groups.UserGroupsLoader;
 import flashtanki.main.kafka.KafkaTemplateService;
 import flashtanki.lobby.shop.GiveItemService;
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.main.netty.NettyService;
 import flashtanki.services.AutoEntryServices;
 import flashtanki.services.hibernate.HibernateService;

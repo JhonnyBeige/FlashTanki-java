@@ -30,7 +30,7 @@ import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
 import flashtanki.lobby.battles.BattleInfo;
 import flashtanki.lobby.battles.BattlesList;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.services.AutoEntryServices;
 import flashtanki.system.BattlesGC;

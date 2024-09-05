@@ -12,7 +12,7 @@ import flashtanki.battles.tanks.weapons.IWeapon;
 import flashtanki.battles.tanks.weapons.WeaponUtils;
 import flashtanki.battles.tanks.weapons.WeaponWeakeningData;
 import flashtanki.battles.tanks.weapons.anticheats.FireableWeaponAnticheatModel;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

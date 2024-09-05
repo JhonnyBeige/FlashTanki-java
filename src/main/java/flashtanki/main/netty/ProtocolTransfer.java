@@ -6,7 +6,7 @@ import flashtanki.commands.Command;
 import flashtanki.commands.Commands;
 import flashtanki.commands.Type;
 import flashtanki.lobby.LobbyManager;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.system.SystemClientMessagesHandler;
 import lombok.Getter;

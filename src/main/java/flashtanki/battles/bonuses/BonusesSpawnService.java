@@ -9,7 +9,7 @@ import flashtanki.battles.BattlefieldPlayerController;
 import flashtanki.battles.spectator.SpectatorController;
 import flashtanki.battles.tanks.math.Vector3;
 import flashtanki.json.JSONUtils;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 
 import java.util.ArrayList;
 import java.util.Random;

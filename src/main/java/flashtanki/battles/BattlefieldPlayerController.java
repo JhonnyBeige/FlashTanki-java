@@ -16,7 +16,7 @@ import flashtanki.battles.tanks.statistic.PlayerStatistic;
 import flashtanki.commands.Command;
 import flashtanki.json.JSONUtils;
 import flashtanki.lobby.LobbyManager;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.services.AutoEntryServices;
 import flashtanki.services.LobbysServices;

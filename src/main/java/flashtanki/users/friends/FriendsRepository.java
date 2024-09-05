@@ -1,6 +1,6 @@
 package flashtanki.users.friends;
 
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.services.hibernate.HibernateService;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

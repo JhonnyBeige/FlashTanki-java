@@ -3,7 +3,7 @@
  */
 package flashtanki.battles.tanks.statistic;
 
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import lombok.Getter;
 import lombok.Setter;
 

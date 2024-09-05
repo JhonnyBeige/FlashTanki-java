@@ -1,6 +1,6 @@
 package flashtanki.main.kafka;
 
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;

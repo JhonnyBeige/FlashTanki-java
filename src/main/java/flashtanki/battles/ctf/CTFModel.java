@@ -140,7 +140,7 @@ public class CTFModel
         return null;
     }
 
-    private FlagServer getEnemyTeamFlag(String teamType) {
+    public FlagServer getEnemyTeamFlag(String teamType) {
         if (teamType.equals("BLUE")) {
             return this.redFlag;
         }

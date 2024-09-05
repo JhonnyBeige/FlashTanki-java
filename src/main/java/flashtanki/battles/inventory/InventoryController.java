@@ -14,7 +14,7 @@ import flashtanki.battles.effects.impl.NitroEffect;
 import flashtanki.battles.tanks.math.Vector3;
 import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;

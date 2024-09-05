@@ -11,7 +11,7 @@ import flashtanki.lobby.LobbyManager;
 import flashtanki.lobby.battles.BattleInfo;
 import flashtanki.lobby.battles.BattlesList;
 import flashtanki.lobby.shop.GiveItemService;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;

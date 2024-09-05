@@ -3,7 +3,7 @@
  */
 package flashtanki.configurator.server.configuration;
 
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.configurator.osgi.OSGi;
 import java.io.File;

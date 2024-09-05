@@ -3,7 +3,7 @@ package flashtanki.battles.tanks.weapons.anticheats;
 import flashtanki.battles.BattlefieldModel;
 import flashtanki.battles.BattlefieldPlayerController;
 import flashtanki.battles.anticheats.AnticheatModel;
-//import flashtanki.logger.statistic.CheatDetectedLogger;
+import flashtanki.logger.statistic.CheatDetectedLogger;
 import java.util.ArrayList;
 
 @Deprecated
@@ -26,7 +26,7 @@ public class WeaponAnticheatModel {
         long delta = System.currentTimeMillis() - this.lastFireTime;
         if (delta <= (long)this.timeReloadWeapon) {
             if (this.suspiciousDeltas.size() >= 7) {
-                //CheatDetectedLogger.cheatDetected(this.player.getUser().getNickname(), this.getClass(), this.player.tank.getWeapon().getClass(), this.timeReloadWeapon, this.deltasToString());
+                CheatDetectedLogger.cheatDetected(this.player.getUser().getNickname(), this.getClass(), this.player.tank.getWeapon().getClass(), this.timeReloadWeapon, this.deltasToString());
                 this.bfModel.cheatDetected(this.player, this.getClass());
             }
             this.suspiciousDeltas.add(delta);

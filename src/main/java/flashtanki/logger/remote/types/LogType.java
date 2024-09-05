@@ -1,7 +1,7 @@
 /*
  * Decompiled with CFR 0.150.
  */
-package flashtanki.logger;
+package flashtanki.logger.remote.types;
 
 public enum LogType {
     INFO,

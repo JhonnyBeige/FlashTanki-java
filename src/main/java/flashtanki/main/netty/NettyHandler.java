@@ -3,9 +3,9 @@
  */
 package flashtanki.main.netty;
 
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.main.netty.blackip.model.BlackIPService;
 import org.jboss.netty.channel.*;
 

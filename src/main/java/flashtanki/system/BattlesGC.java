@@ -5,7 +5,7 @@ package flashtanki.system;
 
 import flashtanki.battles.BattlefieldModel;
 import flashtanki.lobby.battles.BattlesList;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.services.AutoEntryServices;
 

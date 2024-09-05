@@ -1,10 +1,12 @@
 /*
- * Decompiled with CFR 0.150.
+ * Decompiled with CFR 0.153-SNAPSHOT (d6f6758-dirty).
  */
-package flashtanki.logger;
+package flashtanki.logger.remote;
 
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
+import flashtanki.services.annotations.ServicesInject;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -13,6 +15,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class RemoteDatabaseLogger {
+    @ServicesInject(target=DatabaseManager.class)
     private static final DatabaseManager databaseManager = DatabaseManagerImpl.instance();
 
     public static void error(Exception ex) {
@@ -120,4 +123,3 @@ public class RemoteDatabaseLogger {
         }
     }
 }
-

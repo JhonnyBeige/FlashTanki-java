@@ -1,7 +1,9 @@
 /*
  * Decompiled with CFR 0.150.
  */
-package flashtanki.logger;
+package flashtanki.logger.remote;
+
+import flashtanki.logger.remote.types.LogType;
 
 import java.io.Serializable;
 import java.util.Date;

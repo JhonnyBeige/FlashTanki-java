@@ -1,6 +1,6 @@
 package flashtanki.battles.tanks.shoteffect.user;
 
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.services.hibernate.HibernateService;
 import flashtanki.battles.tanks.shoteffect.list.ShotEffectItem;
 import org.hibernate.Session;

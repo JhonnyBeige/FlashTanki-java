@@ -3,7 +3,7 @@ package flashtanki.users.garage.containers.list;
 import java.util.List;
 import java.util.Optional;
 
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import org.hibernate.Session;
 
 import flashtanki.services.hibernate.HibernateService;

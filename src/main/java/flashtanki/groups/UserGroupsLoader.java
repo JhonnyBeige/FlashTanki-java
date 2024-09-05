@@ -3,7 +3,7 @@
  */
 package flashtanki.groups;
 
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 import flashtanki.logger.LoggerService;
 import flashtanki.users.TypeUser;
 import java.io.File;

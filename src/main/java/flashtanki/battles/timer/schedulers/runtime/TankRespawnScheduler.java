@@ -11,7 +11,7 @@ import flashtanki.battles.tanks.TankState;
 import flashtanki.battles.tanks.math.Vector3;
 import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;

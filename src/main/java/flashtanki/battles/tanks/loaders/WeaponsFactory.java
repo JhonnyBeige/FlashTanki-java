@@ -30,7 +30,7 @@ import flashtanki.battles.tanks.weapons.thunder.ThunderModel;
 import flashtanki.battles.tanks.weapons.twins.TwinsEntity;
 import flashtanki.battles.tanks.weapons.twins.TwinsModel;
 import flashtanki.json.JSONUtils;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 
 import java.io.File;
 import java.io.FileReader;

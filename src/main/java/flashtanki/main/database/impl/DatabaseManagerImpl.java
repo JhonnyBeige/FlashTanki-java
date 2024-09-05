@@ -4,10 +4,10 @@
 package flashtanki.main.database.impl;
 
 import flashtanki.users.garage.containers.ContainerSystem;
-import flashtanki.logger.LogType;
-import flashtanki.logger.LogObject;
+import flashtanki.logger.remote.types.LogType;
+import flashtanki.logger.remote.LogObject;
 import flashtanki.logger.LoggerService;
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.netty.blackip.BlackIP;
 import flashtanki.services.hibernate.HibernateService;
@@ -17,7 +17,6 @@ import flashtanki.users.friends.Friends;
 import flashtanki.users.garage.Garage;
 import flashtanki.users.karma.Karma;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;

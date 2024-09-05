@@ -1,6 +1,6 @@
 package flashtanki.battles.tanks.skin.user;
 
-import flashtanki.logger.RemoteDatabaseLogger;
+import flashtanki.logger.remote.RemoteDatabaseLogger;
 import flashtanki.services.hibernate.HibernateService;
 import flashtanki.battles.tanks.skin.list.SkinItem;
 import org.hibernate.Session;

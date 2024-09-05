@@ -13,7 +13,7 @@ import flashtanki.battles.maps.parser.map.spawn.SpawnPosition;
 import flashtanki.battles.maps.parser.map.spawn.SpawnPositionType;
 import flashtanki.battles.maps.themes.MapThemeFactory;
 import flashtanki.battles.tanks.math.Vector3;
-import flashtanki.logger.LogType;
+import flashtanki.logger.remote.types.LogType;
 
 import java.io.File;
 import java.io.FileInputStream;
