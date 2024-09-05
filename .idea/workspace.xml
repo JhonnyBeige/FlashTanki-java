@@ -109,9 +109,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="Application" factoryName="Application">
       <method v="2">
-        <option name="nim.task.build.to.cache" enabled="true" />
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -139,6 +139,7 @@
       <workItem from="1725139934836" duration="1337000" />
       <workItem from="1725195336909" duration="670000" />
       <workItem from="1725566968114" duration="382000" />
+      <workItem from="1725567424763" duration="341000" />
     </task>
     <servers />
   </component>

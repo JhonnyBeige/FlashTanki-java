@@ -55,8 +55,6 @@ public interface DatabaseManager {
 
     void uncache(String var1);
 
-    void initHallOfFame();
-
     boolean contains(String var1);
 
     int getCacheSize();

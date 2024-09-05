@@ -4,7 +4,6 @@
 package flashtanki.main.database.impl;
 
 import flashtanki.users.garage.containers.ContainerSystem;
-import flashtanki.lobby.top.HallOfFame;
 import flashtanki.logger.LogType;
 import flashtanki.logger.LogObject;
 import flashtanki.logger.LoggerService;
@@ -306,20 +305,6 @@ public class DatabaseManagerImpl extends Thread implements DatabaseManager {
     @Override
     public int getCacheSize() {
         return this.cache.size();
-    }
-
-    @Override
-    public void initHallOfFame() {
-        Session session = null;
-        List users = new ArrayList();
-        try {
-            session = HibernateService.getSessionFactory().getCurrentSession();
-            users = session.createCriteria(User.class).list();
-            HallOfFame.getInstance().initHallFromCollection(users);
-        } catch (Exception e) {
-            e.printStackTrace();
-            RemoteDatabaseLogger.error(e);
-        }
     }
 
     @Override
