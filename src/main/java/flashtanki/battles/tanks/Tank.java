@@ -73,6 +73,10 @@ public class Tank {
         this.turnSpeed = hull.turnSpeed;
     }
 
+    public IWeapon getWeapon() {
+        return this.weapon;
+    }
+
     public Module getModule() {
         return this.module;
     }
@@ -94,4 +98,5 @@ public class Tank {
         }
         return false;
     }
+
 }

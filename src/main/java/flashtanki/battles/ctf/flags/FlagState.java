@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.ctf.flags;
 
 public enum FlagState {
@@ -9,4 +6,3 @@ public enum FlagState {
     DROPED;
 
 }
-

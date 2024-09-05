@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.tanks.weapons.anticheats;
 
 import flashtanki.battles.anticheats.AnticheatModel;
@@ -17,4 +14,3 @@ public class TickableWeaponAnticheatModel {
         return this.normalTickTime == timeFromClient;
     }
 }
-

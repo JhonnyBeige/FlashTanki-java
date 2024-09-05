@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.main.params;
 
 import java.util.ArrayList;

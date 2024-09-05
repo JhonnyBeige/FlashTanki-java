@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.ctf;
 
 import flashtanki.battles.ctf.flags.FlagServer;

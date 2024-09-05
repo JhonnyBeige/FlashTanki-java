@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.ctf.anticheats;
 
 import flashtanki.battles.BattlefieldModel;
@@ -10,9 +7,8 @@ import flashtanki.battles.ctf.flags.FlagState;
 import java.util.HashMap;
 
 public class CaptureTheFlagAnticheatModel {
-    private static final long MIN_TIME_DELIVERED = 4000L;
-    private HashMap<BattlefieldPlayerController, Data> datas = new HashMap();
-    private BattlefieldModel bfModel;
+    private final HashMap<BattlefieldPlayerController, Data> datas = new HashMap();
+    private final BattlefieldModel bfModel;
 
     public CaptureTheFlagAnticheatModel(BattlefieldModel bfModel) {
         this.bfModel = bfModel;
@@ -29,23 +25,25 @@ public class CaptureTheFlagAnticheatModel {
         return false;
     }
 
-    public boolean onDeliveredFlag(BattlefieldPlayerController taker, FlagServer flag) {
+    public boolean onDeliveredFlag(BattlefieldPlayerController taker) {
         Data data = this.datas.get(taker);
         long time = System.currentTimeMillis() - data.lastTimeTakeFlag;
         if (time <= 4000L && data.prevState == FlagState.BASE) {
             this.bfModel.cheatDetected(taker, this.getClass());
             return true;
         }
+        if (time <= 4000L && data.prevState == FlagState.DROPED) {
+            this.bfModel.cheatDetected(taker, this.getClass());
+            return true;
+        }
         return false;
     }
 
-    class Data {
+    static class Data {
         long lastTimeTakeFlag;
-        long lastTimeDeliveredFlag;
         FlagState prevState;
 
         Data() {
         }
     }
 }
-
