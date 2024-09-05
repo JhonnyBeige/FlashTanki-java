@@ -27,9 +27,9 @@ public class InventoryController {
     private static final String ACTIVATE_ITEM_COMAND = "activate_item";
     private static final String ENABLE_EFFECT_COMAND = "enable_effect";
     private static final String REFRESH_INVENTORY_COMAND = "update_inventory";
-    private static final DatabaseManager database = DatabaseManagerImpl.instance();
-    private static final LoggerService loggerService = LoggerService.getInstance();
-    private final BattlefieldPlayerController player;
+    private static DatabaseManager database = DatabaseManagerImpl.instance();
+    private static LoggerService loggerService = LoggerService.getInstance();
+    private BattlefieldPlayerController player;
 
     public static Map<EffectType, Map<EffectType, Long>> lockTime = Map.of(
             EffectType.ARMOR, Map.of(EffectType.ARMOR, 59L, EffectType.DAMAGE, 10L, EffectType.HEALTH, 0L, EffectType.NITRO, 5L),

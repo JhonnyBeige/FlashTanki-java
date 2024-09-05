@@ -1,8 +1,10 @@
+/*
+ * Decompiled with CFR 0.150.
+ */
 package flashtanki.battles.ctf;
 
 import flashtanki.battles.BattlefieldModel;
 import flashtanki.battles.BattlefieldPlayerController;
-import flashtanki.battles.ctf.FlagReturnTimer;
 import flashtanki.battles.ctf.anticheats.CaptureTheFlagAnticheatModel;
 import flashtanki.battles.ctf.flags.FlagServer;
 import flashtanki.battles.ctf.flags.FlagState;
@@ -10,15 +12,13 @@ import flashtanki.battles.tanks.math.Vector3;
 import flashtanki.commands.Type;
 import flashtanki.json.JSONUtils;
 import flashtanki.services.TanksServices;
-import flashtanki.services.annotations.ServicesInject;
 import java.util.ArrayList;
 
 public class CTFModel
-        extends CaptureTheFlagAnticheatModel {
+extends CaptureTheFlagAnticheatModel {
     private BattlefieldModel bfModel;
     private FlagServer blueFlag = new FlagServer();
     private FlagServer redFlag = new FlagServer();
-    @ServicesInject(target=TanksServices.class)
     private TanksServices tanksServices = TanksServices.getInstance();
 
     public CTFModel(BattlefieldModel bfModel) {
@@ -37,6 +37,9 @@ public class CTFModel
         if (flag.owner != null) {
             return;
         }
+        if(!taker.tank.state.equals("active")){
+            return;
+        }
         if (taker.playerTeamType.equals(flagTeamType)) {
             FlagServer enemyFlag = this.getEnemyTeamFlag(flagTeamType);
             if (flag.state == FlagState.DROPED) {
@@ -44,7 +47,7 @@ public class CTFModel
                 return;
             }
             if (enemyFlag.owner == taker) {
-                if (this.onDeliveredFlag(taker)) {
+                if (this.onDeliveredFlag(taker, enemyFlag)) {
                     return;
                 }
                 this.bfModel.sendToAllPlayers(Type.BATTLE, "deliver_flag", taker.playerTeamType, taker.tank.id);
@@ -57,7 +60,6 @@ public class CTFModel
                 }
                 int score = (taker.playerTeamType == "BLUE" ? this.bfModel.battleInfo.redPeople : this.bfModel.battleInfo.bluePeople) * 10;
                 this.tanksServices.addScore(taker.parentLobby, score);
-                taker.statistic.addScore(score);
                 this.bfModel.statistics.changeStatistic(taker);
                 double fund = 0.0;
                 ArrayList<BattlefieldPlayerController> otherTeam = new ArrayList<BattlefieldPlayerController>();
@@ -122,10 +124,9 @@ public class CTFModel
         }
         String id = following == null ? null : following.tank.id;
         this.bfModel.sendToAllPlayers(Type.BATTLE, "return_flag", flag.flagTeamType, id);
-        int score = 5;
+        int score = 0;//5; FIXME: check how close to flag it is and give from 0 to 5 xp
         if (following != null) {
             this.tanksServices.addScore(following.parentLobby, score);
-            following.statistic.addScore(score);
             this.bfModel.statistics.changeStatistic(following);
         }
     }
@@ -140,7 +141,7 @@ public class CTFModel
         return null;
     }
 
-    private FlagServer getEnemyTeamFlag(String teamType) {
+    public FlagServer getEnemyTeamFlag(String teamType) {
         if (teamType.equals("BLUE")) {
             return this.redFlag;
         }
@@ -158,3 +159,4 @@ public class CTFModel
         return this.blueFlag;
     }
 }
+

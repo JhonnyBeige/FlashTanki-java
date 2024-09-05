@@ -7,7 +7,7 @@ public enum UserLocation {
     BATTLESELECT,
     GARAGE,
     BATTLE,
-    ALL
+    ALL;
 
 }
 

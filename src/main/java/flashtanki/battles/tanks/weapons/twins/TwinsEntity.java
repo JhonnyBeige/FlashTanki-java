@@ -14,7 +14,7 @@ implements IEntity {
     public float shotRadius;
     public float damage_min;
     public float damage_max;
-    private final ShotData shotData;
+    private ShotData shotData;
 
     public TwinsEntity(float shotRange, float shotSpeed, float shotRadius, float damage_min, float damage_max, ShotData shotData) {
         this.shotRange = shotRange;

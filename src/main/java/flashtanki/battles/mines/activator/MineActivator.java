@@ -13,8 +13,8 @@ public class MineActivator
 extends TimerTask {
     private static final String PUT_MINE_COMMAND = "put_mine";
     private static final String ACTIVATE_MINE_COMMAND = "activate_mine";
-    private final BattlefieldModel bfModel;
-    private final ServerMine mine;
+    private BattlefieldModel bfModel;
+    private ServerMine mine;
 
     public MineActivator(BattlefieldModel bfModel, ServerMine mine) {
         this.bfModel = bfModel;

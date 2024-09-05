@@ -14,7 +14,7 @@ public class NewsFactory {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                stringBuilder.append(line);
+                stringBuilder.append(line).append("");
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -16,7 +16,7 @@ public class Command {
 
     public String toString() {
         String argsString = StringUtils.concatStrings(this.args);
-        return this.type.toString() + " " + argsString;
+        return String.valueOf(this.type.toString()) + " " + argsString;
     }
 }
 

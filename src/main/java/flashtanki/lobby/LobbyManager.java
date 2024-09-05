@@ -105,7 +105,8 @@ public class LobbyManager {
                     User userByNickName = database.getUserByNickName(cmd.args[2]);
                     System.out.println("user has prem: " + premiumService.getPremiumTime(this.localUser.getId()).isActivated());
                     chatLobby.addMessage(new ChatMessage(this.localUser, premiumService.getPremiumTime(this.localUser.getId()).isActivated(), cmd.args[0], this.stringToBoolean(cmd.args[1]),
-                            cmd.args[2].equals("NULL") ? null : userByNickName, !cmd.args[2].equals("NULL") && premiumService.getPremiumTime(userByNickName.getId()).isActivated(), this));
+                            cmd.args[2].equals("NULL") ? null : userByNickName, cmd.args[2].equals("NULL") ? false :
+                            premiumService.getPremiumTime(userByNickName.getId()).isActivated(), this));
                     break;
                 }
                 case GARAGE: {
@@ -146,7 +147,7 @@ public class LobbyManager {
         // send_code_unbind_email
         if (cmd.args[0].equals("send_code_unbind_email")) {
             this.localUser.setEmailConfirmationCode(String.valueOf((int) (Math.random() * 10000)));
-            database.update(this.localUser);
+            this.database.update(this.localUser);
             ObjectMapper objectMapper = new ObjectMapper();
             //FIXME: no kafka
             // kafkaTemplateService.getProducer().send(objectMapper.writeValueAsString(
@@ -161,7 +162,7 @@ public class LobbyManager {
                 this.localUser.setEmail(null);
                 this.localUser.setEmailConfirmed(false);
                 this.localUser.setEmailConfirmationCode(null);
-                database.update(this.localUser);
+                this.database.update(this.localUser);
                 this.send(Type.LOBBY, "email_unbinded");
             } else {
                 this.send(Type.LOBBY, "wrong_email_unbinded_code");
@@ -169,7 +170,7 @@ public class LobbyManager {
         }
         if (cmd.args[0].equals("send_confirm_email_code")) {
             this.localUser.setEmailConfirmationCode(String.valueOf((int) (Math.random() * 10000)));
-            database.update(this.localUser);
+            this.database.update(this.localUser);
             ObjectMapper objectMapper = new ObjectMapper();
             //FIXME: no kafka
             // kafkaTemplateService.getProducer().send(objectMapper.writeValueAsString(
@@ -182,7 +183,7 @@ public class LobbyManager {
             if (cmd.args.length > 1 && cmd.args[1].equals(this.localUser.getEmailConfirmationCode())) {
                 this.localUser.setEmailConfirmed(true);
                 this.localUser.setEmailConfirmationCode(null);
-                database.update(this.localUser);
+                this.database.update(this.localUser);
                 this.send(Type.LOBBY, "email_confirmed");
             } else {
                 this.send(Type.LOBBY, "wrong_email_confirmation_code");
@@ -313,11 +314,11 @@ public class LobbyManager {
         }
         if (cmd.args[0].equals("equip_skin")) {
             skinSystem.equipSkin(this.localUser.getId(), cmd.args[1],
-                    cmd.args.length <= 2 || Boolean.parseBoolean(cmd.args[2]));
+                    cmd.args.length > 2 ? Boolean.parseBoolean(cmd.args[2]) : true);
         }
         if (cmd.args[0].equals("equip_shot_effect")) {
             shotEffectSystem.equipShotEffect(this.localUser.getId(), cmd.args[1],
-                    cmd.args.length <= 2 || Boolean.parseBoolean(cmd.args[2]));
+                    cmd.args.length > 2 ? Boolean.parseBoolean(cmd.args[2]) : true);
         }
         if (cmd.args[0].equals("get_skins_info_for_item")) {
             String skinsForItem = skinSystem.getSkinsForItem(cmd.args[1],
@@ -327,11 +328,11 @@ public class LobbyManager {
         }
         if (cmd.args[0].equals("unequip_skin")) {
             skinSystem.unmountAllSkinsByItem(this.localUser.getId(), cmd.args[1],
-                    cmd.args.length <= 2 || Boolean.parseBoolean(cmd.args[2]));
+                    cmd.args.length > 2 ? Boolean.parseBoolean(cmd.args[2]) : true);
         }
         if (cmd.args[0].equals("unequip_shot_effect")) {
             shotEffectSystem.unmountAllShotEffectsByItem(this.localUser.getId(), cmd.args[1],
-                    cmd.args.length <= 2 || Boolean.parseBoolean(cmd.args[2]));
+                    cmd.args.length > 2 ? Boolean.parseBoolean(cmd.args[2]) : true);
         }
         if (cmd.args[0].equals("get_shot_effects_info_for_item")) {
             this.send(Type.GARAGE, "init_shot_effects_for_item", shotEffectSystem
@@ -427,7 +428,7 @@ public class LobbyManager {
         if (!this.localUser.isEmailConfirmed()) {
             this.localUser.setEmail(cmd.args[1]);
             this.localUser.setEmailConfirmed(false);
-            database.update(this.localUser);
+            this.database.update(this.localUser);
             this.send(Type.LOBBY, "mail_changed", cmd.args[1],
                     String.valueOf(this.localUser.isEmailConfirmed()));
         }
@@ -440,7 +441,7 @@ public class LobbyManager {
             return;
         }
         this.localUser.setPassword(newPass);
-        database.update(this.localUser);
+        this.database.update(this.localUser);
         this.send(Type.LOBBY, "password_changed");
 
     }
@@ -550,7 +551,7 @@ public class LobbyManager {
     }
 
     private void acceptFriend(String arg) {
-        friendsService.acceptFriend(this.localUser.getId(), arg);
+        this.friendsService.acceptFriend(this.localUser.getId(), arg);
     }
 
     private void enterInBattleBySpectator(String battleId) {
@@ -731,7 +732,7 @@ public class LobbyManager {
     }
 
     private void delFriend(final String uid1) {
-        friendsService.delFriend(this.localUser.getId(), uid1);
+        this.friendsService.delFriend(this.localUser.getId(), uid1);
     }
 
     private void makeFriend(final String nickname) {
@@ -755,8 +756,12 @@ public class LobbyManager {
                 e.printStackTrace();
             }
 
-            this.battle.destroy(autoEntryServices.removePlayer(this.battle.battle, this.getLocalUser().getNickname(),
-                    this.battle.playerTeamType, this.battle.battle.battleInfo.team));
+            if (this.autoEntryServices.removePlayer(this.battle.battle, this.getLocalUser().getNickname(),
+                    this.battle.playerTeamType, this.battle.battle.battleInfo.team)) {
+                this.battle.destroy(true);
+            } else {
+                this.battle.destroy(false);
+            }
             this.battle = null;
         }
         if (this.spectatorController != null) {
@@ -773,8 +778,12 @@ public class LobbyManager {
 
     public void onExitFromBattleToGarage() {
         if (this.battle != null) {
-            this.battle.destroy(autoEntryServices.removePlayer(this.battle.battle, this.getLocalUser().getNickname(),
-                    this.battle.playerTeamType, this.battle.battle.battleInfo.team));
+            if (this.autoEntryServices.removePlayer(this.battle.battle, this.getLocalUser().getNickname(),
+                    this.battle.playerTeamType, this.battle.battle.battleInfo.team)) {
+                this.battle.destroy(true);
+            } else {
+                this.battle.destroy(false);
+            }
             this.battle = null;
         }
         if (this.spectatorController != null) {
@@ -850,7 +859,7 @@ public class LobbyManager {
     }
 
     public void onEnterInBattle(String battleId) {
-        autoEntryServices.removePlayer(this.getLocalUser().getNickname());
+        this.autoEntryServices.removePlayer(this.getLocalUser().getNickname());
         if (this.battle != null) {
             return;
         }
@@ -1071,7 +1080,7 @@ public class LobbyManager {
     }
 
     private boolean stringToBoolean(String src) {
-        return src.equalsIgnoreCase("true");
+        return src.toLowerCase().equals("true");
     }
 
     public void onDisconnect() {

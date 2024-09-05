@@ -14,7 +14,7 @@ implements IEntity {
     public float minSplashDamageRadius;
     public float minSplashDamagePercent;
     public float impactForce;
-    private final ShotData shotData;
+    private ShotData shotData;
     public WeaponWeakeningData wwd;
     public float damage_min;
     public float damage_max;

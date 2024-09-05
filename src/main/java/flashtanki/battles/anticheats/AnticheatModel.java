@@ -1,3 +1,6 @@
+/*
+ * Decompiled with CFR 0.150.
+ */
 package flashtanki.battles.anticheats;
 
 import java.lang.annotation.ElementType;
@@ -12,3 +15,4 @@ public @interface AnticheatModel {
 
     public String actionInfo();
 }
+

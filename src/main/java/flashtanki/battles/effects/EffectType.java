@@ -37,6 +37,6 @@ public enum EffectType {
         public String toString() {
             return "mine";
         }
-    }
+    };
 }
 

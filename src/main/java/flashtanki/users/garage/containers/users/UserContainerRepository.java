@@ -83,7 +83,10 @@ public class UserContainerRepository {
             query.setParameter("containerId", containerId);
             List<Integer> result = query.list();
             tx.commit();
-            return result.size() > 0;
+            if (result.size() > 0) {
+                return true;
+            }
+            return false;
         } catch (Exception e) {
             e.printStackTrace();
             try {

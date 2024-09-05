@@ -509,7 +509,7 @@ public class ChatLobby {
             return;
         _lobby.kick();
         this.sendSystemMessageToAll(
-                _userForKick.getNickname() + " was kicked",
+                String.valueOf(_userForKick.getNickname()) + " was kicked",
                 false);
     }
 

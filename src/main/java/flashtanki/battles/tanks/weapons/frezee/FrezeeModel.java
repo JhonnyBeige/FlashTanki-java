@@ -20,9 +20,9 @@ import org.json.simple.parser.ParseException;
 public class FrezeeModel
 extends TickableWeaponAnticheatModel
 implements IWeapon {
-    private final FrezeeEntity entity;
-    private final BattlefieldModel bfModel;
-    private final BattlefieldPlayerController player;
+    private FrezeeEntity entity;
+    private BattlefieldModel bfModel;
+    private BattlefieldPlayerController player;
     private boolean hasFired = false;
 
     public FrezeeModel(FrezeeEntity entity, BattlefieldModel bfModel, BattlefieldPlayerController player) {

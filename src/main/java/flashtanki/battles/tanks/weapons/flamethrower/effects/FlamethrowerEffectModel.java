@@ -9,8 +9,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class FlamethrowerEffectModel {
-    private final Tank tank;
-    private final BattlefieldModel bfModel;
+    private Tank tank;
+    private BattlefieldModel bfModel;
     private FrezeeTimer currFrezeeTimer;
     private Double tankTemperature = 0.0;
     public static BattlefieldPlayerController player;
@@ -87,7 +87,7 @@ public class FlamethrowerEffectModel {
 
         @Override
         public void run() {
-            this.setName("FLAMETHROWER TIMER THREAD " + FlamethrowerEffectModel.this.tank);
+            this.setName("FLAMETHROWER TIMER THREAD " + String.valueOf(FlamethrowerEffectModel.this.tank));
             try {
                 FrezeeTimer.sleep(3000L);
             } catch (InterruptedException var2) {

@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LocalizedString {
-    private final Map<Localization, String> localizatedMap = new HashMap<Localization, String>();
+    private Map<Localization, String> localizatedMap = new HashMap<Localization, String>();
 
     protected LocalizedString(String ruVersion, String enVersion) {
         this.localizatedMap.put(Localization.RU, ruVersion);
@@ -16,7 +16,7 @@ public class LocalizedString {
     }
 
     public String localizatedString(Localization loc) {
-        String string = this.localizatedMap.get(loc);
+        String string = this.localizatedMap.get((Object)loc);
         return string == null ? "null" : string;
     }
 }

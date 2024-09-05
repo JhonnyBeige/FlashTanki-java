@@ -17,7 +17,7 @@ implements IEntity {
     public float shotDistance;
     public float damage_min;
     public float damage_max;
-    private final ShotData shotData;
+    private ShotData shotData;
 
     public RicochetEntity(float shotRadius, float shotSpeed, int energyCapacity, int energyPerShot, float energyRechargeSpeed, float shotDistance, float damage_min, float damage_max, ShotData shotData) {
         this.shotRadius = shotRadius;

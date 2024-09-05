@@ -19,7 +19,7 @@ import org.json.simple.parser.ParseException;
 public class FlamethrowerModel
         extends TickableWeaponAnticheatModel
         implements IWeapon {
-    private final FlamethrowerEntity entity;
+    private FlamethrowerEntity entity;
     public BattlefieldModel bfModel;
     public BattlefieldPlayerController player;
     private boolean hasFired = false;

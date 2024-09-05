@@ -4,6 +4,6 @@
 package flashtanki.system.destroy;
 
 public interface Destroyable {
-    void destroy();
+    public void destroy();
 }
 

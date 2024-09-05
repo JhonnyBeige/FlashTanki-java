@@ -34,8 +34,8 @@ public class ProtocolTransfer {
     private static final String encryptionIv = "D8BF3DF78364B5CC";
     private static final int MAX_PACKAGE_COUNT_PS = 10;
     public LobbyManager lobby;
-    private final Channel channel;
-    private final Map<String, Object> sessionData = new HashMap<>();
+    private Channel channel;
+    private Map<String, Object> sessionData = new HashMap<>();
     private int countPackageLastSec = 0;
     @Getter
     private long totalPackageCount = 0;
@@ -106,7 +106,7 @@ public class ProtocolTransfer {
     @SneakyThrows
     private String encode(String message, String key, String initVector) {
         IvParameterSpec iv = new IvParameterSpec(Base64.getDecoder().decode(initVector));
-        SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8), "AES");
+        SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes("UTF-8"), "AES");
 
         Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
         cipher.init(Cipher.ENCRYPT_MODE, skeySpec, iv);

@@ -13,9 +13,9 @@ public class FrezeeEffectModel {
     public float speed;
     public float turnSpeed;
     public float turretRotationSpeed;
-    private final float power;
-    private final Tank tank;
-    private final BattlefieldModel bfModel;
+    private float power;
+    private Tank tank;
+    private BattlefieldModel bfModel;
     private FrezeeTimer currFrezeeTimer;
 
     public FrezeeEffectModel(float power, Tank tank, BattlefieldModel bfModel) {
@@ -77,7 +77,7 @@ public class FrezeeEffectModel {
 
         @Override
         public void run() {
-            this.setName("FREZEE TIMER THREAD " + FrezeeEffectModel.this.tank);
+            this.setName("FREZEE TIMER THREAD " + String.valueOf(FrezeeEffectModel.this.tank));
             try {
                 FrezeeTimer.sleep(3000L);
             } catch (InterruptedException var2) {

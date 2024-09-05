@@ -10,7 +10,7 @@ import flashtanki.users.User;
 import flashtanki.users.locations.UserLocation;
 
 public class LobbysServices {
-    private static final LobbysServices instance = new LobbysServices();
+    private static LobbysServices instance = new LobbysServices();
     public FastHashMap<String, LobbyManager> lobbys = new FastHashMap();
 
     public static LobbysServices getInstance() {

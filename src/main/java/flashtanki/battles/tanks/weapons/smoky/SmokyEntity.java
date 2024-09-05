@@ -11,7 +11,7 @@ public class SmokyEntity
 implements IEntity {
     public float damage_min;
     public float damage_max;
-    private final ShotData shotData;
+    private ShotData shotData;
     public final EntityType type = EntityType.SMOKY;
 
     public SmokyEntity(ShotData shotData, float damage_min, float damage_max) {

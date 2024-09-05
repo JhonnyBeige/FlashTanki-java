@@ -40,7 +40,7 @@ public enum BonusType {
     };
 
 
-    BonusType() {
+    private BonusType() {
     }
 
     /* synthetic */ BonusType(String string, int n, BonusType bonusType) {

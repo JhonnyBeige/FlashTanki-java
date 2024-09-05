@@ -15,9 +15,11 @@ import flashtanki.users.User;
 import flashtanki.users.garage.GarageItemsLoader;
 import flashtanki.users.garage.enums.ItemType;
 import flashtanki.users.garage.items.Item;
-
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -26,8 +28,8 @@ import org.json.simple.parser.ParseException;
 public class GiftsServices {
     private static final GiftsServices INSTANCE = new GiftsServices();
     @ServicesInject(target=DatabaseManagerImpl.class)
-    private final DatabaseManager database = DatabaseManagerImpl.instance();
-    private final List<String> loadedGifts = new ArrayList<String>(Collections.singletonList(ContainerItemsFactory.getData()));
+    private DatabaseManager database = DatabaseManagerImpl.instance();
+    private List<String> loadedGifts = new ArrayList<String>(Arrays.asList(ContainerItemsFactory.getData()));
 
     public static GiftsServices instance() {
         return INSTANCE;
@@ -103,7 +105,7 @@ public class GiftsServices {
         }
         Optional<Item> item = lobby.getLocalUser().getGarage().getItemById("gift");
         this.updateInventory(lobby, item, 1);
-        lobby.send(Type.LOBBY, "item_rolled", itemId, countItems + ";" + offsetCrystalls, itemName + ";" + rarity);
+        lobby.send(Type.LOBBY, "item_rolled", itemId, countItems + ";" + offsetCrystalls, (String)itemName + ";" + rarity);
     }
 
     public void rollItems(LobbyManager lobby, int rollCount) {
@@ -192,17 +194,17 @@ public class GiftsServices {
     }
 
     private String getItemNameWithCount(LobbyManager lobby, String itemId, int countItems) {
-        if(GarageItemsLoader.getInstance().items.get(itemId) == null){
+        if(GarageItemsLoader.getInstance().items.get((Object)itemId) == null){
             return itemId;
         }
-        String itemName = GarageItemsLoader.getInstance().items.get(itemId).name.localizatedString(lobby.getLocalUser().getLocalization());
+        String itemName = GarageItemsLoader.getInstance().items.get((Object)itemId).name.localizatedString(lobby.getLocalUser().getLocalization());
         List<String> specialItemIds = Arrays.asList("mine", "n2o", "health", "armor", "double_damage");
         if (specialItemIds.contains(itemId)) {
             Optional<Item> bonusItem = lobby.getLocalUser().getGarage().getItemById(itemId);
             if (bonusItem == null) {
                 lobby.getLocalUser().getGarage().giveItem(itemId, countItems, () -> {}, () -> {});
             }
-            itemName = itemName + " x" + countItems;
+            itemName = (String)itemName + " x" + countItems;
         }
         return itemName;
     }
@@ -303,7 +305,7 @@ public class GiftsServices {
         }
         if (itemsWithRarity.size() > 0) {
             int randomIndex = random.nextInt(itemsWithRarity.size());
-            return itemsWithRarity.get(randomIndex);
+            return (JSONObject)itemsWithRarity.get(randomIndex);
         }
         return (JSONObject)jsonArray.get(0);
     }

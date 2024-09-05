@@ -4,15 +4,15 @@
 package flashtanki.battles.tanks.weapons;
 
 public interface IEntity {
-    int chargingTime = 0;
-    int weakeningCoeff = 0;
-    float damage_min = 0.0f;
-    float damage_max = 0.0f;
+    public static final int chargingTime = 0;
+    public static final int weakeningCoeff = 0;
+    public static final float damage_min = 0.0f;
+    public static final float damage_max = 0.0f;
 
-    ShotData getShotData();
+    public ShotData getShotData();
 
-    EntityType getType();
+    public EntityType getType();
 
-    String toString();
+    public String toString();
 }
 

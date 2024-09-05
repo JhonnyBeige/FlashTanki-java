@@ -5,7 +5,7 @@ package flashtanki.system.localization;
 
 public enum Localization {
     RU,
-    EN
+    EN;
 
 }
 

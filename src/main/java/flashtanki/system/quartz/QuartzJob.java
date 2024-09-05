@@ -6,6 +6,6 @@ package flashtanki.system.quartz;
 import org.quartz.JobExecutionContext;
 
 public interface QuartzJob {
-    void run(JobExecutionContext var1);
+    public void run(JobExecutionContext var1);
 }
 

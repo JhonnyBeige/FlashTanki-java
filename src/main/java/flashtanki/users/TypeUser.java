@@ -93,5 +93,5 @@ public enum TypeUser {
         public String toString() {
             return "tester";
         }
-    }
+    };
 }

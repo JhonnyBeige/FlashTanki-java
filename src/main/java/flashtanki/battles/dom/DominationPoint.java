@@ -20,9 +20,9 @@ public class DominationPoint {
     private double timeLeft;
     private boolean pointCapturedByBlue;
     private boolean pointCapturedByRed;
-    private final List<String> userIds = new ArrayList<String>();
-    private final List<BattlefieldPlayerController> blues;
-    private final List<BattlefieldPlayerController> reds;
+    private List<String> userIds = new ArrayList<String>();
+    private List<BattlefieldPlayerController> blues;
+    private List<BattlefieldPlayerController> reds;
     private DominationModel.DominationPointHandler tickableHandler;
 
     public DominationPoint(String id, Vector3 pos, double radius) {

@@ -19,7 +19,7 @@ public class BonusTakeModel {
     private static final String SET_CRY = "set_cry";
     private static final String ENABLE_EFFECT_COMAND = "enable_effect";
     private static final int GOLD_BONUS_COST = 1000;
-    private static final DatabaseManager database = DatabaseManagerImpl.instance();
+    private static DatabaseManager database = DatabaseManagerImpl.instance();
     private static BonusTakeModel instance;
 
     private BonusTakeModel() {
@@ -40,7 +40,7 @@ public class BonusTakeModel {
                         "has taken the gold box");
                 player.parentLobby.getLocalUser().addCrystall(GOLD_BONUS_COST);
                 player.send(Type.BATTLE, SET_CRY, String.valueOf(player.parentLobby.getLocalUser().getCrystall()));
-                database.update(player.getUser());
+                this.database.update(player.getUser());
                 player.battle.sendToAllPlayers(Type.BATTLE, "remove_graffiti;" + bonus.id);
                 break;
             }

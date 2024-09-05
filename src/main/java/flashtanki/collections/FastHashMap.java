@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class FastHashMap<K, V>
 implements Iterable<V> {
-    private final ConcurrentHashMap<K, V> map = new ConcurrentHashMap();
+    private ConcurrentHashMap<K, V> map = new ConcurrentHashMap();
 
     public void put(K key, V value) {
         if (key == null || value == null) {

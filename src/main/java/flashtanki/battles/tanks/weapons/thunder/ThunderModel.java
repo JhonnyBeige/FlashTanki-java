@@ -20,9 +20,9 @@ import org.json.simple.parser.ParseException;
 public class ThunderModel
 extends FireableWeaponAnticheatModel
 implements IWeapon {
-    private final ThunderEntity entity;
-    private final BattlefieldModel bfModel;
-    private final BattlefieldPlayerController player;
+    private ThunderEntity entity;
+    private BattlefieldModel bfModel;
+    private BattlefieldPlayerController player;
 
     public ThunderModel(ThunderEntity entity, BattlefieldModel bfModel, BattlefieldPlayerController player) {
         super(entity.getShotData().reloadMsec);

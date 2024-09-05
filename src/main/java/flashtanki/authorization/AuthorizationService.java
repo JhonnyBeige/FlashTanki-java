@@ -61,7 +61,7 @@ public class AuthorizationService {
                 if (command.args[0].equals("recovery_account")) {
                     String userEmail = command.args[1];
                     // check if email exists and is linked to any account
-                    String nickname = database.getNicknameByEmail(userEmail);
+                    String nickname = this.database.getNicknameByEmail(userEmail);
                     boolean emailExists = nickname != null;
                     if (!emailExists) {
                         protocolTransfer.send(Type.AUTH, "recovery_account_result", "false");
@@ -71,9 +71,9 @@ public class AuthorizationService {
                     // of
                     protocolTransfer.setParam("restoringUser", nickname);
                     // process the email sending the code
-                    User localUser = database.getUserByNickName(nickname);
+                    User localUser = this.database.getUserByNickName(nickname);
                     localUser.setEmailConfirmationCode(String.valueOf((int) (Math.random() * 10000)));
-                    database.update(localUser);
+                    this.database.update(localUser);
                     ObjectMapper objectMapper = new ObjectMapper();
                     //FIXME: no kafka
                     // kafkaTemplateService.getProducer().send(objectMapper.writeValueAsString(
@@ -85,7 +85,7 @@ public class AuthorizationService {
                     return;
                 }
                 if (command.args[0].equals("recovery_account_code")) {
-                    User localUser = database.getUserByNickName(protocolTransfer.getParam("restoringUser"));
+                    User localUser = this.database.getUserByNickName(protocolTransfer.getParam("restoringUser"));
                     // check if code is equal to the code sent in email
                     String codeSentInEmail = localUser.getEmailConfirmationCode();
                     if (command.args[1].equals(codeSentInEmail)) {
@@ -124,9 +124,9 @@ public class AuthorizationService {
                     return;
                 }
                 if (id.contains("@")) {
-                    id = database.getNicknameByEmail(id);
+                    id = this.database.getNicknameByEmail(id);
                 }
-                User user = database.getUserByNickName(id);
+                User user = this.database.getUserByNickName(id);
                 if (user == null) {
                     protocolTransfer.send(Type.AUTH, "not_exist");
                     return;
@@ -147,7 +147,7 @@ public class AuthorizationService {
                         nickname = null;
                         return;
                     }
-                    boolean callsignExist = database.contains(nickname);
+                    boolean callsignExist = this.database.contains(nickname);
                     boolean callsignNormal = this.callsignNormal(nickname);
                     
                     loggerService.log(LogType.INFO, "callsign exist: " + nickname + " " + callsignExist);
@@ -170,14 +170,14 @@ public class AuthorizationService {
                         return;
                     }
 
-                    if (database.contains(nickname)) {
+                    if (this.database.contains(nickname)) {
                         protocolTransfer.send(Type.REGISTRATON, "nickname_exist");
                         return;
                     }
                     if (this.callsignNormal(nickname)) {
                          User newUser = new User(nickname, password);
                          newUser.setLastIP("127.0.0.1"); //stub
-                         database.register(newUser);
+                         this.database.register(newUser);
                          protocolTransfer.send(Type.REGISTRATON, "info_done");
                          this.createNewUser(newUser, protocolTransfer);
                          protocolTransfer.identify(newUser.getId());
@@ -208,11 +208,11 @@ public class AuthorizationService {
 
     private void createNewUser(User user, ProtocolTransfer protocolTransfer) {
         try {
-            Karma karma = database.getKarmaByUser(user);
+            Karma karma = this.database.getKarmaByUser(user);
             user.setKarma(karma);
             user.getAntiCheatData().ip = protocolTransfer.getIP();
-            database.cache(user);
-            user.setGarage(database.getGarageByUser(user));
+            this.database.cache(user);
+            user.setGarage(this.database.getGarageByUser(user));
             user.getGarage().unparseJSONData();
             user.setUserGroup(UserGroupsLoader.getUserGroup(user.getType()));
             loggerService.log(LogType.INFO, "User registered: " + user.getNickname() + " with ID: " + user.getId());
@@ -231,10 +231,10 @@ public class AuthorizationService {
                 protocolTransfer.send(Type.LOBBY, "init_battle_select", JSONUtils.parseBattleMapList());
                 protocolTransfer.send(Type.LOBBY_CHAT, "init_chat");
                 protocolTransfer.send(Type.LOBBY_CHAT, "init_messages",
-                        JSONUtils.parseChatLobbyMessages(chatLobby.getMessages()));
+                        JSONUtils.parseChatLobbyMessages(this.chatLobby.getMessages()));
             }
             user.setLastIP(user.getAntiCheatData().ip);
-            database.update(user);
+            this.database.update(user);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -287,13 +287,13 @@ public class AuthorizationService {
                 protocolTransfer.send(Type.LOBBY, "init_battle_select", JSONUtils.parseBattleMapList());
                 protocolTransfer.send(Type.LOBBY_CHAT, "init_chat");
                 protocolTransfer.send(Type.LOBBY_CHAT, "init_messages",
-                        JSONUtils.parseChatLobbyMessages(chatLobby.getMessages()));
+                        JSONUtils.parseChatLobbyMessages(this.chatLobby.getMessages()));
             } else {
                 protocolTransfer.send(Type.LOBBY, "init_battlecontroller");
-                autoEntryServices.prepareToEnter(protocolTransfer.lobby);
+                this.autoEntryServices.prepareToEnter(protocolTransfer.lobby);
             }
             user.setLastIP(user.getAntiCheatData().ip);
-            database.update(user);
+            this.database.update(user);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

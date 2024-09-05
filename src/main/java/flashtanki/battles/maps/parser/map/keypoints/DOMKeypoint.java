@@ -40,7 +40,7 @@ public class DOMKeypoint {
     }
 
     public String toString() {
-        return "Point id: " + this.pointId + " position: " + this.position;
+        return "Point id: " + this.pointId + " position: " + String.valueOf(this.position);
     }
 }
 

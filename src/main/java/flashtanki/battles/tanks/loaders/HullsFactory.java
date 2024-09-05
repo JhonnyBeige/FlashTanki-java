@@ -21,8 +21,8 @@ import org.json.simple.parser.ParseException;
 
 public class HullsFactory {
     private static HullsFactory instance;
-    private static final LoggerService loggerService = LoggerService.getInstance();
-    private final HashMap<String, Hull> hulls = new HashMap();
+    private static LoggerService loggerService = LoggerService.getInstance();
+    private HashMap<String, Hull> hulls = new HashMap();
 
     public static HullsFactory getInstance() {
         if (instance == null) {
@@ -43,7 +43,7 @@ public class HullsFactory {
         }
     }
 
-    private void parse(File config) throws IOException, ParseException {
+    private void parse(File config) throws FileNotFoundException, IOException, ParseException {
         JSONObject jobj = (JSONObject) new JSONParser().parse(new FileReader(config));
         String type = (String) jobj.get("type");
         for (Object obj : (JSONArray) jobj.get("modifications")) {

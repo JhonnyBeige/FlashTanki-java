@@ -112,7 +112,7 @@ public class BattlefieldModel implements Destroyable {
     }
 
     private void startTimeBattle() {
-        this.endBattleTime = System.currentTimeMillis() + (long) (this.battleInfo.time * 1000L);
+        this.endBattleTime = System.currentTimeMillis() + (long) (this.battleInfo.time * 1000);
         quartzService.addJob(this.QUARTZ_NAME, QUARTZ_GROUP, e -> {
             loggerService.log(LogType.DEBUG, "battle end...");
             this.tanksKillModel.restartBattle(true);
@@ -136,7 +136,7 @@ public class BattlefieldModel implements Destroyable {
             this.respawnPlayer(player, false);
         }
         long currentTimeMillis = System.currentTimeMillis();
-        int prepareTimeLeft = (int) ((currentTimeMillis + (long) (this.battleInfo.time * 1000L) - currentTimeMillis) / 1000L);
+        int prepareTimeLeft = (int) ((currentTimeMillis + (long) (this.battleInfo.time * 1000) - currentTimeMillis) / 1000L);
         this.sendToAllPlayers(Type.BATTLE, "battle_restart", String.valueOf(prepareTimeLeft));
         if (this.battleInfo.time > 0) {
             this.startTimeBattle();
@@ -165,7 +165,7 @@ public class BattlefieldModel implements Destroyable {
                 this.ctfModel.getRedFlag().owner = null;
             }
         }
-        if (!battleInfo.isPaid || battleInfo.inventory) {
+        if ((battleInfo.isPaid && battleInfo.inventory) || !battleInfo.isPaid) {
             this.bonusesSpawnService.battleFinished();
         }
         this.tanksKillModel.setBattleFund(0);
@@ -422,7 +422,7 @@ public class BattlefieldModel implements Destroyable {
     }
 
     public void cheatDetected(BattlefieldPlayerController player, Class<?> anticheat) {
-        AnticheatModel[] model = anticheat.getAnnotationsByType(AnticheatModel.class);
+        AnticheatModel[] model = (AnticheatModel[]) anticheat.getAnnotationsByType(AnticheatModel.class);
         if (model != null && model.length >= 1) {
             loggerService.log(LogType.INFO, "Detected cheater![" + model[0].name() + "] " + player.getUser().getNickname() + " " + player.parentLobby.protocolTransfer.getIP());
         }

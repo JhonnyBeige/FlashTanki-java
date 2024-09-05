@@ -39,7 +39,7 @@ public class ChatMessage {
     }
 
     public String toString() {
-        return (this.system ? "SYSTEM: " : this.user.getNickname() + ": ") + (this.addressed ? "->" + this.userTo.getNickname() : "") + this.message;
+        return String.valueOf(this.system ? "SYSTEM: " : String.valueOf(this.user.getNickname()) + ": ") + (this.addressed ? "->" + this.userTo.getNickname() : "") + this.message;
     }
 }
 

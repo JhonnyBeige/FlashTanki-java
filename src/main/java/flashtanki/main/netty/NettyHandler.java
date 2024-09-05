@@ -62,7 +62,7 @@ public class NettyHandler extends SimpleChannelUpstreamHandler {
             StringWriter sw = new StringWriter();
             e.getCause().printStackTrace(new PrintWriter(sw));
             String exceptionAsString = sw.toString();
-            RemoteDatabaseLogger.error(exceptionAsString);
+            RemoteDatabaseLogger.error(exceptionAsString.toString());
             if (ctx.getChannel().isConnected()) {
                 ctx.getChannel().close();
             }

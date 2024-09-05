@@ -329,7 +329,7 @@ public class BattlefieldPlayerController implements  Comparable<BattlefieldPlaye
             --this.battle.battleInfo.redPeople;
             ++this.battle.battleInfo.bluePeople;
         }
-        lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, "update_count_users_in_team_battle", JSONUtils.parseUpdateCoundPeoplesCommand(this.battle.battleInfo));
+        this.lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, "update_count_users_in_team_battle", JSONUtils.parseUpdateCoundPeoplesCommand(this.battle.battleInfo));
         this.battle.sendToAllPlayers(flashtanki.commands.Type.BATTLE, "change_user_team", this.tank.id, this.playerTeamType);
     }
 
@@ -337,11 +337,11 @@ public class BattlefieldPlayerController implements  Comparable<BattlefieldPlaye
 
         this.battle.removeUser(this, cache);
         if (!cache) {
-            lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, "remove_player_from_battle", JSONUtils.parseRemovePlayerComand(this));
+            this.lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, "remove_player_from_battle", JSONUtils.parseRemovePlayerComand(this));
             if (!this.battle.battleInfo.team) {
-                lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, StringUtils.concatStrings("update_count_users_in_dm_battle", ";", this.battle.battleInfo.battleId, ";", String.valueOf(this.battle.players.size())));
+                this.lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, StringUtils.concatStrings("update_count_users_in_dm_battle", ";", this.battle.battleInfo.battleId, ";", String.valueOf(this.battle.players.size())));
             } else {
-                lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, "update_count_users_in_team_battle", JSONUtils.parseUpdateCoundPeoplesCommand(this.battle.battleInfo));
+                this.lobbysServices.sendCommandToAllUsers(flashtanki.commands.Type.LOBBY, UserLocation.BATTLESELECT, "update_count_users_in_team_battle", JSONUtils.parseUpdateCoundPeoplesCommand(this.battle.battleInfo));
             }
         }
         this.parentLobby = null;
@@ -356,7 +356,7 @@ public class BattlefieldPlayerController implements  Comparable<BattlefieldPlaye
     }
 
     public void onDisconnect() {
-        autoEntryServices.userExit(this);
+        this.autoEntryServices.userExit(this);
         this.destroy(true);
     }
 

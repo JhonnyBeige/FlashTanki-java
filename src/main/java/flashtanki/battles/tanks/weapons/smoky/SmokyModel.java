@@ -21,10 +21,10 @@ import org.json.simple.parser.ParseException;
 @AnticheatModel(name="SmokyModel", actionInfo="Child FireableWeaponAnticheatModel")
 public class SmokyModel extends FireableWeaponAnticheatModel implements IWeapon {
     private static final LoggerService loggerService = LoggerService.getInstance();
-    private final BattlefieldModel bfModel;
-    private final BattlefieldPlayerController player;
-    private final SmokyEntity entity;
-    private final WeaponWeakeningData weakeingData;
+    private BattlefieldModel bfModel;
+    private BattlefieldPlayerController player;
+    private SmokyEntity entity;
+    private WeaponWeakeningData weakeingData;
 
     public SmokyModel(SmokyEntity entity, WeaponWeakeningData weakeingData, BattlefieldModel bfModel, BattlefieldPlayerController player) {
         super(entity.getShotData().reloadMsec);

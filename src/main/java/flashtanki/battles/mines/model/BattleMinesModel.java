@@ -18,20 +18,19 @@ import flashtanki.configurator.server.configuration.entitys.MineConfiguratorEnti
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class BattleMinesModel {
     private static final String REMOVE_MINES_COMMAND = "remove_mines";
     private static final String INIT_MINES_COMMAND = "init_mines";
     private static final String HIT_MINE_COMMAND = "hit_mine";
     private static final String INIT_MINE_MODEL_COMMAND = "init_mine_model";
-    private final BattlefieldModel bfModel;
-    private final FastHashMap<BattlefieldPlayerController, ArrayList<ServerMine>> mines;
+    private BattlefieldModel bfModel;
+    private FastHashMap<BattlefieldPlayerController, ArrayList<ServerMine>> mines;
     private static String _initObjectData;
-    private final MinesActivatorService minesActivatorService = MinesActivatorService.getInstance();
+    private MinesActivatorService minesActivatorService = MinesActivatorService.getInstance();
     private int _incrationId;
-    private static final int minDamage;
-    private static final int maxDamage;
+    private static int minDamage;
+    private static int maxDamage;
 
     static {
         MineConfiguratorEntity configurator = (MineConfiguratorEntity)OSGi.getModelByInterface(MineConfiguratorEntity.class);
@@ -68,12 +67,12 @@ public class BattleMinesModel {
 
     public void tryPutMine(BattlefieldPlayerController player, Vector3 pos) {
         ServerMine mine = new ServerMine();
-        mine.setId(player.tank.id + "_" + this._incrationId);
+        mine.setId(String.valueOf(player.tank.id) + "_" + this._incrationId);
         mine.setOwner(player);
         mine.setPosition(pos);
         ArrayList<ServerMine> userMines = this.mines.get(player);
         if (userMines == null) {
-            userMines = new ArrayList<ServerMine>(List.of(mine));
+            userMines = new ArrayList<ServerMine>(Arrays.asList(mine));
             this.mines.put(player, userMines);
         } else {
             userMines.add(mine);

@@ -30,7 +30,7 @@ import flashtanki.users.karma.Karma;
 import java.util.Date;
 
 public class BattlefieldChatModel {
-    private final BattlefieldModel bfModel;
+    private BattlefieldModel bfModel;
     private static final TanksServices tanksServices = TanksServices.getInstance();
 
     private static final DatabaseManager database = DatabaseManagerImpl.instance();
@@ -52,7 +52,7 @@ public class BattlefieldChatModel {
                 if ((message = message.trim()).isEmpty()) {
                     return;
                 }
-                Karma karma = database.getKarmaByUser(player.getUser());
+                Karma karma = this.database.getKarmaByUser(player.getUser());
                 if (karma.isChatBanned()) {
                     Date banTo;
                     long currDate = System.currentTimeMillis();
@@ -64,7 +64,7 @@ public class BattlefieldChatModel {
                                 ". Reason: " + karma.getReasonChatBan()));
                         return;
                     }
-                    banServices.unbanChat(player.getUser());
+                    this.banServices.unbanChat(player.getUser());
                 }
                 if (!this.bfModel.battleInfo.team) {
                     team = false;
@@ -100,7 +100,7 @@ public class BattlefieldChatModel {
                         break;
                     }
                     case "addcry": {
-                        tanksServices.addCrystall(player.parentLobby, this.getInt(arguments[1]));
+                        this.tanksServices.addCrystall(player.parentLobby, this.getInt(arguments[1]));
                         break;
                     }
                     case "addscore": {
@@ -110,14 +110,14 @@ public class BattlefieldChatModel {
                                     player);
                             break;
                         }
-                        tanksServices.addScore(player.parentLobby, score);
+                        this.tanksServices.addScore(player.parentLobby, score);
                         break;
                     }
                     case "blockgame": {
                         if (arguments.length < 3) {
                             return;
                         }
-                        User victim_ = database.getUserByNickName(arguments[1]);
+                        User victim_ = this.database.getUserByNickName(arguments[1]);
                         int reasonId = 0;
                         try {
                             reasonId = Integer.parseInt(arguments[2]);
@@ -135,9 +135,9 @@ public class BattlefieldChatModel {
                             time = BanChatCommads.getTimeType(arguments[3]);
                         }
 
-                        banServices.ban(BanType.GAME, time, victim_, player.getUser(),
+                        this.banServices.ban(BanType.GAME, time, victim_, player.getUser(),
                                 BlockGameReason.getReasonById(reasonId).getReason());
-                        LobbyManager lobby = lobbyServices.getLobbyByNick(victim_.getNickname());
+                        LobbyManager lobby = this.lobbyServices.getLobbyByNick(victim_.getNickname());
                         if (lobby != null) {
                             lobby.kick();
                         }
@@ -149,14 +149,14 @@ public class BattlefieldChatModel {
                     case "unban": {
                         if (arguments.length < 2)
                             break;
-                        User cu = database.getUserByNickName(arguments[1]);
+                        User cu = this.database.getUserByNickName(arguments[1]);
                         if (cu == null) {
                             this.sendSystemMessage(
                                     "[SERVER]: Player not found!",
                                     player);
                             break;
                         }
-                        banServices.unbanChat(cu);
+                        this.banServices.unbanChat(cu);
                         this.sendSystemMessage("Tanker " + cu.getNickname()
                                 + " has been unbanned");
                         break;
@@ -165,14 +165,14 @@ public class BattlefieldChatModel {
                         if (arguments.length < 2) {
                             return;
                         }
-                        User av = database.getUserByNickName(arguments[1]);
+                        User av = this.database.getUserByNickName(arguments[1]);
                         if (av == null) {
                             this.sendSystemMessage(
                                     "[SERVER]: User not found!",
                                     player);
                             break;
                         }
-                        banServices.unblock(av);
+                        this.banServices.unblock(av);
                         this.sendSystemMessage(av.getNickname()
                                 + " unlocked");
                         break;
@@ -184,14 +184,14 @@ public class BattlefieldChatModel {
                         break;
                     }
                     case "kick": {
-                        User _userForKick = database.getUserByNickName(arguments[1]);
+                        User _userForKick = this.database.getUserByNickName(arguments[1]);
                         if (_userForKick == null) {
                             this.sendSystemMessage(
                                     "[SERVER]: Player not found",
                                     player);
                             break;
                         }
-                        LobbyManager _lobby = lobbyServices.getLobbyByUser(_userForKick);
+                        LobbyManager _lobby = this.lobbyServices.getLobbyByUser(_userForKick);
                         if (_lobby == null)
                             break;
                         _lobby.kick();
@@ -207,7 +207,7 @@ public class BattlefieldChatModel {
                         if (arguments.length < 3) {
                             return;
                         }
-                        User giver = database.getUserByNickName(arguments[1]);
+                        User giver = this.database.getUserByNickName(arguments[1]);
                         if (giver == null) {
                             this.sendSystemMessage("[SERVER]: Player not found\u0435\u043d!", player);
                             break;
@@ -220,7 +220,7 @@ public class BattlefieldChatModel {
                     case "getip": {
                         if (arguments.length < 2)
                             break;
-                        User shower = database.getUserByNickName(arguments[1]);
+                        User shower = this.database.getUserByNickName(arguments[1]);
                         if (shower == null) {
                             return;
                         }
@@ -251,14 +251,14 @@ public class BattlefieldChatModel {
                                 player);
                         return;
                     }
-                    User _victim = database.getUserByNickName(arguments[1]);
+                    User _victim = this.database.getUserByNickName(arguments[1]);
                     if (_victim == null) {
                         this.sendSystemMessage(
                                 "[SERVER]: Player not found!",
                                 player);
                         return;
                     }
-                    banServices.ban(BanType.CHAT, time, _victim, player.getUser(), reason);
+                    this.banServices.ban(BanType.CHAT, time, _victim, player.getUser(), reason);
                     this.sendSystemMessage(StringUtils.concatStrings("Tanker ",
                             _victim.getNickname(),
                             " has been muted from the chat ",
@@ -279,7 +279,7 @@ public class BattlefieldChatModel {
                 if (player.getUser().getWarnings() >= 5) {
                     BanTimeType time = BanTimeType.FIVE_MINUTES;
                     String reason = "Flood.";
-                    banServices.ban(BanType.CHAT, time, player.getUser(), player.getUser(), reason);
+                    this.banServices.ban(BanType.CHAT, time, player.getUser(), player.getUser(), reason);
                     this.sendSystemMessage(StringUtils.concatStrings("Tanker ",
                             player.getUser().getNickname(),
                             " has been muted from the chat ",
@@ -339,7 +339,7 @@ public class BattlefieldChatModel {
     }
 
     private void sendMessage(BattleChatMessage msg, SpectatorController controller) {
-        lobbyServices.getLobbyByUser(controller.getUser()).send(Type.BATTLE, "chat", JSONUtils.parseBattleChatMessage(msg));
+        this.lobbyServices.getLobbyByUser(controller.getUser()).send(Type.BATTLE, "chat", JSONUtils.parseBattleChatMessage(msg));
     }
 
     public int getInt(String src) {

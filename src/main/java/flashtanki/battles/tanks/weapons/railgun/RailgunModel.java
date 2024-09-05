@@ -19,9 +19,9 @@ import org.json.simple.parser.ParseException;
 public class RailgunModel
 extends FireableWeaponAnticheatModel
 implements IWeapon {
-    private final RailgunEntity entity;
-    private final BattlefieldModel battle;
-    private final BattlefieldPlayerController tank;
+    private RailgunEntity entity;
+    private BattlefieldModel battle;
+    private BattlefieldPlayerController tank;
 
     public RailgunModel(RailgunEntity entity, BattlefieldPlayerController tank, BattlefieldModel battle) {
         super(entity.getShotData().reloadMsec);
@@ -51,7 +51,7 @@ implements IWeapon {
             }
             BattlefieldPlayerController[] tanks_array = new BattlefieldPlayerController[tanks.size()];
             for (int i = 0; i < tanks.size(); ++i) {
-                tanks_array[i] = this.battle.players.get(tanks.get(i));
+                tanks_array[i] = this.battle.players.get((String)tanks.get(i));
             }
             this.onTarget(tanks_array, 0);
         }

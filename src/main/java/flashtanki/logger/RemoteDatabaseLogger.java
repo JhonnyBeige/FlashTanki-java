@@ -112,9 +112,10 @@ public class RemoteDatabaseLogger {
         }
 
         public boolean equals(Object obj) {
-            if (!(obj instanceof DumpData _obj)) {
+            if (!(obj instanceof DumpData)) {
                 return false;
             }
+            DumpData _obj = (DumpData)obj;
             return this.obj.getMessage().equals(_obj.obj.getMessage());
         }
     }
