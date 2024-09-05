@@ -1,15 +1,13 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.battles.ctf;
 
+import flashtanki.battles.ctf.CTFModel;
 import flashtanki.battles.ctf.flags.FlagServer;
 
 public class FlagReturnTimer
-extends Thread {
+        extends Thread {
     public boolean stop = false;
-    private final CTFModel ctfModel;
-    private final FlagServer flag;
+    private CTFModel ctfModel;
+    private FlagServer flag;
 
     public FlagReturnTimer(CTFModel ctfModel, FlagServer flag) {
         super.setName("FlagReturnTimer THREAD");
@@ -24,10 +22,8 @@ extends Thread {
             if (!this.stop) {
                 this.ctfModel.returnFlag(null, this.flag);
             }
-        }
-        catch (InterruptedException e) {
-            e.printStackTrace();
+        } catch (InterruptedException var2) {
+            var2.printStackTrace();
         }
     }
 }
-
