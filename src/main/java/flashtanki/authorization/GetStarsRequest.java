@@ -1,4 +1,4 @@
-package flashtanki.system.missions.challenges;
+package flashtanki.authorization;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

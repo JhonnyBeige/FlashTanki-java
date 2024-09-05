@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="277b6907-4be7-4ae1-a00c-15ad0981c799" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/BonusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/BonusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/BonusesSpawnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/BonusesSpawnService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/model/BonusTakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/bonuses/model/BonusTakeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/chat/BattlefieldChatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/chat/BattlefieldChatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/battles/spectator/chat/SpectatorChatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/battles/spectator/chat/SpectatorChatModel.java" afterDir="false" />
-    </list>
+    <list default="true" id="277b6907-4be7-4ae1-a00c-15ad0981c799" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,9 +109,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="nim.task.build.to.cache" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -146,6 +138,7 @@
       <workItem from="1725136442779" duration="2411000" />
       <workItem from="1725139934836" duration="1337000" />
       <workItem from="1725195336909" duration="670000" />
+      <workItem from="1725566968114" duration="382000" />
     </task>
     <servers />
   </component>

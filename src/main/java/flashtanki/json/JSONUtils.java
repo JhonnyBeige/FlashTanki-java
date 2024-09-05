@@ -30,6 +30,7 @@ import flashtanki.collections.FastHashMap;
 import flashtanki.lobby.battles.BattleInfo;
 import flashtanki.lobby.battles.BattlesList;
 import flashtanki.lobby.chat.ChatMessage;
+import flashtanki.lobby.top.HallOfFame;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
 import flashtanki.users.premium.PremiumService;
@@ -375,6 +376,16 @@ public class JSONUtils {
         obj.put("score", user.getScore());
         obj.put("friendsCachedId", user.getLastFriendRequest());
         return obj;
+    }
+
+    public static String parseHallOfFame(HallOfFame top) {
+        JSONObject obj = new JSONObject();
+        JSONArray array = new JSONArray();
+        for (User user : top.getData()) {
+            array.add(JSONUtils.parseUserToJSONObject(user));
+        }
+        obj.put("users_data", array);
+        return obj.toJSONString();
     }
 
     public static String parseChatLobbyMessage(ChatMessage msg) {
