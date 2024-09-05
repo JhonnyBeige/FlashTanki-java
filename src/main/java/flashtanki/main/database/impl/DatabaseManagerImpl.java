@@ -419,7 +419,7 @@ public class DatabaseManagerImpl extends Thread implements DatabaseManager {
         try {
             session = HibernateService.getSessionFactory().getCurrentSession();
             tx = session.beginTransaction();
-            SQLQuery query = session.createSQLQuery("delete from tanks.black_ips where ip = :ip");
+            SQLQuery query = session.createSQLQuery("delete from flashtanki.black_ips where ip = :ip");
             query.setString("ip", blackIP.getIp());
             query.executeUpdate();
             tx.commit();
