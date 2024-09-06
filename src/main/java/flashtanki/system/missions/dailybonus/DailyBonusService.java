@@ -1,12 +1,10 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.system.missions.dailybonus;
 
 import flashtanki.lobby.LobbyManager;
 import flashtanki.main.database.DatabaseManager;
 import flashtanki.main.database.impl.DatabaseManagerImpl;
 import flashtanki.system.missions.dailybonus.crystalls.CrystallsBonusModel;
+import flashtanki.system.missions.dailybonus.mapping.DailyBonusInfo;
 import flashtanki.system.missions.dailybonus.ui.DailyBonusUIModel;
 import flashtanki.users.User;
 import flashtanki.users.garage.Garage;
@@ -24,7 +22,7 @@ public class DailyBonusService {
     private static final DailyBonusService instance = new DailyBonusService();
     private static final DatabaseManager databaseManager = DatabaseManagerImpl.instance();
     public static final String[] SUPPLIES_IDS = new String[]{"armor", "double_damage", "n2o"};
-    private static Map<LobbyManager, Data> waitingUsers = new HashMap<LobbyManager, Data>();
+    private static Map<LobbyManager, Data> waitingUsers = new HashMap<>();
     private static DailyBonusUIModel uiModel = new DailyBonusUIModel();
     private static CrystallsBonusModel crystallsBonus = new CrystallsBonusModel();
     private static Random random = new Random();
@@ -102,12 +100,16 @@ public class DailyBonusService {
         if (data == null) {
             return;
         }
-        if (data.type == 1) {
+
+        DailyBonusInfo bonusInfo = new DailyBonusInfo(data.type, data.bonusList);
+
+        if (bonusInfo.getBonusType() == 1) {
             int count = crystallsBonus.applyBonus(lobby);
             uiModel.showCrystalls(lobby, count);
-        } else if (data.type == 3) {
-            uiModel.showBonuses(lobby, data.bonusList);
+        } else if (bonusInfo.getBonusType() == 3) {
+            uiModel.showBonuses(lobby, bonusInfo);
         }
+
         waitingUsers.remove(lobby);
         this.saveLastDate(lobby.getLocalUser());
     }
@@ -142,4 +144,3 @@ public class DailyBonusService {
         public List<BonusListItem> bonusList = new ArrayList<>();
     }
 }
-

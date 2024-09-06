@@ -1,20 +1,17 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.system.missions.dailybonus.ui;
 
 import flashtanki.commands.Type;
 import flashtanki.lobby.LobbyManager;
 import flashtanki.system.missions.dailybonus.BonusListItem;
-import java.util.List;
+import flashtanki.system.missions.dailybonus.mapping.DailyBonusInfo;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 public class DailyBonusUIModel {
-    public void showBonuses(LobbyManager lobby, List<BonusListItem> bonusesData) {
+    public void showBonuses(LobbyManager lobby, DailyBonusInfo bonusInfo) {
         JSONObject json = new JSONObject();
         JSONArray items = new JSONArray();
-        for (BonusListItem item : bonusesData) {
+        for (BonusListItem item : bonusInfo.getBonusList()) {
             JSONObject _item = new JSONObject();
             _item.put("id", item.getBonus().id);
             _item.put("count", item.getCount());
@@ -31,4 +28,3 @@ public class DailyBonusUIModel {
     public void showNoSupplies() {
     }
 }
-

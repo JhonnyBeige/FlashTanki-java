@@ -33,6 +33,6 @@
         <mapping class="flashtanki.main.netty.blackip.BlackIP"/>
         <mapping class="flashtanki.logger.remote.LogObject"/>
         <mapping class="flashtanki.captcha.CaptchaService$Captcha"/>
-        <!--<mapping class="flashtanki.system.missions.dailybonus.mapping.DailyBonusInfo"/>-->
+        <mapping class="flashtanki.system.missions.dailybonus.mapping.DailyBonusInfo"/>
      </session-factory>
 </hibernate-configuration>

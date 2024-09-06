@@ -1,6 +1,3 @@
-/*
- * Decompiled with CFR 0.150.
- */
 package flashtanki.system.missions.dailybonus;
 
 import flashtanki.users.garage.items.Item;
@@ -14,8 +11,8 @@ import lombok.Setter;
 public class BonusListItem {
     private Item bonus;
     private int count;
+
     public void addCount(int count) {
         this.count += count;
     }
 }
-
