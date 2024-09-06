@@ -88,7 +88,7 @@ public class ContainerSystem {
     public void giveContainer(Long userId, String containerClientId, int count) {
         containerAssortmentRespository.findByClientId(containerClientId)
                 .ifPresent(containerItemInfo -> {
-                    if (userContainerRepository.existUserContainers(userId, containerItemInfo.getId()) ) {
+                    if (userContainerRepository.existUserContainers(userId, containerItemInfo.getId())) {
                         userContainerRepository.addContainers(userId, containerItemInfo.getId(), count);
                     } else {
                         userContainerRepository.save(UserContainer.builder()
@@ -141,29 +141,41 @@ public class ContainerSystem {
             //         .build();
 
             // String outStr = objectMapper.writeValueAsString(containerWindowRequest);
-            //FIXME: no kafka
-            //kafkaTemplateService.getProducer().send(outStr, CONTAINER_OPEN_REQUEST_TOPIC);
+            // FIXME: no kafka
+            // kafkaTemplateService.getProducer().send(outStr, CONTAINER_OPEN_REQUEST_TOPIC);
         }
     }
 
     @SneakyThrows
     public void openContainerWindow(User user, String clientContainerId) {
         ObjectMapper objectMapper = new ObjectMapper();
-        List<String> outItems = new ArrayList<String>();
+        List<String> outItems = new ArrayList<>();
+
+        List<String> existingItemIds = user.getGarage().items.stream()
+                .map(Item::getId)
+                .collect(Collectors.toList());
 
         for (Item item : user.getGarage().items) {
             outItems.add(item.getId());
         }
+
         Map<Long, ShotEffectItem> allShotEffects = shotEffectSystem.getAllShotEffects();
         List<UserShotEffect> userShotEffects = shotEffectSystem.getAllUserShotEffects(user.getId());
         Map<Long, SkinItem> allSkins = skinSystem.getAllSkins();
         List<UserSkin> userSkins = skinSystem.getAllUserSkins(user.getId());
 
         for (UserShotEffect userShotEffect : userShotEffects) {
-            outItems.add(allShotEffects.get(userShotEffect.getShotEffectId()).getClientId());
+            String shotEffectId = allShotEffects.get(userShotEffect.getShotEffectId()).getClientId();
+            if (!existingItemIds.contains(shotEffectId)) {
+                outItems.add(shotEffectId);
+            }
         }
+
         for (UserSkin userSkin : userSkins) {
-            outItems.add(allSkins.get(userSkin.getSkinId()).getClientId());
+            String skinId = allSkins.get(userSkin.getSkinId()).getClientId();
+            if (!existingItemIds.contains(skinId)) {
+                outItems.add(skinId);
+            }
         }
 
         ContainerWindowRequest containerWindowRequest = ContainerWindowRequest.builder()
@@ -173,8 +185,8 @@ public class ContainerSystem {
                 .build();
 
         String outStr = objectMapper.writeValueAsString(containerWindowRequest);
-        //FIXME: no kafka
-        //kafkaTemplateService.getProducer().send(outStr, CONTAINER_WINDOW_REQUEST_TOPIC);
+        // FIXME: no kafka
+        // kafkaTemplateService.getProducer().send(outStr, CONTAINER_WINDOW_REQUEST_TOPIC);
     }
 
     public boolean existContainer(String itemId) {
@@ -189,6 +201,5 @@ public class ContainerSystem {
         private Long userId;
         private String containerId;
         private List<String> items;
-
     }
 }
