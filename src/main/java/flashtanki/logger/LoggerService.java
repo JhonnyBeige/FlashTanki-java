@@ -24,8 +24,8 @@ public class LoggerService {
     }
 
     public static void log(Type type, String msg) {
-        Log tempLog = new Log(type, msg);
-        System.out.println("[" + getCurrentTimeStamp() + "] " + tempLog);
+        LogEntry tempLogEntry = new LogEntry(type, msg);
+        System.out.println("[" + getCurrentTimeStamp() + "] " + tempLogEntry);
     }
 
     public static void debug(String msg) {

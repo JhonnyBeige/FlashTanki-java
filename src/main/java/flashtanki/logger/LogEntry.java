@@ -1,12 +1,10 @@
 package flashtanki.logger;
 
-import flashtanki.logger.Type;
-
-public class Log {
+public class LogEntry {
     public Type type;
     public String msg;
 
-    public Log(Type type, String msg) {
+    public LogEntry(Type type, String msg) {
         this.type = type;
         this.msg = msg;
     }
