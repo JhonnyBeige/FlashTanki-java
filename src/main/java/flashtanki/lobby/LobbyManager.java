@@ -16,7 +16,7 @@ import flashtanki.users.garage.containers.ContainerSystem;
 import flashtanki.json.JSONUtils;
 import flashtanki.json.ShopFactory;
 import flashtanki.main.kafka.KafkaTemplateService;
-import flashtanki.main.kafka.extermalMessage.GetChallengeInfoRequest;
+import flashtanki.system.missions.challenges.GetChallengeInfoRequest;
 import flashtanki.lobby.battles.BattleInfo;
 import flashtanki.lobby.battles.BattlesList;
 import flashtanki.lobby.chat.ChatLobby;
