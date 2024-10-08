@@ -24,12 +24,15 @@ import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.json.simple.parser.ParseException;
 import java.io.IOException;
+import flashtanki.discord.JdaBot;
+import javax.security.auth.login.LoginException;
 
 public class Main {
     public static void main(String[] args) {
         try {
             initializeSystem();
             initializeServices();
+            startDiscordBot("MTI0OTI4Mjc2ODc4NjAzMDY1Mw.GNhwjn.tGmHM8L0VZjvtZamOrSmWZ690hA0g2ZkTQqkaA");
         } catch (Exception ex) {
             ex.printStackTrace();
             RemoteDatabaseLogger.error(ex);
@@ -79,5 +82,14 @@ public class Main {
         KafkaTemplateService.getInstance();
         UpdateStarsService.getInstance();
         SystemBattlesHandler.systemBattlesInit();
+    }
+
+    private static void startDiscordBot(String token) {
+        try {
+            JdaBot.initialize(token);
+        } catch (InterruptedException | LoginException e) {
+            e.printStackTrace();
+            RemoteDatabaseLogger.error(e);
+        }
     }
 }
