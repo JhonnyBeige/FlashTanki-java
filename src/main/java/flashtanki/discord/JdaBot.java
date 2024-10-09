@@ -6,6 +6,7 @@ import flashtanki.discord.commands.Owner.HelpCommand;
 import flashtanki.discord.commands.Default.OnlineCommand;
 import flashtanki.discord.commands.Default.PingCommand;
 //import flashtanki.discord.commands.Owner.RestartCommand;
+import flashtanki.discord.commands.Owner.RestartCommand;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.events.ReadyEvent;
@@ -28,7 +29,7 @@ public class JdaBot {
                 .addEventListeners(new DiscordLinkCommand())
                 .addEventListeners(new HelpCommand())
                 .addEventListeners(new OnlineCommand())
-                //.addEventListeners(new RestartCommand())
+                .addEventListeners(new RestartCommand())
                 .addEventListeners(new ClearChatCommand())
                 .setActivity(Activity.playing("FlashTanki"));
 

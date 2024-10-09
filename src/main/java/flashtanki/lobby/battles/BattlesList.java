@@ -54,7 +54,7 @@ public class BattlesList {
         battles.remove(battle);
     }
 
-    public List<BattleInfo> getList() {
+    public static List<BattleInfo> getList() {
         return battles;
     }
 

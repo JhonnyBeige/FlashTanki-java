@@ -1,6 +1,5 @@
 package flashtanki.discord.commands.Owner;
 
-/*
 import flashtanki.discord.commands.Permissions;
 import flashtanki.system.restart.ServerRestartService;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -99,4 +98,3 @@ public class RestartCommand extends ListenerAdapter {
         event.getChannel().sendMessageEmbeds(embedBuilder.build()).queue();
     }
 }
- */

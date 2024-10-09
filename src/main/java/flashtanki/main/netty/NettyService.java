@@ -37,6 +37,10 @@ public class NettyService implements Destroyable {
         this.bootstrap.setOption("child.keepAlive", true);
     }
 
+    public static NettyService inject() {
+        return instance;
+    }
+
     public void init() {
         this.bootstrap.bind(new InetSocketAddress(this.port));
     }
