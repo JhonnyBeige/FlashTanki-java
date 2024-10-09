@@ -32,6 +32,7 @@ public class Main {
         try {
             initializeSystem();
             initializeServices();
+            startResourceServer();
             startDiscordBot("MTI0OTI4Mjc2ODc4NjAzMDY1Mw.GNhwjn.tGmHM8L0VZjvtZamOrSmWZ690hA0g2ZkTQqkaA");
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -82,6 +83,16 @@ public class Main {
         KafkaTemplateService.getInstance();
         UpdateStarsService.getInstance();
         SystemBattlesHandler.systemBattlesInit();
+    }
+
+    private static void startResourceServer() {
+        new Thread(() -> {
+            try {
+                ResourceServer.start();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 
     private static void startDiscordBot(String token) {
