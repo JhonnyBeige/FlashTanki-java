@@ -20,8 +20,8 @@ import flashtanki.system.missions.dailybonus.DailyBonusService;
 import flashtanki.system.quartz.impl.QuartzServiceImpl;
 import flashtanki.configurator.server.configuration.ConfigurationsLoader;
 import flashtanki.users.garage.GarageItemsLoader;
-import org.hibernate.SQLQuery;
 import org.hibernate.Session;
+import org.hibernate.query.NativeQuery;
 import org.json.simple.parser.ParseException;
 import java.io.IOException;
 import flashtanki.discord.JdaBot;
@@ -35,8 +35,7 @@ public class Main {
             startResourceServer();
             startDiscordBot("MTI0OTI4Mjc2ODc4NjAzMDY1Mw.GNhwjn.tGmHM8L0VZjvtZamOrSmWZ690hA0g2ZkTQqkaA");
         } catch (Exception ex) {
-            ex.printStackTrace();
-            RemoteDatabaseLogger.error(ex);
+            handleException(ex);
         }
     }
 
@@ -64,10 +63,11 @@ public class Main {
     private static void setupDatabaseSession() {
         try (Session session = HibernateService.getSessionFactory().openSession()) {
             session.beginTransaction();
-            SQLQuery query = session.createSQLQuery("SET NAMES 'utf8' COLLATE 'utf8_general_ci';");
+            NativeQuery<?> query = session.createNativeQuery("SET NAMES 'utf8' COLLATE 'utf8_general_ci';");
+            query.executeUpdate();
             session.getTransaction().commit();
         } catch (Exception e) {
-            e.printStackTrace();
+            handleException(e);
         }
     }
 
@@ -90,7 +90,7 @@ public class Main {
             try {
                 ResourceServer.start();
             } catch (IOException e) {
-                e.printStackTrace();
+                handleException(e);
             }
         }).start();
     }
@@ -99,8 +99,12 @@ public class Main {
         try {
             JdaBot.initialize(token);
         } catch (InterruptedException | LoginException e) {
-            e.printStackTrace();
-            RemoteDatabaseLogger.error(e);
+            handleException(e);
         }
+    }
+
+    private static void handleException(Exception e) {
+        e.printStackTrace();
+        RemoteDatabaseLogger.error(e);
     }
 }

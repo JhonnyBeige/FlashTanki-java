@@ -17,7 +17,7 @@ public class ResourceServer {
         HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);
         server.createContext("/resources", new ResourceHandler());
         server.setExecutor(null);
-        System.out.println("Server started on port: " + PORT);
+        System.out.println("ResourceServer started on port: " + PORT);
         server.start();
     }
 
