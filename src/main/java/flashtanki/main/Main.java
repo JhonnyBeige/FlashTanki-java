@@ -23,16 +23,16 @@ import flashtanki.users.garage.GarageItemsLoader;
 import org.hibernate.Session;
 import org.hibernate.query.NativeQuery;
 import org.json.simple.parser.ParseException;
-import java.io.IOException;
 import flashtanki.discord.JdaBot;
 import javax.security.auth.login.LoginException;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
         try {
             initializeSystem();
             initializeServices();
-            startResourceServer();
+            startResourceServer();  // Starting Resource Server
             startDiscordBot("MTI0OTI4Mjc2ODc4NjAzMDY1Mw.GNhwjn.tGmHM8L0VZjvtZamOrSmWZ690hA0g2ZkTQqkaA");
         } catch (Exception ex) {
             handleException(ex);
@@ -85,14 +85,13 @@ public class Main {
         SystemBattlesHandler.systemBattlesInit();
     }
 
+    // Added Resource Server start method
     private static void startResourceServer() {
-        new Thread(() -> {
-            try {
-                ResourceServer.start();
-            } catch (IOException e) {
-                handleException(e);
-            }
-        }).start();
+        try {
+            ResourceServer.start();
+        } catch (IOException e) {
+            handleException(e);
+        }
     }
 
     private static void startDiscordBot(String token) {

@@ -1,53 +1,52 @@
 package flashtanki.main;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.InetSocketAddress;
 import com.sun.net.httpserver.HttpServer;
+import flashtanki.logger.LoggerService;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpExchange;
+import flashtanki.logger.remote.types.LogType;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.nio.file.Files;
 
 public class ResourceServer {
-    private static final int PORT = 7070;
-    private static final String RESOURCE_DIR = "resources";
-
-    public static void start() throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(PORT), 0);
-        server.createContext("/resources", new ResourceHandler());
-        server.setExecutor(null);
-        System.out.println("ResourceServer started on port: " + PORT);
-        server.start();
+    static {
+        LoggerService.getInstance();
     }
 
-    static class ResourceHandler implements HttpHandler {
+    public static void start() throws IOException {
+        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        server.createContext("/localization/", new LocalizationHandler());
+        server.setExecutor(null);
+        server.start();
+        LoggerService.log(LogType.INFO, "Resource server started");
+    }
+
+    static class LocalizationHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            String requestURI = exchange.getRequestURI().toString();
-            String filePath = RESOURCE_DIR + requestURI.replace("/resources", "");
+            String pathStr = "configurations" + exchange.getRequestURI().getPath();
+            System.out.println(pathStr);
 
-            System.out.println("Requested URI: " + requestURI);
-            System.out.println("Full file path: " + filePath);
-
-            File file = new File(filePath);
-            if (!file.exists() || file.isDirectory()) {
-                System.out.println("File not found: " + filePath);
-                exchange.sendResponseHeaders(404, -1);
-                return;
-            }
-
-            try (FileInputStream fis = new FileInputStream(file);
-                 OutputStream os = exchange.getResponseBody()) {
-                exchange.sendResponseHeaders(200, file.length());
-                byte[] buffer = new byte[1024];
-                int bytesRead;
-                while ((bytesRead = fis.read(buffer)) != -1) {
-                    os.write(buffer, 0, bytesRead);
-                }
-            } catch (IOException e) {
-                exchange.sendResponseHeaders(500, -1);
-                e.printStackTrace();
+            InputStream resourceStream = getClass().getClassLoader().getResourceAsStream(pathStr);
+            if (resourceStream != null) {
+                byte[] response = resourceStream.readAllBytes();
+                exchange.sendResponseHeaders(200, response.length);
+                OutputStream os = exchange.getResponseBody();
+                os.write(response);
+                os.close();
+                LoggerService.log(LogType.INFO, "The localization file (" + pathStr + ") was successfully sent");
+            } else {
+                String response = "404 (Not Found)";
+                exchange.sendResponseHeaders(404, response.length());
+                OutputStream os = exchange.getResponseBody();
+                os.write(response.getBytes());
+                os.close();
+                LoggerService.log(LogType.INFO, "The localization file (" + pathStr + ") not found");
             }
         }
     }
