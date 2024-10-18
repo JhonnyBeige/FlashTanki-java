@@ -32,7 +32,7 @@ public class Main {
         try {
             initializeSystem();
             initializeServices();
-            startResourceServer();  // Starting Resource Server
+            startResourceServer();
             startDiscordBot("MTI0OTI4Mjc2ODc4NjAzMDY1Mw.GNhwjn.tGmHM8L0VZjvtZamOrSmWZ690hA0g2ZkTQqkaA");
         } catch (Exception ex) {
             handleException(ex);
@@ -85,7 +85,6 @@ public class Main {
         SystemBattlesHandler.systemBattlesInit();
     }
 
-    // Added Resource Server start method
     private static void startResourceServer() {
         try {
             ResourceServer.start();
