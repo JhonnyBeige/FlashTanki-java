@@ -22,10 +22,11 @@ import flashtanki.configurator.server.configuration.ConfigurationsLoader;
 import flashtanki.users.garage.GarageItemsLoader;
 import org.hibernate.Session;
 import org.hibernate.query.NativeQuery;
-import org.json.simple.parser.ParseException;
 import flashtanki.discord.JdaBot;
 import javax.security.auth.login.LoginException;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,20 +34,20 @@ public class Main {
             initializeSystem();
             initializeServices();
             startResourceServer();
-            startDiscordBot("MTI0OTI4Mjc2ODc4NjAzMDY1Mw.GNhwjn.tGmHM8L0VZjvtZamOrSmWZ690hA0g2ZkTQqkaA");
+            startDiscordBot();
         } catch (Exception ex) {
             handleException(ex);
         }
     }
 
-    private static void initializeSystem() throws IOException, ParseException {
+    private static void initializeSystem() {
         ConfigurationsLoader.load("");
         initializeFactories();
         UserGroupsLoader.load("groups/");
         setupDatabaseSession();
     }
 
-    private static void initializeFactories() throws IOException, ParseException {
+    private static void initializeFactories() {
         GarageItemsLoader.getInstance().loadFromConfig(
                 "turrets.json",
                 "hulls.json",
@@ -73,8 +74,10 @@ public class Main {
 
     private static void initializeServices() {
         QuartzServiceImpl.getInstance();
-        DailyBonusService.getInstance();
-        AutoEntryServices.getInstance();
+        @SuppressWarnings("unused")
+        DailyBonusService dailyBonusService = DailyBonusService.getInstance();
+        @SuppressWarnings("unused")
+        AutoEntryServices autoEntryServices = AutoEntryServices.getInstance();
         NettyService.getInstance().init();
         GiveItemService.getInstance();
         GetChallengeInfoService.getInstance();
@@ -93,16 +96,17 @@ public class Main {
         }
     }
 
-    private static void startDiscordBot(String token) {
+    private static void startDiscordBot() {
         try {
-            JdaBot.initialize(token);
+            JdaBot.initialize();
         } catch (InterruptedException | LoginException e) {
             handleException(e);
         }
     }
 
     private static void handleException(Exception e) {
-        e.printStackTrace();
         RemoteDatabaseLogger.error(e);
+        Logger logger = Logger.getLogger(Main.class.getName());
+        logger.log(Level.SEVERE, "Exception caught", e);
     }
 }
