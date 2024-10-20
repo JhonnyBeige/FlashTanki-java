@@ -47,8 +47,8 @@ public class NettyService implements Destroyable {
 
     @Override
     public void destroy() {
+        System.exit(0);
         this.bootstrap.releaseExternalResources();
-        //FIXME   this.bootstrap.shutdown();
     }
 
     private void initParams() {
