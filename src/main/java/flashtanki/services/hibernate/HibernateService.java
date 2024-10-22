@@ -44,7 +44,7 @@ public class HibernateService {
             cfg.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
             cfg.setProperty("hibernate.connection.username", "root");
             cfg.setProperty("hibernate.connection.password", "");
-            cfg.setProperty("hibernate.show_sql", "true");
+            cfg.setProperty("hibernate.show_sql", "flase");
             cfg.setProperty("hibernate.hbm2ddl.auto", "update");
             cfg.setProperty("hibernate.current_session_context_class", "thread");
             cfg.setProperty("hibernate.c3p0.acquire_increment", "1");

@@ -25,6 +25,7 @@ import org.hibernate.query.NativeQuery;
 import flashtanki.discord.JdaBot;
 import javax.security.auth.login.LoginException;
 import java.io.IOException;
+import org.apache.log4j.PropertyConfigurator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -41,6 +42,7 @@ public class Main {
     }
 
     private static void initializeSystem() {
+        PropertyConfigurator.configure(Main.class.getClassLoader().getResource("log4j.properties"));
         ConfigurationsLoader.load("");
         initializeFactories();
         UserGroupsLoader.load("groups/");
