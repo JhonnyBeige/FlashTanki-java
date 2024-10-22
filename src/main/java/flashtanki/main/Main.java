@@ -50,6 +50,14 @@ public class Main {
     }
 
     private static void initializeFactories() {
+        loadGarageItems();
+        WeaponsFactory.getInstance().init("weapons/");
+        HullsFactory.getInstance().init("hulls/");
+        RankUtils.init();
+        MapsLoaderService.initFactoryMaps();
+    }
+
+    private static void loadGarageItems() {
         GarageItemsLoader.getInstance().loadFromConfig(
                 "turrets.json",
                 "hulls.json",
@@ -57,29 +65,28 @@ public class Main {
                 "inventory.json",
                 "modules.json"
         );
-        WeaponsFactory.getInstance().init("weapons/");
-        HullsFactory.getInstance().init("hulls/");
-        RankUtils.init();
-        MapsLoaderService.initFactoryMaps();
     }
 
     private static void setupDatabaseSession() {
         try (Session session = HibernateService.getSessionFactory().openSession()) {
             session.beginTransaction();
-            NativeQuery<?> query = session.createNativeQuery("SET NAMES 'utf8' COLLATE 'utf8_general_ci';");
-            query.executeUpdate();
+            executeNativeQuery(session);
             session.getTransaction().commit();
         } catch (Exception e) {
             handleException(e);
         }
     }
 
+    private static void executeNativeQuery(Session session) {
+        NativeQuery<?> query = session.createNativeQuery("SET NAMES 'utf8' COLLATE 'utf8_general_ci';");
+        query.executeUpdate();
+    }
+
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     private static void initializeServices() {
         QuartzServiceImpl.getInstance();
-        @SuppressWarnings("unused")
-        DailyBonusService dailyBonusService = DailyBonusService.getInstance();
-        @SuppressWarnings("unused")
-        AutoEntryServices autoEntryServices = AutoEntryServices.getInstance();
+        DailyBonusService.getInstance();
+        AutoEntryServices.getInstance();
         NettyService.getInstance().init();
         GiveItemService.getInstance();
         GetChallengeInfoService.getInstance();
@@ -93,6 +100,7 @@ public class Main {
     private static void startResourceServer() {
         try {
             ResourceServer.start();
+            logSuccess("Resource server started successfully.");
         } catch (IOException e) {
             handleException(e);
         }
@@ -101,14 +109,20 @@ public class Main {
     private static void startDiscordBot() {
         try {
             JdaBot.initialize();
+            logSuccess("Discord bot started successfully.");
         } catch (InterruptedException | LoginException e) {
             handleException(e);
         }
     }
 
     private static void handleException(Exception e) {
-        RemoteDatabaseLogger.error(e);
         Logger logger = Logger.getLogger(Main.class.getName());
         logger.log(Level.SEVERE, "Exception caught", e);
+        RemoteDatabaseLogger.error(e);
+    }
+
+    private static void logSuccess(String message) {
+        Logger logger = Logger.getLogger(Main.class.getName());
+        logger.log(Level.INFO, message);
     }
 }
