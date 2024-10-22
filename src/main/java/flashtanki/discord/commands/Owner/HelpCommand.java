@@ -20,12 +20,16 @@ public class HelpCommand extends ListenerAdapter {
         englishCommands.put("en?online", "Displays the number of online players and their details.");
         englishCommands.put("en?clear", "Clears the chat room.");
         englishCommands.put("en?help", "Displays this help message.");
+        englishCommands.put("en?write", "Writes messages on behalf of the bot.");
+        englishCommands.put("en?write-publish", "Publishes news on behalf of the bot.");
 
         russianCommands.put("ссылка", "Дает ссылку на дискорд сервер.");
         russianCommands.put("ru?restart", "Производит рестарт сервера.");
         russianCommands.put("ru?online", "Отображает количество онлайн игроков и их данные.");
         russianCommands.put("ru?clear", "Очищает чат.");
         russianCommands.put("ru?help", "Отображает это сообщение справки.");
+        russianCommands.put("ru?write", "Пишет сообщения от лица бота.");
+        russianCommands.put("ru?write-publish", "Публикует новости от лица бота.");
     }
 
     @Override
