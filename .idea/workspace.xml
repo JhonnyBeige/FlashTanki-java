@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fef45df5-0cca-4294-84a0-8079d2bb2129" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/discord/commands/Bot/WriteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/discord/commands/Bot/WriteCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/discord/commands/Owner/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/discord/commands/Owner/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flashtanki/main/ResourceServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flashtanki/main/ResourceServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +92,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="nim.task.build.to.cache" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -116,6 +120,7 @@
       <workItem from="1729284075140" duration="503000" />
       <workItem from="1729438360248" duration="1617000" />
       <workItem from="1729606737937" duration="1788000" />
+      <workItem from="1729795962170" duration="413000" />
     </task>
     <servers />
   </component>
