@@ -37,7 +37,7 @@ jobs:
     - name: Archive Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: FlashTanki-java/
+        name: FlashTanki-java
         path: /home/runner/work/FlashTanki-java/FlashTanki-java/target/server.jar
 
 
