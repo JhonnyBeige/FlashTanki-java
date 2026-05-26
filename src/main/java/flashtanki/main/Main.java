@@ -35,7 +35,7 @@ public class Main {
             initializeSystem();
             initializeServices();
             startResourceServer();
-            startDiscordBot();
+            // startDiscordBot();
         } catch (Exception ex) {
             handleException(ex);
         }
