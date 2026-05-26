@@ -106,14 +106,14 @@ public class Main {
         }
     }
 
-    private static void startDiscordBot() {
-        try {
-            JdaBot.initialize();
-            logSuccess("Discord bot started successfully.");
-        } catch (InterruptedException | LoginException e) {
-            handleException(e);
-        }
-    }
+//   private static void startDiscordBot() {
+//        try {
+//           JdaBot.initialize();
+//            logSuccess("Discord bot started successfully.");
+//        } catch (InterruptedException | LoginException e) {
+//            handleException(e);
+//        }
+//    }
 
     private static void handleException(Exception e) {
         Logger logger = Logger.getLogger(Main.class.getName());
